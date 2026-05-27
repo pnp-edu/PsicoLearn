@@ -1,0 +1,9 @@
+{
+  "name": "psicolearn-admin",
+  "version": "1.0.0",
+  "description": "Scripts para administración de usuarios en PsicoLearn",
+  "main": "add_users.js",
+  "dependencies": {
+    "firebase-admin": "^12.0.0"
+  }
+}

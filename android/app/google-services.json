@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "474933138096",
+    "project_id": "psico-l",
+    "storage_bucket": "psico-l.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474933138096:android:ba9a5be751b8ab1c8ba175",
+        "android_client_info": {
+          "package_name": "com.psicolearn.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474933138096-1e8bph8ss9eb5st9rm0rkpcdamm03r3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.psicolearn.app",
+            "certificate_hash": "c4d444e950efc7e06a8ac11c3d292c7b8b081922"
+          }
+        },
+        {
+          "client_id": "474933138096-i9m8vn3qonujq4qgnq75jhu80flm6lsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATeI14K6CbGVM7FEKUZP4wLON32HsNaO8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474933138096-i9m8vn3qonujq4qgnq75jhu80flm6lsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

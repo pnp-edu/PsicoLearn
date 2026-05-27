@@ -1,0 +1,56 @@
+name: psicolearn
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  shared_preferences: ^2.5.5
+  lottie: ^3.3.3
+  fl_chart: ^1.2.0
+  flutter_svg: ^2.3.0
+  get_it: ^9.2.1
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.5
+  flutter_local_notifications: ^17.2.2
+  timezone: ^0.9.4
+  firebase_core: ^3.1.1
+  cloud_firestore: ^5.0.0
+  firebase_auth: ^5.1.0
+  device_info_plus: ^13.1.0
+  url_launcher: ^6.3.2
+
+  google_sign_in: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/google_logo.svg
+    - assets/portada-pnp.png
+    - assets/animations/
+    - assets/data/
+    - assets/psicotecnico_full_01.svg
+    - assets/figuras_psicometrico/cerillos/
+    - assets/figuras_psicometrico/espacial/
+    - assets/figuras_psicometrico/matriz/
+    - assets/figuras_psicometrico/serie/
+    - assets/figuras_psicometrico/analogia/
+    - assets/figuras_psicometrico/rotacion/
+    - assets/figuras_psicometrico/conteo/
+    - assets/figuras_psicometrico/simetria/
+    - assets/figuras_psicometrico/logica/
+    - assets/figuras_psicometrico/cerillos_common/
