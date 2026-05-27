@@ -28,6 +28,17 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: ThemeMode.system,
+      builder: (context, child) {
+        return Container(
+          color: Colors.black87, // Fondo oscuro para pantallas grandes
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 800),
+              child: ClipRect(child: child),
+            ),
+          ),
+        );
+      },
       // Iniciamos con el SplashScreen táctico
       home: const TacticalSplashScreen(),
     );

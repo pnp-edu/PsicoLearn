@@ -24,7 +24,11 @@ class SecurityService {
   late final gsi.GoogleSignIn _googleSignIn;
 
   SecurityService() {
-    _googleSignIn = gsi.GoogleSignIn();
+    _googleSignIn = gsi.GoogleSignIn(
+      clientId: kIsWeb 
+          ? '474933138096-i9m8vn3qonujq4qgnq75jhu80flm6lsj.apps.googleusercontent.com' 
+          : null,
+    );
   }
   
   static const String _keyUserEmail = 'user_email';
