@@ -113,42 +113,10 @@ class SecurityService {
       final data = doc.data()!;
       final bool active = data['active'] ?? false;
       _cachedRole = data['role'] ?? 'user';
-      String? lastId = data['last_device_id'];
-      
-      final currentId = await getDeviceId();
-
       if (!active) return false;
 
-      // AUTO-REGISTRO: Si el usuario es activo pero no tiene ID registrado,
-      // lo vinculamos a este dispositivo automáticamente (solo si NO es web).
-      if (lastId == null) {
-        if (!kIsWeb) {
-          debugPrint('🔓 SecurityService: Registrando ID de dispositivo automáticamente...');
-          await _firestore.collection('users').doc(email).update({
-            'last_device_id': currentId,
-            'updated_at': FieldValue.serverTimestamp(),
-          });
-        }
-        lastId = currentId;
-      }
-
-      // EXCEPCIÓN WEB: La versión web funciona como un visor libre que no bloquea la cuenta móvil.
-      if (lastId == currentId || kIsWeb) {
-        if (!kIsWeb) {
-          _startSessionVigilance(email);
-        }
-        await _storage.setBool(_keyIsActivated, true);
-        return true;
-      }
-      
-      // MODO DEBUG WINDOWS: Permitir acceso para pruebas si Firebase falla o no coincide
-      if (kDebugMode && !kIsWeb && Platform.isWindows) {
-        debugPrint('🛠️ SecurityService: Modo Debug Windows - Saltando validación...');
-        return true;
-      }
-
-      debugPrint('🚫 SecurityService: El ID no coincide ($lastId != $currentId)');
-      return false;
+      await _storage.setBool(_keyIsActivated, true);
+      return true;
     } catch (e) {
       debugPrint('⚠️ SecurityService: Error en checkActivation: $e');
       
@@ -166,19 +134,14 @@ class SecurityService {
 
   /// Activa el dispositivo
   Future<void> activate(String email) async {
-    final currentId = await getDeviceId();
-    
     await _firestore.collection('users').doc(email).set({
       'email': email,
-      'last_device_id': currentId,
       'active': true,
       'updated_at': FieldValue.serverTimestamp(),
     }, SetOptions(merge: true));
 
     await _storage.setString(_keyUserEmail, email);
     await _storage.setBool(_keyIsActivated, true);
-    
-    _startSessionVigilance(email);
   }
 
   /// Escucha en tiempo real si el ID del dispositivo cambia en la nube
