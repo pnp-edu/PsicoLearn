@@ -8,6 +8,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:psicolearn/core/services/security_service.dart';
 import 'package:psicolearn/features/home/presentation/activation_screen.dart';
 import 'package:psicolearn/core/widgets/laboratory_background.dart';
+import 'package:psicolearn/firebase_options.dart';
 
 void main() {
   // 1. Asegurar enlace con el motor de Flutter
@@ -67,7 +68,9 @@ class _TacticalSplashScreenState extends State<TacticalSplashScreen> {
       // Fase 1: Firebase
       setState(() { _status = 'CONECTANDO A LA RED TÁCTICA...'; _progress = 0.3; });
       try {
-        await Firebase.initializeApp().timeout(const Duration(seconds: 5));
+        await Firebase.initializeApp(
+          options: DefaultFirebaseOptions.currentPlatform,
+        ).timeout(const Duration(seconds: 5));
       } catch (e) {
         debugPrint('ℹ️ Sistema: Firebase operando en modo local.');
       }
