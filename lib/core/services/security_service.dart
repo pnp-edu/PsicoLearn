@@ -120,18 +120,23 @@ class SecurityService {
       if (!active) return false;
 
       // AUTO-REGISTRO: Si el usuario es activo pero no tiene ID registrado,
-      // lo vinculamos a este dispositivo automáticamente.
+      // lo vinculamos a este dispositivo automáticamente (solo si NO es web).
       if (lastId == null) {
-        debugPrint('🔓 SecurityService: Registrando ID de dispositivo automáticamente...');
-        await _firestore.collection('users').doc(email).update({
-          'last_device_id': currentId,
-          'updated_at': FieldValue.serverTimestamp(),
-        });
+        if (!kIsWeb) {
+          debugPrint('🔓 SecurityService: Registrando ID de dispositivo automáticamente...');
+          await _firestore.collection('users').doc(email).update({
+            'last_device_id': currentId,
+            'updated_at': FieldValue.serverTimestamp(),
+          });
+        }
         lastId = currentId;
       }
 
-      if (lastId == currentId) {
-        _startSessionVigilance(email);
+      // EXCEPCIÓN WEB: La versión web funciona como un visor libre que no bloquea la cuenta móvil.
+      if (lastId == currentId || kIsWeb) {
+        if (!kIsWeb) {
+          _startSessionVigilance(email);
+        }
         await _storage.setBool(_keyIsActivated, true);
         return true;
       }
