@@ -92,76 +92,65 @@ class ActionCardCarousel extends StatelessWidget {
                               ),
                             ],
                           ),
-                          child: ColorFiltered(
-                            colorFilter: item.isLocked 
-                              ? const ColorFilter.matrix([
-                                  0.2126, 0.7152, 0.0722, 0, 0,
-                                  0.2126, 0.7152, 0.0722, 0, 0,
-                                  0.2126, 0.7152, 0.0722, 0, 0,
-                                  0,      0,      0,      1, 0,
-                                ])
-                              : const ColorFilter.mode(Colors.transparent, BlendMode.multiply),
-                            child: Column(
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: [
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Container(
-                                      padding: const EdgeInsets.all(8),
-                                      decoration: BoxDecoration(
-                                        gradient: LinearGradient(
-                                          colors: [
-                                            item.color,
-                                            item.color.withOpacity(0.6)
-                                          ],
-                                          begin: Alignment.topLeft,
-                                          end: Alignment.bottomRight,
-                                        ),
-                                        borderRadius: BorderRadius.circular(10),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Container(
+                                    padding: const EdgeInsets.all(8),
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          item.color,
+                                          item.color.withOpacity(0.6)
+                                        ],
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight,
                                       ),
-                                      child: Hero(
-                                        tag: 'card_icon_${item.title}',
-                                        child: Icon(item.icon,
-                                            color: Colors.white, size: 18),
-                                      ),
+                                      borderRadius: BorderRadius.circular(10),
                                     ),
-                                    Icon(
-                                      item.isLocked ? Icons.lock_outline_rounded : Icons.arrow_forward_ios_rounded,
-                                      color: item.color.withOpacity(
-                                          (0.4 + (0.4 * glowOpacity)).clamp(0.0, 1.0)),
-                                      size: 11,
+                                    child: Hero(
+                                      tag: 'card_icon_${item.title}',
+                                      child: Icon(item.icon,
+                                          color: Colors.white, size: 18),
                                     ),
-                                  ],
-                                ),
-                                const Spacer(),
-                                Text(
-                                  item.title,
-                                  maxLines: 1,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    color: item.color,
-                                    fontSize: 8,
-                                    fontWeight: FontWeight.w900,
-                                    letterSpacing: 0.8,
                                   ),
-                                ),
-                                const SizedBox(height: 3),
-                                Text(
-                                  item.subtitle,
-                                  maxLines: 2,
-                                  overflow: TextOverflow.ellipsis,
-                                  style: TextStyle(
-                                    color: isDark ? Colors.white : Colors.black87,
-                                    fontSize: 11,
-                                    fontWeight: FontWeight.w800,
-                                    height: 1.0,
+                                  Icon(
+                                    Icons.arrow_forward_ios_rounded,
+                                    color: isDark ? Colors.white54 : Colors.black45,
+                                    size: 10,
                                   ),
+                                ],
+                              ),
+                              const Spacer(),
+                              Text(
+                                item.title,
+                                maxLines: 1,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: item.color,
+                                  fontSize: 8,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 0.8,
                                 ),
-                              ],
-                            ),
+                              ),
+                              const SizedBox(height: 3),
+                              Text(
+                                item.subtitle,
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(
+                                  color: isDark ? Colors.white : Colors.black87,
+                                  fontSize: 11,
+                                  fontWeight: FontWeight.w800,
+                                  height: 1.0,
+                                ),
+                              ),
+                            ],
                           ),
                         ),
                       ),
@@ -183,7 +172,6 @@ class ActionCardItem {
   final IconData icon;
   final Color color;
   final VoidCallback onTap;
-  final bool isLocked;
 
   ActionCardItem({
     required this.title,
@@ -191,6 +179,5 @@ class ActionCardItem {
     required this.icon,
     required this.color,
     required this.onTap,
-    this.isLocked = false,
   });
 }

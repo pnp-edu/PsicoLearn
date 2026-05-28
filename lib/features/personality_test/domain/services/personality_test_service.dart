@@ -48,10 +48,11 @@ class PersonalityTestService {
       final sorted = scores.entries.toList()..sort((a, b) => a.value.compareTo(b.value));
       weakDimensions = sorted.take(2).map((e) => e.key).toList();
     }
+    final int limit = 100;
 
     if (weakDimensions.isEmpty) {
       pool.shuffle();
-      return pool.take(100).toList();
+      return pool.take(limit).toList();
     }
 
     // Dividir el pool: 40% debilidades, 60% general
@@ -61,9 +62,12 @@ class PersonalityTestService {
     weakPool.shuffle();
     generalPool.shuffle();
 
+    final int weakLimit = (limit * 0.4).round();
+    final int generalLimit = limit - weakLimit;
+
     final result = [
-      ...weakPool.take(40),
-      ...generalPool.take(60),
+      ...weakPool.take(weakLimit),
+      ...generalPool.take(generalLimit),
     ];
     result.shuffle();
     return result;
@@ -84,7 +88,7 @@ class PersonalityTestService {
 
     final List<Question> pool = all.where((q) => !seenIds.contains(q.id)).toList()..shuffle();
     
-    // Acceso completo a las preguntas
+    // Límite PRO
     final int limit = 50;
     final List<Question> mission = pool.take(limit).toList();
     
@@ -101,7 +105,8 @@ class PersonalityTestService {
     
     // Acceso completo a la simulación
     final int limit = 110;
-    return all.toList()..shuffle()..take(limit).toList();
+    final shuffled = all.toList()..shuffle();
+    return shuffled.take(limit).toList();
   }
 
   Future<List<Question>> loadShuffled100() => QuestionRepository.loadShuffled100Questions();

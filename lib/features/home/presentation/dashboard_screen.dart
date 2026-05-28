@@ -340,11 +340,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                       MaterialPageRoute(
                           builder: (context) => const AdminPanelScreen()))
                   : _contactAdmin,
-              backgroundColor: sl<SecurityService>().isPremium
-                  ? (sl<SecurityService>().isAdmin
+              backgroundColor: sl<SecurityService>().isAdmin
                       ? Colors.redAccent
-                      : Colors.amber)
-                  : AppTheme.accentColor,
+                      : Colors.amber,
               icon: Icon(
                   sl<SecurityService>().isAdmin
                       ? Icons.admin_panel_settings
@@ -462,12 +460,9 @@ class _DashboardScreenState extends State<DashboardScreen>
             ActionCardItem(
               title: 'PONTE A PRUEBA',
               subtitle: 'Simulación de examen real',
-              icon: sl<SecurityService>().isPremium
-                  ? Icons.timer_rounded
-                  : Icons.lock_rounded,
+              icon: Icons.timer_rounded,
               color: const Color(0xFF00E5FF),
               onTap: _startExamSimulation,
-              isLocked: !sl<SecurityService>().isPremium,
             ),
             ActionCardItem(
               title: 'PSICOTÉCNICO',
@@ -475,27 +470,20 @@ class _DashboardScreenState extends State<DashboardScreen>
               icon: Icons.extension_rounded,
               color: Colors.tealAccent,
               onTap: _startPsychotechnicalTest,
-              isLocked: false,
             ),
             ActionCardItem(
               title: 'LA ESCUELITA',
               subtitle: 'Refuerzo de Errores',
-              icon: sl<SecurityService>().isPremium
-                  ? Icons.school_rounded
-                  : Icons.lock_rounded,
+              icon: Icons.school_rounded,
               color: Colors.orangeAccent,
               onTap: _startEscuelita,
-              isLocked: !sl<SecurityService>().isPremium,
             ),
             ActionCardItem(
               title: 'EXAMEN MÉDICO',
               subtitle: 'Psicología (Entrevista)',
-              icon: sl<SecurityService>().isPremium
-                  ? Icons.forum_rounded
-                  : Icons.lock_rounded,
+              icon: Icons.forum_rounded,
               color: Colors.blueAccent,
               onTap: _startMedicalExam,
-              isLocked: !sl<SecurityService>().isPremium,
             ),
           ],
         ),
@@ -727,26 +715,23 @@ class _DashboardScreenState extends State<DashboardScreen>
                 _buildActionCard(
                   'PONTE A PRUEBA',
                   'Simulación de examen real',
-                  secService.isPremium ? Icons.timer_rounded : Icons.lock_rounded,
+                  Icons.timer_rounded,
                   const LinearGradient(colors: [Color(0xFF3B82F6), Color(0xFF2563EB)]),
                   _startExamSimulation,
-                  isLocked: !secService.isPremium,
                 ),
                 _buildActionCard(
                   'LA ESCUELITA',
                   'Refuerzo de errores cometidos',
-                  secService.isPremium ? Icons.school_rounded : Icons.lock_rounded,
+                  Icons.school_rounded,
                   const LinearGradient(colors: [Color(0xFFF97316), Color(0xFFEA580C)]),
                   _startEscuelita,
-                  isLocked: !secService.isPremium,
                 ),
                 _buildActionCard(
                   'ENTREVISTA MÉDICA',
                   'Evaluación psicológica personal',
-                  secService.isPremium ? Icons.forum_rounded : Icons.lock_rounded,
+                  Icons.forum_rounded,
                   const LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFDB2777)]),
                   _startMedicalExam,
-                  isLocked: !secService.isPremium,
                 ),
                 if (secService.isAdmin)
                   _buildActionCard(
@@ -1129,7 +1114,6 @@ class _WebActionCard extends StatelessWidget {
   final IconData icon;
   final Gradient gradient;
   final VoidCallback? onTap;
-  final bool isLocked;
   final String? badge;
 
   const _WebActionCard({
@@ -1139,14 +1123,13 @@ class _WebActionCard extends StatelessWidget {
     required this.icon,
     required this.gradient,
     this.onTap,
-    this.isLocked = false,
     this.badge,
   });
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: isLocked ? null : onTap,
+      onTap: onTap,
       borderRadius: BorderRadius.circular(20),
       child: Container(
         decoration: BoxDecoration(
@@ -1225,35 +1208,6 @@ class _WebActionCard extends StatelessWidget {
                 ],
               ),
             ),
-            if (isLocked)
-              Container(
-                decoration: BoxDecoration(
-                  color: Colors.black.withOpacity(0.6),
-                  borderRadius: BorderRadius.circular(20),
-                ),
-                child: const Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Icon(
-                        Icons.lock_rounded,
-                        color: Colors.white,
-                        size: 40,
-                      ),
-                      SizedBox(height: 8),
-                      Text(
-                        'CONTENIDO BLOQUEADO',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 12,
-                          fontWeight: FontWeight.bold,
-                          letterSpacing: 1.2,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
           ],
         ),
       ),

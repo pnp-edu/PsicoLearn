@@ -56,9 +56,6 @@ class SecurityService {
     return _adminEmails.contains(email) || _cachedRole == 'admin';
   }
 
-  bool get isPremium {
-    return true;
-  }
 
   /// Obtiene el ID único del dispositivo
   Future<String> getDeviceId() async {

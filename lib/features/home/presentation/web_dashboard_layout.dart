@@ -120,7 +120,7 @@ class _WebSidebar extends StatelessWidget {
       width: w,
       child: Container(
         decoration: BoxDecoration(
-          color: Colors.black.withOpacity(0.25),
+          color: Colors.black.withOpacity(0.08),
           border: Border(
             right: BorderSide(
               color: AppTheme.accentColor.withOpacity(0.15),

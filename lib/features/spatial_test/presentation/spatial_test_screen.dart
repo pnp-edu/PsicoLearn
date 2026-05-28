@@ -56,14 +56,10 @@ class _SpatialTestScreenState extends State<SpatialTestScreen>
   }
 
   Future<void> _loadQuestions() async {
-    final isPremium = sl<SecurityService>().isPremium;
     if (widget.isReviewMode) {
       _allQuestions = await _service.getFailedQuestions();
     } else {
       _allQuestions = _service.getQuestions();
-      if (!isPremium) {
-        _allQuestions = _allQuestions.take(3).toList();
-      }
     }
     if (mounted) setState(() {});
   }

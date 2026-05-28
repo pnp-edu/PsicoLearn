@@ -50,20 +50,12 @@ class _ExamSimulationScreenState extends State<ExamSimulationScreen>
 
   Future<void> _loadData() async {
     final personalityService = sl<PersonalityTestService>();
-    final isPremium = sl<SecurityService>().isPremium;
-    
     final pQuestions = await personalityService.loadExamSimulation110();
     final List<SpatialQuestion> sPool = List<SpatialQuestion>.from(SpatialRepository.preguntas)..shuffle();
     
     setState(() {
-      if (isPremium) {
-        _personalityQuestions = pQuestions;
-        _spatialQuestions = sPool.take(40).toList();
-      } else {
-        // MODO GRATUITO: Solo 3 de cada
-        _personalityQuestions = pQuestions.take(3).toList();
-        _spatialQuestions = sPool.take(3).toList();
-      }
+      _personalityQuestions = pQuestions;
+      _spatialQuestions = sPool.take(40).toList();
       _isLoading = false;
     });
   }

@@ -39,7 +39,7 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/animations/
+    # - assets/animations/
     # - assets/google_logo.svg
     # - assets/portada-pnp.png
     # - assets/data/
