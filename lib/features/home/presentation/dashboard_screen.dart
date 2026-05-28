@@ -11,7 +11,6 @@ import '../../personality_test/domain/controllers/test_controller.dart';
 import '../../spatial_test/presentation/spatial_test_screen.dart';
 import 'profile_screen.dart';
 import 'settings_screen.dart';
-import 'progress_screen.dart';
 import '../../interview/presentation/interview_screen.dart';
 import 'package:psicolearn/core/theme/app_theme.dart';
 import 'widgets/dashboard_header.dart';

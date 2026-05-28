@@ -7,7 +7,6 @@ import '../../../core/services/security_service.dart';
 import '../../../core/di/service_locator.dart';
 import 'admin_panel_screen.dart';
 import 'profile_screen.dart';
-import 'progress_screen.dart';
 import 'settings_screen.dart';
 
 /// Wraps the dashboard content with a web-optimized sidebar layout on large
@@ -78,12 +77,9 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
         return widget.homeTab;
       case 1:
         return ProfileScreen(
-          onShowProgress: () => widget.onTabChanged(2),
-          onSettingsPressed: () => widget.onTabChanged(3),
+          onSettingsPressed: () => widget.onTabChanged(2),
         );
       case 2:
-        return ProgressScreen(onBack: () => widget.onTabChanged(0));
-      case 3:
         return SettingsScreen(onBack: () => widget.onTabChanged(0));
       default:
         return widget.homeTab;
@@ -257,18 +253,11 @@ class _WebSidebar extends StatelessWidget {
               onTap: () => onTabChanged(1),
             ),
             _NavItem(
-              icon: Icons.trending_up_rounded,
-              label: 'Progreso',
+              icon: Icons.settings_rounded,
+              label: 'Configuración',
               selected: selectedIndex == 2,
               collapsed: collapsed,
               onTap: () => onTabChanged(2),
-            ),
-            _NavItem(
-              icon: Icons.settings_rounded,
-              label: 'Configuración',
-              selected: selectedIndex == 3,
-              collapsed: collapsed,
-              onTap: () => onTabChanged(3),
             ),
 
             const SizedBox(height: 24),

@@ -3,8 +3,10 @@ import 'package:psicolearn/features/interview/domain/services/interview_service.
 import '../../../core/theme/app_theme.dart';
 import '../../../core/services/app_date_service.dart';
 import '../../../core/services/storage_service.dart';
+import '../../../core/services/security_service.dart';
 import '../../../core/di/service_locator.dart';
 import '../../../core/widgets/laboratory_background.dart';
+import 'activation_screen.dart';
 
 
 
@@ -174,6 +176,95 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           },
                           icon: const Icon(Icons.refresh_rounded, size: 18),
                           label: const Text('REINICIAR TODA LA ENTREVISTA', 
+                            style: TextStyle(fontWeight: FontWeight.w900, fontSize: 11)),
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.redAccent.withOpacity(0.1),
+                            foregroundColor: Colors.redAccent,
+                            padding: const EdgeInsets.symmetric(vertical: 16),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                              side: const BorderSide(color: Colors.redAccent),
+                            ),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                const SizedBox(height: 28),
+
+                // ── SESIÓN ─────────────────────────────────────────
+                _buildSectionHeader('SESIÓN', subColor),
+                const SizedBox(height: 10),
+                Container(
+                  padding: const EdgeInsets.all(20),
+                  decoration: BoxDecoration(
+                    color: cardBg,
+                    borderRadius: BorderRadius.circular(20),
+                    border: Border.all(
+                      color: Colors.redAccent.withOpacity(0.2),
+                    ),
+                  ),
+                  child: Column(
+                    children: [
+                      const Text(
+                        'Cierra tu sesión actual en este dispositivo de forma segura.',
+                        style: TextStyle(color: Colors.grey, fontSize: 12, height: 1.4),
+                        textAlign: TextAlign.center,
+                      ),
+                      const SizedBox(height: 16),
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton.icon(
+                          onPressed: () async {
+                            final confirm = await showDialog<bool>(
+                              context: context,
+                              builder: (context) => AlertDialog(
+                                backgroundColor: const Color(0xFF161B22),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                  side: const BorderSide(color: Colors.redAccent, width: 1),
+                                ),
+                                title: const Row(
+                                  children: [
+                                    Icon(Icons.logout_rounded, color: Colors.redAccent),
+                                    SizedBox(width: 10),
+                                    Text('CERRAR SESIÓN', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold)),
+                                  ],
+                                ),
+                                content: const Text(
+                                  '¿Estás seguro de que deseas cerrar tu sesión actual?',
+                                  style: TextStyle(color: Colors.white70),
+                                ),
+                                actions: [
+                                  TextButton(
+                                    onPressed: () => Navigator.pop(context, false),
+                                    child: const Text('CANCELAR', style: TextStyle(color: Colors.white54)),
+                                  ),
+                                  ElevatedButton(
+                                    onPressed: () => Navigator.pop(context, true),
+                                    style: ElevatedButton.styleFrom(backgroundColor: Colors.redAccent, foregroundColor: Colors.white),
+                                    child: const Text('CERRAR SESIÓN', style: TextStyle(fontWeight: FontWeight.bold)),
+                                  ),
+                                ],
+                              ),
+                            );
+
+                            if (confirm == true) {
+                              final securityService = sl<SecurityService>();
+                              await securityService.signOut();
+                              if (mounted) {
+                                Navigator.pushAndRemoveUntil(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => const ActivationScreen()),
+                                  (route) => false,
+                                );
+                              }
+                            }
+                          },
+                          icon: const Icon(Icons.logout_rounded, size: 18),
+                          label: const Text('CERRAR SESIÓN', 
                             style: TextStyle(fontWeight: FontWeight.w900, fontSize: 11)),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.redAccent.withOpacity(0.1),

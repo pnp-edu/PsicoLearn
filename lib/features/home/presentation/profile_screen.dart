@@ -7,16 +7,15 @@ import 'package:psicolearn/features/personality_test/domain/services/personality
 import 'package:psicolearn/features/results/presentation/widgets/history_chart.dart';
 import 'package:psicolearn/features/home/presentation/widgets/radar_diagnosis_chart.dart';
 import 'package:psicolearn/core/utils/responsive.dart';
+import 'package:psicolearn/features/spatial_test/domain/services/spatial_test_service.dart';
 import '../../../core/widgets/laboratory_background.dart';
 
 
 class ProfileScreen extends StatefulWidget {
-  final VoidCallback? onShowProgress;
   final VoidCallback? onSettingsPressed;
   
   const ProfileScreen({
     super.key, 
-    this.onShowProgress,
     this.onSettingsPressed,
   });
 
@@ -161,6 +160,8 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final bg = isDark ? const Color(0xFF111318) : const Color(0xFFF5F7FA);
     final card = isDark ? const Color(0xFF1C2030) : Colors.white;
+    final history = TestController.getHistory();
+    final spatialBest = sl<SpatialTestService>().getBestScore();
 
     return Scaffold(
       backgroundColor: bg,
@@ -248,29 +249,27 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                GestureDetector(
-                  onTap: widget.onShowProgress,
-                  child: Container(
-                    width: double.infinity,
-                    margin: const EdgeInsets.only(bottom: 20),
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(24),
-                      gradient: LinearGradient(
-                        colors: [diagColor.withOpacity(0.2), diagColor.withOpacity(0.05)],
-                        begin: Alignment.topLeft, end: Alignment.bottomRight,
-                      ),
-                      border: Border.all(color: diagColor.withOpacity(0.35), width: 1.5),
-                      boxShadow: [
-                        BoxShadow(
-                          color: diagColor.withOpacity(0.05),
-                          blurRadius: 20,
-                          offset: const Offset(0, 10),
-                        ),
-                      ],
+                Container(
+                  width: double.infinity,
+                  margin: const EdgeInsets.only(bottom: 20),
+                  padding: const EdgeInsets.all(24),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                    gradient: LinearGradient(
+                      colors: [diagColor.withOpacity(0.2), diagColor.withOpacity(0.05)],
+                      begin: Alignment.topLeft, end: Alignment.bottomRight,
                     ),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
+                    border: Border.all(color: diagColor.withOpacity(0.35), width: 1.5),
+                    boxShadow: [
+                      BoxShadow(
+                        color: diagColor.withOpacity(0.05),
+                        blurRadius: 20,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
@@ -332,7 +331,6 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                       ],
                     ),
                   ),
-                ),
 
                 RadarDiagnosisChart(areaResults: areas),
                 const SizedBox(height: 20),
@@ -350,8 +348,19 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                 ),
                 const SizedBox(height: 24),
 
+                // ── EVOLUCIÓN SUMMARY ROW ─────────────────────────────────
+                _buildEvolucionSummary(history, spatialBest, isDark, card),
+
                 const HistoryChart(),
                 const SizedBox(height: 24),
+
+                // ── HISTORIAL DE SIMULACROS ────────────────────────────────
+                if (history.isNotEmpty) ...[
+                  _sectionTitle('HISTORIAL DE SIMULACROS', isDark),
+                  const SizedBox(height: 12),
+                  ...history.reversed.map((e) => _buildHistoryItem(e, isDark, card)),
+                  const SizedBox(height: 24),
+                ],
 
                 // ── RECOMENDACIÓN ─────────────────────────────────────────
                 if (!isPending) ...[
@@ -493,5 +502,87 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
     if (score >= 0.7) return 'Estás cerca del perfil ideal. Corrige las áreas marcadas para consolidar tu diagnóstico.';
     if (score >= 0.4) return 'Tienes áreas importantes que trabajar. Enfócate en el autocontrol y la disciplina.';
     return 'Tu perfil requiere trabajo profundo. Analiza cada área crítica con calma. La constancia es la clave.';
+  }
+
+  Widget _buildEvolucionSummary(List<Map<String, dynamic>> history, int spatialBest, bool isDark, Color cardColor) {
+    if (history.isEmpty) return const SizedBox.shrink();
+    
+    final lastScore = (history.last['score'] as num).toDouble();
+    final avgScore = history.map((e) => (e['score'] as num).toDouble()).reduce((a, b) => a + b) / history.length;
+
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 20),
+      child: Row(
+        children: [
+          _summaryItem('Último Psico', '${lastScore.toStringAsFixed(0)}%', AppTheme.accentColor, isDark, cardColor),
+          const SizedBox(width: 8),
+          _summaryItem('Promedio', '${avgScore.toStringAsFixed(0)}%', Colors.purpleAccent, isDark, cardColor),
+          const SizedBox(width: 8),
+          _summaryItem('Récord Espacial', '$spatialBest%', Colors.tealAccent, isDark, cardColor),
+        ],
+      ),
+    );
+  }
+
+  Widget _summaryItem(String label, String value, Color color, bool isDark, Color cardColor) {
+    return Expanded(
+      child: Container(
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+        decoration: BoxDecoration(
+          color: cardColor,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: color.withOpacity(0.2)),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Text(
+              label, 
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: const TextStyle(fontSize: 9, color: Colors.grey, fontWeight: FontWeight.bold, letterSpacing: 0.5)
+            ),
+            const SizedBox(height: 4),
+            Text(value, style: TextStyle(fontSize: 20, fontWeight: FontWeight.w900, color: color)),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildHistoryItem(Map<String, dynamic> entry, bool isDark, Color cardColor) {
+    final date = DateTime.parse(entry['date']);
+    final score = (entry['score'] as num).toDouble();
+    final dateStr = '${date.day}/${date.month} ${date.hour}:${date.minute.toString().padLeft(2, '0')}';
+
+    return Container(
+      margin: const EdgeInsets.only(bottom: 12),
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: cardColor,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: Colors.white.withOpacity(0.03)),
+      ),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(dateStr, style: const TextStyle(fontSize: 12, fontWeight: FontWeight.bold)),
+              const Text('Simulacro completado', style: TextStyle(fontSize: 10, color: Colors.grey)),
+            ],
+          ),
+          Text(
+            '${score.toStringAsFixed(0)}%',
+            style: TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 14,
+              color: score >= 75 ? Colors.greenAccent : Colors.redAccent,
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
