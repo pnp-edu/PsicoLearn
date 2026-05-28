@@ -63,18 +63,7 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
         ),
         Expanded(
           child: Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
-                colors: [
-                  const Color(0xFF0D1117),
-                  const Color(0xFF161B22),
-                  const Color(0xFF21262D),
-                ],
-                stops: const [0.0, 0.5, 1.0],
-              ),
-            ),
+            color: Colors.transparent,
             child: _buildContent(),
           ),
         ),

@@ -713,7 +713,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                   _todayCompleted ? Icons.check_circle_rounded : Icons.bolt_rounded,
                   _todayCompleted 
                       ? const LinearGradient(colors: [Color(0xFF10B981), Color(0xFF059669)])
-                      : const LinearGradient(colors: [Color(0xFF06B6D4), Color(0xFF0891B2)]),
+                      : const LinearGradient(colors: [Color(0xFFFF6F00), Color(0xFFFF9100)]),
                   _todayCompleted ? null : _startDailyTest,
                   isCompleted: _todayCompleted,
                 ),
@@ -1031,13 +1031,33 @@ class _WebDailyBadge extends StatelessWidget {
     final progress = totalQuestions > 0 ? (questionsAnswered / totalQuestions).clamp(0.0, 1.0) : 0.0;
     return InkWell(
       onTap: onTap,
-      borderRadius: BorderRadius.circular(16),
+      borderRadius: BorderRadius.circular(20),
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         decoration: BoxDecoration(
-          color: Colors.white.withOpacity(0.08),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: Colors.white.withOpacity(0.12)),
+          gradient: todayCompleted
+              ? const LinearGradient(
+                  colors: [Color(0xFF0D9488), Color(0xFF0F766E)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                )
+              : const LinearGradient(
+                  colors: [Color(0xFFFF6F00), Color(0xFFFF9100)],
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                ),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: todayCompleted ? const Color(0xFF2DD4BF).withOpacity(0.5) : const Color(0xFFFFAB00).withOpacity(0.6),
+            width: 1.5,
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: (todayCompleted ? const Color(0xFF0D9488) : const Color(0xFFFF6F00)).withOpacity(0.35),
+              blurRadius: 16,
+              offset: const Offset(0, 6),
+            ),
+          ],
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -1046,31 +1066,39 @@ class _WebDailyBadge extends StatelessWidget {
             Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
-                  todayCompleted ? Icons.check_circle_rounded : Icons.bolt_rounded,
-                  color: todayCompleted ? const Color(0xFF2DD4BF) : AppTheme.accentColor,
-                  size: 20,
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    shape: BoxShape.circle,
+                  ),
+                  child: Icon(
+                    todayCompleted ? Icons.check_circle_rounded : Icons.bolt_rounded,
+                    color: Colors.white,
+                    size: 16,
+                  ),
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  todayCompleted ? 'MISIÓN COMPLETADA' : 'MISIÓN DIARIA',
+                  todayCompleted ? 'MISIÓN COMPLETADA' : 'MISIÓN DIARIA REQUERIDA',
                   style: const TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.bold,
+                    fontSize: 11,
+                    fontWeight: FontWeight.w900,
                     color: Colors.white,
                     letterSpacing: 1.0,
                   ),
                 ),
               ],
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 12),
             Text(
               todayCompleted 
                   ? '¡Buen trabajo! Vuelve mañana.'
-                  : '$questionsAnswered de $totalQuestions preguntas',
-              style: TextStyle(
+                  : '$questionsAnswered de $totalQuestions preguntas completadas',
+              style: const TextStyle(
                 fontSize: 12,
-                color: Colors.white.withOpacity(0.6),
+                fontWeight: FontWeight.bold,
+                color: Colors.white,
               ),
             ),
             if (!todayCompleted) ...[
@@ -1081,8 +1109,8 @@ class _WebDailyBadge extends StatelessWidget {
                   borderRadius: BorderRadius.circular(4),
                   child: LinearProgressIndicator(
                     value: progress,
-                    backgroundColor: Colors.white.withOpacity(0.1),
-                    valueColor: AlwaysStoppedAnimation<Color>(AppTheme.accentColor),
+                    backgroundColor: Colors.white.withOpacity(0.25),
+                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
                     minHeight: 6,
                   ),
                 ),
