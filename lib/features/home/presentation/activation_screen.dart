@@ -1,5 +1,6 @@
 import 'dart:ui';
 import 'dart:math' as math;
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
@@ -7,6 +8,8 @@ import 'package:url_launcher/url_launcher.dart';
 import 'package:psicolearn/core/di/service_locator.dart';
 import 'package:psicolearn/core/services/security_service.dart';
 import 'package:psicolearn/features/home/presentation/dashboard_screen.dart';
+import 'package:psicolearn/features/home/presentation/widgets/web_helper.dart'
+    if (dart.library.html) 'package:psicolearn/features/home/presentation/widgets/web_helper_web.dart';
 
 class ActivationScreen extends StatefulWidget {
   const ActivationScreen({super.key});
@@ -26,6 +29,14 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   @override
   void initState() {
     super.initState();
+    if (kIsWeb) {
+      WebHelper.registerViewFactory('login-html', 'psicolearn_gemini_redesign.html');
+      WebHelper.setupMessageListener(
+        onGoogleSignIn: _handleGoogleSignIn,
+        onViewDemo: _showDemoDialog,
+        onSupport: _contactAdmin,
+      );
+    }
     _auroraController = AnimationController(
       vsync: this,
       duration: const Duration(seconds: 12),
@@ -41,6 +52,9 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
 
   @override
   void dispose() {
+    if (kIsWeb) {
+      WebHelper.disposeMessageListener();
+    }
     _auroraController.dispose();
     super.dispose();
   }
@@ -275,6 +289,13 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
 
   @override
   Widget build(BuildContext context) {
+    if (kIsWeb) {
+      return const Scaffold(
+        backgroundColor: Color(0xFF060A14),
+        body: HtmlElementView(viewType: 'login-html'),
+      );
+    }
+
     final screenWidth = MediaQuery.of(context).size.width;
     final isDesktop = screenWidth >= 1000;
 
