@@ -118,32 +118,35 @@ class _WebSidebar extends StatelessWidget {
       duration: const Duration(milliseconds: 300),
       curve: Curves.easeInOutCubic,
       width: w,
-      child: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [
-              const Color(0xFF0D1117),
-              const Color(0xFF161B22),
-              const Color(0xFF21262D),
-            ],
-            stops: const [0.0, 0.6, 1.0],
-          ),
-          border: Border(
-            right: BorderSide(
-              color: AppTheme.accentColor.withOpacity(0.2),
-              width: 1,
+      child: ClipRRect(
+        child: BackdropFilter(
+          filter: ImageFilter.blur(sigmaX: 12, sigmaY: 12),
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topCenter,
+                end: Alignment.bottomCenter,
+                colors: [
+                  const Color(0xFF0D1117).withOpacity(0.55),
+                  const Color(0xFF161B22).withOpacity(0.6),
+                  const Color(0xFF21262D).withOpacity(0.65),
+                ],
+                stops: const [0.0, 0.6, 1.0],
+              ),
+              border: Border(
+                right: BorderSide(
+                  color: AppTheme.accentColor.withOpacity(0.15),
+                  width: 1,
+                ),
+              ),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withOpacity(0.2),
+                  blurRadius: 20,
+                  offset: const Offset(2, 0),
+                ),
+              ],
             ),
-          ),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black.withOpacity(0.3),
-              blurRadius: 20,
-              offset: const Offset(2, 0),
-            ),
-          ],
-        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -388,7 +391,9 @@ class _WebSidebar extends StatelessWidget {
           ],
         ),
       ),
-    );
+    ),
+  ),
+);
   }
 }
 
