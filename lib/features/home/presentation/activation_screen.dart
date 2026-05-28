@@ -289,13 +289,6 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
 
   @override
   Widget build(BuildContext context) {
-    if (kIsWeb) {
-      return const Scaffold(
-        backgroundColor: Color(0xFF060A14),
-        body: HtmlElementView(viewType: 'login-html'),
-      );
-    }
-
     final screenWidth = MediaQuery.of(context).size.width;
     final isDesktop = screenWidth >= 1000;
 
