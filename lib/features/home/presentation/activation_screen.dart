@@ -118,17 +118,7 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
     }
   }
 
-  void _continueInFreeMode() {
-    HapticFeedback.lightImpact();
-    Navigator.pushReplacement(
-      context,
-      PageRouteBuilder(
-        pageBuilder: (context, anim1, anim2) => const DashboardScreen(),
-        transitionsBuilder: (context, anim1, anim2, child) => 
-            FadeTransition(opacity: anim1, child: child),
-      ),
-    );
-  }
+
 
   void _showErrorSnackBar(String message) {
     ScaffoldMessenger.of(context).showSnackBar(
@@ -154,19 +144,20 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     final isSmallScreen = screenHeight < 600;
+    final isWebLayout = screenWidth > 800;
     
     return Scaffold(
       backgroundColor: const Color(0xFF0A0E12),
-      resizeToAvoidBottomInset: false, // Evita que la imagen se mueva al abrir el teclado
+      resizeToAvoidBottomInset: false,
       body: SizedBox.expand(
         child: Stack(
           children: [
-            // GRID DE LABORATORIO (NUEVO)
+            // GRID DE LABORATORIO
             const Positioned.fill(child: LaboratoryBackground()),
             
             // IMAGEN DE FONDO
-
             Positioned.fill(
               child: Image.asset(
                 'assets/portada-pnp.png',
@@ -174,6 +165,7 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
                 alignment: Alignment.center,
               ),
             ),
+            
             // OVERLAY GRADIENTE
             Positioned.fill(
               child: Container(
@@ -191,36 +183,62 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
                 ),
               ),
             ),
-          SafeArea(
-            child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  // TÍTULO EN LA PARTE SUPERIOR
-                  _buildCompactHeader(isSmallScreen),
-                  
-                  // ESPACIO VACÍO EN EL MEDIO (Para ver el arco)
-                  const Spacer(),
-                  
-                  // CARD DE BIENVENIDA SUBIDA UN POCO
-                  Column(
-                    children: [
-                      _buildCompactActivationCard(isSmallScreen),
-                      const SizedBox(height: 80), // Empuja la card hacia arriba
-                      _buildCompactFooter(),
-                      const SizedBox(height: 20), // Margen final
-                    ],
-                  ),
-                ],
-              ),
+            
+            // CONTENIDO PRINCIPAL
+            SafeArea(
+              child: isWebLayout
+                  ? _buildWebLayout(isSmallScreen)
+                  : _buildMobileLayout(isSmallScreen),
             ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildWebLayout(bool isSmallScreen) {
+    return Center(
+      child: SingleChildScrollView(
+        child: ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 600),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 40),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                _buildCompactHeader(isSmallScreen),
+                const SizedBox(height: 60),
+                _buildCompactActivationCard(isSmallScreen),
+                const SizedBox(height: 60),
+                _buildCompactFooter(),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _buildMobileLayout(bool isSmallScreen) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          _buildCompactHeader(isSmallScreen),
+          const Spacer(),
+          Column(
+            children: [
+              _buildCompactActivationCard(isSmallScreen),
+              const SizedBox(height: 80),
+              _buildCompactFooter(),
+              const SizedBox(height: 20),
+            ],
           ),
         ],
       ),
-    ),
-  );
-}
+    );
+  }
 
   Widget _buildCompactHeader(bool isSmallScreen) {
     return Column(
@@ -298,29 +316,8 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
               ),
               SizedBox(height: isSmallScreen ? 24 : 32),
               _buildGoogleSignInButton(isSmallScreen),
-              const SizedBox(height: 16),
-              _buildFreeModeButton(isSmallScreen),
             ],
           ),
-        ),
-      ),
-    );
-  }
-
-  Widget _buildFreeModeButton(bool isSmallScreen) {
-    return TextButton(
-      onPressed: _isChecking ? null : _continueInFreeMode,
-      style: TextButton.styleFrom(
-        foregroundColor: Colors.white38,
-        padding: const EdgeInsets.symmetric(vertical: 12),
-      ),
-      child: const Text(
-        'CONTINUAR EN MODO GRATUITO',
-        style: TextStyle(
-          fontSize: 10,
-          fontWeight: FontWeight.w900,
-          letterSpacing: 1.5,
-          decoration: TextDecoration.underline,
         ),
       ),
     );

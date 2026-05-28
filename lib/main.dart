@@ -28,16 +28,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       builder: (context, child) {
+        // En web, permitimos que el layout se expanda completamente sin bordes
         return Container(
-          color: Colors.black87, // Fondo oscuro para pantallas grandes
-          child: Center(
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxWidth: 800),
-              child: ClipRect(child: child),
-            ),
-          ),
+          color: Colors.black,
+          child: child,
         );
       },
       // Iniciamos con el SplashScreen táctico

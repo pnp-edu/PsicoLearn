@@ -84,8 +84,8 @@ class PersonalityTestService {
 
     final List<Question> pool = all.where((q) => !seenIds.contains(q.id)).toList()..shuffle();
     
-    // LIMITACIÓN FREEMIUM: 5 preguntas para gratis, 50 para premium
-    final int limit = sl<SecurityService>().isPremium ? 50 : 5;
+    // Acceso completo a las preguntas
+    final int limit = 50;
     final List<Question> mission = pool.take(limit).toList();
     
     // Guardar como vistas
@@ -99,8 +99,8 @@ class PersonalityTestService {
   Future<List<Question>> loadExamSimulation110() async {
     final all = await loadQuestions();
     
-    // LIMITACIÓN FREEMIUM: 3 preguntas para gratis, 110 para premium
-    final int limit = sl<SecurityService>().isPremium ? 110 : 3;
+    // Acceso completo a la simulación
+    final int limit = 110;
     return all.toList()..shuffle()..take(limit).toList();
   }
 
