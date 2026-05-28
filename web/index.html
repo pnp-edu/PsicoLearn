@@ -19,7 +19,7 @@
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
   <meta name="description" content="PsicoLearn - Sistema de Evaluación Táctica">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="viewport" content="width=1280, initial-scale=0.3, maximum-scale=1.0, user-scalable=yes">
   <meta name="google-signin-client_id" content="474933138096-i9m8vn3qonujq4qgnq75jhu80flm6lsj.apps.googleusercontent.com">
 
   <!-- iOS meta tags & icons -->
@@ -63,6 +63,30 @@
 </head>
 <body>
   <div id="app"></div>
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // CACHE BUSTER: Force unregister any existing service workers so the user gets the fresh version
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister();
+          console.log('Unregistered SW to force update');
+        }
+      });
+      caches.keys().then((keyList) => {
+        return Promise.all(keyList.map((key) => {
+          return caches.delete(key);
+        }));
+      });
+    }
+    
+    // Force reload if not reloaded recently
+    if (!sessionStorage.getItem('force_reloaded')) {
+      sessionStorage.setItem('force_reloaded', 'true');
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 500);
+    }
+  </script>
+  <script src="flutter_bootstrap.js?v=v3_desktop_force" async></script>
 </body>
 </html>
