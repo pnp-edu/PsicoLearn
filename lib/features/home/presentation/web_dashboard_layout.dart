@@ -33,6 +33,14 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
   bool _sidebarCollapsed = false;
 
   @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    if (MediaQuery.of(context).size.width < 900) {
+      _sidebarCollapsed = true;
+    }
+  }
+
+  @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
     const isWide = true; // Force sidebar layout on mobile too

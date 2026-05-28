@@ -472,10 +472,12 @@ class _DashboardScreenState extends State<DashboardScreen>
   // ──────────────────────────────────────────
   Widget _buildWebHomeTab() {
     final secService = sl<SecurityService>();
+    final isMobile = MediaQuery.of(context).size.width < 900;
+    
     return Container(
       color: Colors.transparent,
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(32),
+        padding: EdgeInsets.all(isMobile ? 16 : 32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
@@ -497,160 +499,298 @@ class _DashboardScreenState extends State<DashboardScreen>
                   width: 1,
                 ),
               ),
-              child: Row(
-                children: [
-                  Expanded(
-                    flex: 3,
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        // Floating welcome badge
-                        Container(
-                          padding: const EdgeInsets.symmetric(
-                            horizontal: 14,
-                            vertical: 6,
-                          ),
-                          decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                              colors: [
-                                AppTheme.accentColor.withOpacity(0.3),
-                                AppTheme.accentColor.withOpacity(0.1),
+                  isMobile
+                      ? Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                // Floating welcome badge
+                                Container(
+                                  padding: const EdgeInsets.symmetric(
+                                    horizontal: 14,
+                                    vertical: 6,
+                                  ),
+                                  decoration: BoxDecoration(
+                                    gradient: LinearGradient(
+                                      colors: [
+                                        AppTheme.accentColor.withOpacity(0.3),
+                                        AppTheme.accentColor.withOpacity(0.1),
+                                      ],
+                                    ),
+                                    borderRadius: BorderRadius.circular(25),
+                                    border: Border.all(
+                                      color: AppTheme.accentColor.withOpacity(0.4),
+                                      width: 1,
+                                    ),
+                                  ),
+                                  child: Row(
+                                    mainAxisSize: MainAxisSize.min,
+                                    children: [
+                                      Icon(
+                                        Icons.psychology_rounded,
+                                        color: AppTheme.accentColor,
+                                        size: 16,
+                                      ),
+                                      const SizedBox(width: 6),
+                                      Text(
+                                        '¡Bienvenido de vuelta!',
+                                        style: TextStyle(
+                                          color: AppTheme.accentColor,
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.w600,
+                                          letterSpacing: 0.5,
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                                
+                                const SizedBox(height: 16),
+
+                                // Animated diagnosis status
+                                AnimatedBuilder(
+                                  animation: _pulseAnimation,
+                                  builder: (context, _) {
+                                    final baseColor = _diagnosis == 'APTO'
+                                        ? const Color(0xFF10B981)
+                                        : (_diagnosis == 'PENDIENTE' || _diagnosis == '...'
+                                            ? const Color(0xFFF59E0B)
+                                            : const Color(0xFFEF4444));
+                                    
+                                    return ShaderMask(
+                                      shaderCallback: (bounds) => LinearGradient(
+                                        colors: [
+                                          baseColor.withOpacity(0.6),
+                                          baseColor,
+                                          Colors.white,
+                                          baseColor,
+                                          baseColor.withOpacity(0.6),
+                                        ],
+                                        stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
+                                        begin: Alignment(_pulseAnimation.value - 1, 0),
+                                        end: Alignment(_pulseAnimation.value + 1, 0),
+                                      ).createShader(bounds),
+                                      child: Text(
+                                        'ESTADO: $_diagnosis',
+                                        style: const TextStyle(
+                                          color: Colors.white,
+                                          fontSize: 30,
+                                          fontWeight: FontWeight.w900,
+                                          letterSpacing: 1.5,
+                                          height: 1.1,
+                                        ),
+                                      ),
+                                    );
+                                  },
+                                ),
+
+                                const SizedBox(height: 10),
+
+                                Text(
+                                  'Tu progreso actual en la evaluación psicométrica integral',
+                                  style: TextStyle(
+                                    color: Colors.white.withOpacity(0.8),
+                                    fontSize: 14,
+                                    height: 1.4,
+                                    letterSpacing: 0.3,
+                                  ),
+                                ),
                               ],
                             ),
-                            borderRadius: BorderRadius.circular(25),
-                            border: Border.all(
-                              color: AppTheme.accentColor.withOpacity(0.4),
-                              width: 1,
+                            const SizedBox(height: 24),
+                            _WebDailyBadge(
+                              todayCompleted: _todayCompleted,
+                              questionsAnswered: _questionsAnswered,
+                              totalQuestions: _totalQuestionsInDaily,
+                              onTap: _startDailyTest,
                             ),
-                          ),
-                          child: Row(
-                            mainAxisSize: MainAxisSize.min,
-                            children: [
-                              Icon(
-                                Icons.psychology_rounded,
-                                color: AppTheme.accentColor,
-                                size: 16,
-                              ),
-                              const SizedBox(width: 6),
-                              Text(
-                                '¡Bienvenido de vuelta!',
-                                style: TextStyle(
-                                  color: AppTheme.accentColor,
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.w600,
-                                  letterSpacing: 0.5,
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                        
-                        const SizedBox(height: 16),
+                          ],
+                        )
+                      : Row(
+                          children: [
+                            Expanded(
+                              flex: 3,
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  // Floating welcome badge
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(
+                                      horizontal: 14,
+                                      vertical: 6,
+                                    ),
+                                    decoration: BoxDecoration(
+                                      gradient: LinearGradient(
+                                        colors: [
+                                          AppTheme.accentColor.withOpacity(0.3),
+                                          AppTheme.accentColor.withOpacity(0.1),
+                                        ],
+                                      ),
+                                      borderRadius: BorderRadius.circular(25),
+                                      border: Border.all(
+                                        color: AppTheme.accentColor.withOpacity(0.4),
+                                        width: 1,
+                                      ),
+                                    ),
+                                    child: Row(
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        Icon(
+                                          Icons.psychology_rounded,
+                                          color: AppTheme.accentColor,
+                                          size: 16,
+                                        ),
+                                        const SizedBox(width: 6),
+                                        Text(
+                                          '¡Bienvenido de vuelta!',
+                                          style: TextStyle(
+                                            color: AppTheme.accentColor,
+                                            fontSize: 12,
+                                            fontWeight: FontWeight.w600,
+                                            letterSpacing: 0.5,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  
+                                  const SizedBox(height: 16),
 
-                        // Animated diagnosis status
-                        AnimatedBuilder(
-                          animation: _pulseAnimation,
-                          builder: (context, _) {
-                            final baseColor = _diagnosis == 'APTO'
-                                ? const Color(0xFF10B981)
-                                : (_diagnosis == 'PENDIENTE' || _diagnosis == '...'
-                                    ? const Color(0xFFF59E0B)
-                                    : const Color(0xFFEF4444));
-                            
-                            return ShaderMask(
-                              shaderCallback: (bounds) => LinearGradient(
-                                colors: [
-                                  baseColor.withOpacity(0.6),
-                                  baseColor,
-                                  Colors.white,
-                                  baseColor,
-                                  baseColor.withOpacity(0.6),
+                                  // Animated diagnosis status
+                                  AnimatedBuilder(
+                                    animation: _pulseAnimation,
+                                    builder: (context, _) {
+                                      final baseColor = _diagnosis == 'APTO'
+                                          ? const Color(0xFF10B981)
+                                          : (_diagnosis == 'PENDIENTE' || _diagnosis == '...'
+                                              ? const Color(0xFFF59E0B)
+                                              : const Color(0xFFEF4444));
+                                      
+                                      return ShaderMask(
+                                        shaderCallback: (bounds) => LinearGradient(
+                                          colors: [
+                                            baseColor.withOpacity(0.6),
+                                            baseColor,
+                                            Colors.white,
+                                            baseColor,
+                                            baseColor.withOpacity(0.6),
+                                          ],
+                                          stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
+                                          begin: Alignment(_pulseAnimation.value - 1, 0),
+                                          end: Alignment(_pulseAnimation.value + 1, 0),
+                                        ).createShader(bounds),
+                                        child: Text(
+                                          'ESTADO: $_diagnosis',
+                                          style: const TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 30,
+                                            fontWeight: FontWeight.w900,
+                                            letterSpacing: 1.5,
+                                            height: 1.1,
+                                          ),
+                                        ),
+                                      );
+                                    },
+                                  ),
+
+                                  const SizedBox(height: 10),
+
+                                  Text(
+                                    'Tu progreso actual en la evaluación psicométrica integral',
+                                    style: TextStyle(
+                                      color: Colors.white.withOpacity(0.8),
+                                      fontSize: 14,
+                                      height: 1.4,
+                                      letterSpacing: 0.3,
+                                    ),
+                                  ),
                                 ],
-                                stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
-                                begin: Alignment(_pulseAnimation.value - 1, 0),
-                                end: Alignment(_pulseAnimation.value + 1, 0),
-                              ).createShader(bounds),
-                              child: Text(
-                                'ESTADO: $_diagnosis',
-                                style: const TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 30,
-                                  fontWeight: FontWeight.w900,
-                                  letterSpacing: 1.5,
-                                  height: 1.1,
-                                ),
                               ),
-                            );
-                          },
+                            ),
+                            
+                            const SizedBox(width: 32),
+                            
+                            // Enhanced daily mission card
+                            Expanded(
+                              flex: 2,
+                              child: _WebDailyBadge(
+                                todayCompleted: _todayCompleted,
+                                questionsAnswered: _questionsAnswered,
+                                totalQuestions: _totalQuestionsInDaily,
+                                onTap: _startDailyTest,
+                              ),
+                            ),
+                          ],
                         ),
-
-                        const SizedBox(height: 10),
-
-                        Text(
-                          'Tu progreso actual en la evaluación psicométrica integral',
-                          style: TextStyle(
-                            color: Colors.white.withOpacity(0.8),
-                            fontSize: 14,
-                            height: 1.4,
-                            letterSpacing: 0.3,
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
-                  
-                  const SizedBox(width: 32),
-                  
-                  // Enhanced daily mission card
-                  Expanded(
-                    flex: 2,
-                    child: _WebDailyBadge(
-                      todayCompleted: _todayCompleted,
-                      questionsAnswered: _questionsAnswered,
-                      totalQuestions: _totalQuestionsInDaily,
-                      onTap: _startDailyTest,
-                    ),
-                  ),
-                ],
-              ),
             ),
             
             const SizedBox(height: 24),
 
             // ── Enhanced stats grid ──
-            Row(
-              children: [
-                Expanded(
-                  child: _buildStatCard(
+            if (isMobile)
+              Column(
+                children: [
+                  _buildStatCard(
                     'Preguntas Respondidas',
                     '$_questionsAnswered',
                     'En total',
                     Icons.task_alt_rounded,
                     const Color(0xFF06B6D4),
                   ),
-                ),
-                const SizedBox(width: 20),
-                Expanded(
-                  child: _buildStatCard(
+                  const SizedBox(height: 20),
+                  _buildStatCard(
                     'Errores Cometidos',
                     '$_failedCount',
                     'Para mejorar',
                     Icons.assignment_late_rounded,
                     const Color(0xFFF97316),
                   ),
-                ),
-                const SizedBox(width: 20),
-                Expanded(
-                  child: _buildStatCard(
+                  const SizedBox(height: 20),
+                  _buildStatCard(
                     'Dimensión Débil',
                     _weakestDim.isEmpty ? 'N/A' : _weakestDim,
                     '${_weakestScore.toStringAsFixed(1)}% precisión',
                     Icons.track_changes_rounded,
                     const Color(0xFFEF4444),
                   ),
-                ),
-              ],
-            ),
+                ],
+              )
+            else
+              Row(
+                children: [
+                  Expanded(
+                    child: _buildStatCard(
+                      'Preguntas Respondidas',
+                      '$_questionsAnswered',
+                      'En total',
+                      Icons.task_alt_rounded,
+                      const Color(0xFF06B6D4),
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  Expanded(
+                    child: _buildStatCard(
+                      'Errores Cometidos',
+                      '$_failedCount',
+                      'Para mejorar',
+                      Icons.assignment_late_rounded,
+                      const Color(0xFFF97316),
+                    ),
+                  ),
+                  const SizedBox(width: 20),
+                  Expanded(
+                    child: _buildStatCard(
+                      'Dimensión Débil',
+                      _weakestDim.isEmpty ? 'N/A' : _weakestDim,
+                      '${_weakestScore.toStringAsFixed(1)}% precisión',
+                      Icons.track_changes_rounded,
+                      const Color(0xFFEF4444),
+                    ),
+                  ),
+                ],
+              ),
 
             const SizedBox(height: 32),
 
@@ -662,11 +802,11 @@ class _DashboardScreenState extends State<DashboardScreen>
             GridView(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+              gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
                 maxCrossAxisExtent: 450,
-                crossAxisSpacing: 24,
-                mainAxisSpacing: 24,
-                childAspectRatio: 1.4,
+                crossAxisSpacing: isMobile ? 16 : 24,
+                mainAxisSpacing: isMobile ? 16 : 24,
+                childAspectRatio: isMobile ? 1.8 : 1.4,
               ),
               children: [
                 _buildActionCard(
