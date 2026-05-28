@@ -305,67 +305,81 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
         children: [
           // ── AURORA NEURAL BACKGROUND ──
           Positioned.fill(
-            child: AnimatedBuilder(
-              animation: _auroraAnimation,
-              builder: (context, _) {
-                final val = _auroraAnimation.value;
-                return Stack(
-                  children: [
-                    // Blob 1 (Blue)
-                    Positioned(
-                      top: -100,
-                      left: -100,
-                      child: _AuroraBlob(
-                        width: 500,
-                        height: 400,
-                        color: const Color(0xFF4285F4),
-                        opacity: 0.22,
-                        animationValue: val,
-                        phaseShift: 0.0,
-                      ),
+            child: Stack(
+              children: [
+                Positioned.fill(
+                  child: AnimatedBuilder(
+                    animation: _auroraAnimation,
+                    builder: (context, _) {
+                      final val = _auroraAnimation.value;
+                      return Stack(
+                        children: [
+                          // Blob 1 (Blue)
+                          Positioned(
+                            top: -100,
+                            left: -100,
+                            child: _AuroraBlob(
+                              width: 500,
+                              height: 400,
+                              color: const Color(0xFF4285F4),
+                              opacity: 0.22,
+                              animationValue: val,
+                              phaseShift: 0.0,
+                            ),
+                          ),
+                          // Blob 2 (Purple)
+                          Positioned(
+                            top: 50,
+                            right: -50,
+                            child: _AuroraBlob(
+                              width: 400,
+                              height: 500,
+                              color: const Color(0xFF8A2BE2),
+                              opacity: 0.18,
+                              animationValue: val,
+                              phaseShift: -2.0 * math.pi * 4.0 / 12.0, // delay -4s
+                            ),
+                          ),
+                          // Blob 3 (Red)
+                          Positioned(
+                            bottom: 0,
+                            left: screenWidth * 0.3,
+                            child: _AuroraBlob(
+                              width: 350,
+                              height: 300,
+                              color: const Color(0xFFEA4335),
+                              opacity: 0.12,
+                              animationValue: val,
+                              phaseShift: -2.0 * math.pi * 8.0 / 12.0, // delay -8s
+                            ),
+                          ),
+                          // Blob 4 (Green)
+                          Positioned(
+                            bottom: 50,
+                            right: screenWidth * 0.2,
+                            child: _AuroraBlob(
+                              width: 300,
+                              height: 350,
+                              color: const Color(0xFF34A853),
+                              opacity: 0.14,
+                              animationValue: val,
+                              phaseShift: -2.0 * math.pi * 2.0 / 12.0, // delay -2s
+                            ),
+                          ),
+                        ],
+                      );
+                    },
+                  ),
+                ),
+                Positioned.fill(
+                  child: IgnorePointer(
+                    child: BackdropFilter(
+                      filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+                      child: const SizedBox.shrink(),
                     ),
-                    // Blob 2 (Purple)
-                    Positioned(
-                      top: 50,
-                      right: -50,
-                      child: _AuroraBlob(
-                        width: 400,
-                        height: 500,
-                        color: const Color(0xFF8A2BE2),
-                        opacity: 0.18,
-                        animationValue: val,
-                        phaseShift: -2.0 * math.pi * 4.0 / 12.0, // delay -4s
-                      ),
-                    ),
-                    // Blob 3 (Red)
-                    Positioned(
-                      bottom: 0,
-                      left: screenWidth * 0.3,
-                      child: _AuroraBlob(
-                        width: 350,
-                        height: 300,
-                        color: const Color(0xFFEA4335),
-                        opacity: 0.12,
-                        animationValue: val,
-                        phaseShift: -2.0 * math.pi * 8.0 / 12.0, // delay -8s
-                      ),
-                    ),
-                    // Blob 4 (Green)
-                    Positioned(
-                      bottom: 50,
-                      right: screenWidth * 0.2,
-                      child: _AuroraBlob(
-                        width: 300,
-                        height: 350,
-                        color: const Color(0xFF34A853),
-                        opacity: 0.14,
-                        animationValue: val,
-                        phaseShift: -2.0 * math.pi * 2.0 / 12.0, // delay -2s
-                      ),
-                    ),
-                  ],
-                );
-              },
+                  ),
+                ),
+              ],
             ),
           ),
 
@@ -389,7 +403,10 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
                   child: Center(
                     child: SingleChildScrollView(
                       physics: const BouncingScrollPhysics(),
-                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 40),
+                      padding: EdgeInsets.symmetric(
+                        horizontal: isDesktop ? 40 : 20,
+                        vertical: isDesktop ? 40 : 24,
+                      ),
                       child: ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: 1200),
                         child: isDesktop
@@ -422,8 +439,10 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   }
 
   Widget _buildNavbar() {
+    final screenWidth = MediaQuery.of(context).size.width;
+    final isDesktop = screenWidth >= 1000;
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 18),
+      padding: EdgeInsets.symmetric(horizontal: isDesktop ? 40 : 20, vertical: 18),
       decoration: const BoxDecoration(
         border: Border(
           bottom: BorderSide(color: Color(0x0FFFFFFF), width: 1.0),
@@ -483,14 +502,15 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
         const SizedBox(height: 20),
         _buildDescription(isDesktop),
         const SizedBox(height: 36),
-        Row(
-          mainAxisAlignment: isDesktop ? MainAxisAlignment.start : MainAxisAlignment.center,
+        Wrap(
+          spacing: 14,
+          runSpacing: 14,
+          alignment: isDesktop ? WrapAlignment.start : WrapAlignment.center,
           children: [
             _GoogleSignInButton(
               isLoading: _isChecking,
               onTap: _handleGoogleSignIn,
             ),
-            const SizedBox(width: 14),
             _GhostButton(
               text: 'Ver demo',
               onTap: _showDemoDialog,
@@ -574,8 +594,8 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   }
 
   Widget _buildDescription(bool isDesktop) {
-    return SizedBox(
-      width: 420,
+    return Container(
+      constraints: const BoxConstraints(maxWidth: 420),
       child: RichText(
         textAlign: isDesktop ? TextAlign.left : TextAlign.center,
         text: const TextSpan(
@@ -608,6 +628,7 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
 
   Widget _buildStatsBar(bool isDesktop) {
     return Container(
+      width: double.infinity,
       margin: const EdgeInsets.only(top: 36),
       padding: const EdgeInsets.only(top: 28),
       decoration: const BoxDecoration(
@@ -615,13 +636,13 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
           top: BorderSide(color: Color(0x12FFFFFF), width: 1.0),
         ),
       ),
-      child: Row(
-        mainAxisAlignment: isDesktop ? MainAxisAlignment.start : MainAxisAlignment.spaceEvenly,
+      child: Wrap(
+        spacing: 24,
+        runSpacing: 16,
+        alignment: isDesktop ? WrapAlignment.start : WrapAlignment.center,
         children: [
           _buildStatItem('50+', 'PREGUNTAS DIARIAS'),
-          if (isDesktop) const SizedBox(width: 28),
           _buildStatItem('98%', 'TASA DE APROBACIÓN'),
-          if (isDesktop) const SizedBox(width: 28),
           _buildStatItem('12k', 'POSTULANTES ACTIVOS'),
         ],
       ),
@@ -664,6 +685,49 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   }
 
   Widget _buildRightSideContent(bool isDesktop) {
+    const cards = [
+      _BentoCardRedesign(
+        title: 'Misión Diaria',
+        description: 'Resuelve 50 preguntas personalizadas cada día para mantener tu racha.',
+        icon: '⚡',
+        glowColor: Color(0x264285F4),
+        lineColor: Color(0xFF4285F4),
+        iconBgColor: Color(0x264285F4),
+        iconTextColor: Color(0xFF8AB4F8),
+        iconBorderColor: Color(0x404285F4),
+      ),
+      _BentoCardRedesign(
+        title: 'Psicotécnico',
+        description: 'Ejercicios interactivos de figuras y razonamiento espacial.',
+        icon: '🧩',
+        glowColor: Color(0x268A2BE2),
+        lineColor: Color(0xFF9B59B6),
+        iconBgColor: Color(0x268A2BE2),
+        iconTextColor: Color(0xFFC58AF9),
+        iconBorderColor: Color(0x408A2BE2),
+      ),
+      _BentoCardRedesign(
+        title: 'Simulacros Reales',
+        description: 'Exámenes completos contrarreloj con la estructura exacta PNP.',
+        icon: '🎯',
+        glowColor: Color(0x2634A853),
+        lineColor: Color(0xFF34A853),
+        iconBgColor: Color(0x2634A853),
+        iconTextColor: Color(0xFF81C995),
+        iconBorderColor: Color(0x4034A853),
+      ),
+      _BentoCardRedesign(
+        title: 'La Escuelita',
+        description: 'Retroalimentación y repaso enfocado únicamente en tus errores.',
+        icon: '🎓',
+        glowColor: Color(0x1FEA4335),
+        lineColor: Color(0xFFEA4335),
+        iconBgColor: Color(0x1FEA4335),
+        iconTextColor: Color(0xFFF28B82),
+        iconBorderColor: Color(0x33EA4335),
+      ),
+    ];
+
     return Column(
       crossAxisAlignment: isDesktop ? CrossAxisAlignment.end : CrossAxisAlignment.center,
       children: [
@@ -681,58 +745,29 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
             ),
           ),
         ),
-        GridView(
-          shrinkWrap: true,
-          physics: const NeverScrollableScrollPhysics(),
-          gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-            crossAxisCount: isDesktop ? 2 : 1,
-            crossAxisSpacing: 12,
-            mainAxisSpacing: 12,
-            childAspectRatio: isDesktop ? 1.45 : 1.8,
-          ),
-          children: const [
-            _BentoCardRedesign(
-              title: 'Misión Diaria',
-              description: 'Resuelve 50 preguntas personalizadas cada día para mantener tu racha.',
-              icon: '⚡',
-              glowColor: Color(0x264285F4),
-              lineColor: Color(0xFF4285F4),
-              iconBgColor: Color(0x264285F4),
-              iconTextColor: Color(0xFF8AB4F8),
-              iconBorderColor: Color(0x404285F4),
-            ),
-            _BentoCardRedesign(
-              title: 'Psicotécnico',
-              description: 'Ejercicios interactivos de figuras y razonamiento espacial.',
-              icon: '🧩',
-              glowColor: Color(0x268A2BE2),
-              lineColor: Color(0xFF9B59B6),
-              iconBgColor: Color(0x268A2BE2),
-              iconTextColor: Color(0xFFC58AF9),
-              iconBorderColor: Color(0x408A2BE2),
-            ),
-            _BentoCardRedesign(
-              title: 'Simulacros Reales',
-              description: 'Exámenes completos contrarreloj con la estructura exacta PNP.',
-              icon: '🎯',
-              glowColor: Color(0x2634A853),
-              lineColor: Color(0xFF34A853),
-              iconBgColor: Color(0x2634A853),
-              iconTextColor: Color(0xFF81C995),
-              iconBorderColor: Color(0x4034A853),
-            ),
-            _BentoCardRedesign(
-              title: 'La Escuelita',
-              description: 'Retroalimentación y repaso enfocado únicamente en tus errores.',
-              icon: '🎓',
-              glowColor: Color(0x1FEA4335),
-              lineColor: Color(0xFFEA4335),
-              iconBgColor: Color(0x1FEA4335),
-              iconTextColor: Color(0xFFF28B82),
-              iconBorderColor: Color(0x33EA4335),
-            ),
-          ],
-        ),
+        isDesktop
+            ? GridView(
+                shrinkWrap: true,
+                physics: const NeverScrollableScrollPhysics(),
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                  crossAxisCount: 2,
+                  crossAxisSpacing: 12,
+                  mainAxisSpacing: 12,
+                  childAspectRatio: 1.45,
+                ),
+                children: cards,
+              )
+            : Column(
+                children: [
+                  cards[0],
+                  const SizedBox(height: 12),
+                  cards[1],
+                  const SizedBox(height: 12),
+                  cards[2],
+                  const SizedBox(height: 12),
+                  cards[3],
+                ],
+              ),
       ],
     );
   }
@@ -1153,7 +1188,7 @@ class _BentoCardRedesignState extends State<_BentoCardRedesign> {
                           fontFamily: 'Google Sans',
                           fontSize: 12,
                           fontWeight: FontWeight.w300,
-                          color: Color(0xFF5F6368),
+                          color: Color(0xFF9AA0A6),
                           height: 1.55,
                         ),
                       ),
