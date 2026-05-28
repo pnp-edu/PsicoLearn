@@ -39,18 +39,18 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/google_logo.svg
-    - assets/portada-pnp.png
     - assets/animations/
-    - assets/data/
-    - assets/psicotecnico_full_01.svg
-    - assets/figuras_psicometrico/cerillos/
-    - assets/figuras_psicometrico/espacial/
-    - assets/figuras_psicometrico/matriz/
-    - assets/figuras_psicometrico/serie/
-    - assets/figuras_psicometrico/analogia/
-    - assets/figuras_psicometrico/rotacion/
-    - assets/figuras_psicometrico/conteo/
-    - assets/figuras_psicometrico/simetria/
-    - assets/figuras_psicometrico/logica/
-    - assets/figuras_psicometrico/cerillos_common/
+    # - assets/google_logo.svg
+    # - assets/portada-pnp.png
+    # - assets/data/
+    # - assets/psicotecnico_full_01.svg
+    # - assets/figuras_psicometrico/cerillos/
+    # - assets/figuras_psicometrico/espacial/
+    # - assets/figuras_psicometrico/matriz/
+    # - assets/figuras_psicometrico/serie/
+    # - assets/figuras_psicometrico/analogia/
+    # - assets/figuras_psicometrico/rotacion/
+    # - assets/figuras_psicometrico/conteo/
+    # - assets/figuras_psicometrico/simetria/
+    # - assets/figuras_psicometrico/logica/
+    # - assets/figuras_psicometrico/cerillos_common/
