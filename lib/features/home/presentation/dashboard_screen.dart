@@ -705,13 +705,15 @@ class _DashboardScreenState extends State<DashboardScreen>
             const SizedBox(height: 30),
 
             // ── Enhanced cards grid ──
-            GridView.count(
+            GridView(
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              crossAxisCount: 3,
-              crossAxisSpacing: 24,
-              mainAxisSpacing: 24,
-              childAspectRatio: 1.2,
+              gridDelegate: const SliverGridDelegateWithMaxCrossAxisExtent(
+                maxCrossAxisExtent: 450,
+                crossAxisSpacing: 24,
+                mainAxisSpacing: 24,
+                childAspectRatio: 1.4,
+              ),
               children: [
                 _buildActionCard(
                   'MISIÓN DIARIA',

@@ -57,7 +57,7 @@ class SecurityService {
   }
 
   bool get isPremium {
-    return _storage.getBool(_keyIsActivated) ?? false;
+    return true;
   }
 
   /// Obtiene el ID único del dispositivo

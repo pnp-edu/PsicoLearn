@@ -461,15 +461,18 @@ class _TestScreenState extends State<TestScreen> with TickerProviderStateMixin {
                         if (widget.isCorrectingErrors) _buildReinforcementBadge(),
                         Expanded(
                           child: Center(
-                            child: SingleChildScrollView(
-                              physics: const BouncingScrollPhysics(),
-                              child: Column(
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                children: [
-                                  _buildQuestionSwitcher(question, isDark),
-                                  const SizedBox(height: 24),
-                                  _buildOptionsSelector(question),
-                                ],
+                            child: ConstrainedBox(
+                              constraints: const BoxConstraints(maxWidth: 800),
+                              child: SingleChildScrollView(
+                                physics: const BouncingScrollPhysics(),
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    _buildQuestionSwitcher(question, isDark),
+                                    const SizedBox(height: 24),
+                                    _buildOptionsSelector(question),
+                                  ],
+                                ),
                               ),
                             ),
                           ),
