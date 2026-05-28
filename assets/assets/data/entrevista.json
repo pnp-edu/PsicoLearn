@@ -1,0 +1,473 @@
+{
+  "preguntas_entrevista": [
+    {
+      "id": 1,
+      "categoria": "VOCACIÓN",
+      "pregunta": "¿Usted solo postula a la policía porque no tiene otra opción de trabajo?",
+      "puntos_clave": "PREGUNTA TRAMPA: Buscan ver si te pones a la defensiva.",
+      "respuesta_ideal": "Mire, opciones de trabajo siempre hay, pero vocación solo tengo una. Si quisiera dinero buscaría otra cosa, pero yo quiero el uniforme. He esperado este momento y me he preparado solo para esto, no es un plan B, es mi única meta."
+    },
+    {
+      "id": 35,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Usted cree que la mujer tiene la misma capacidad que el hombre para enfrentar a un delincuente violento en el VRAEM?",
+      "puntos_clave": "Enfoque de género y profesionalismo. Buscan ver si eres machista o realista táctico.",
+      "respuesta_ideal": "La capacidad no depende del género, sino del entrenamiento y el coraje. En la PNP hay mujeres valientes que han demostrado estar a la altura en las zonas más difíciles. Lo que importa es que estemos bien preparados para cuidarnos la espalda unos a otros."
+    },
+    {
+      "id": 36,
+      "categoria": "ÉTICA",
+      "pregunta": "Si un informante le pide droga incautada a cambio de darle la ubicación de un cabecilla de banda, ¿acepta el trato?",
+      "puntos_clave": "Dilema de 'El fin justifica los medios'. Corrupción operativa.",
+      "respuesta_ideal": "Jamás. No puedo combatir el crimen usando el mismo crimen. La droga incautada tiene un protocolo legal de custodia y destrucción. Si el informante quiere beneficios, que se acoja a la colaboración eficaz bajo supervisión fiscal, pero yo no negocio con la ley."
+    },
+    {
+      "id": 37,
+      "categoria": "PODER",
+      "pregunta": "Usted interviene al hijo de un Coronel activo por manejar borracho. El chico le pasa el teléfono y su Coronel le dice: 'Suéltalo, es una orden'. ¿Qué hace?",
+      "puntos_clave": "Jerarquía vs Legalidad. Prueba de fuego de integridad.",
+      "respuesta_ideal": "Con todo el respeto que merece mi Coronel, le diría que no puedo cumplir esa orden porque es ilegal. Procedo con la detención y el dosaje etílico. Mi lealtad es con la ley; el Coronel debería ser el primero en dar el ejemplo de respeto a las normas."
+    },
+    {
+      "id": 38,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Qué opina de las ONG de Derechos Humanos que defienden a los delincuentes y atacan a la policía?",
+      "puntos_clave": "Buscan ver si tienes resentimiento o si eres un profesional que entiende el sistema.",
+      "respuesta_ideal": "Cada institución cumple su papel en democracia. Si hacemos nuestro trabajo bien, bajo la ley, no tenemos nada que temer de ninguna ONG. Mi enfoque es hacer intervenciones impecables para que nadie tenga excusas para atacarnos."
+    },
+    {
+      "id": 39,
+      "categoria": "PSICOLOGÍA",
+      "pregunta": "¿Usted ha llorado alguna vez? ¿Cree que un policía puede llorar?",
+      "puntos_clave": "Estereotipos vs Humanidad. Estabilidad emocional.",
+      "respuesta_ideal": "Claro que he llorado, soy un ser humano. Llorar no te hace débil, te hace real. Lo importante es que en el servicio, un policía debe tener la cabeza fría para actuar. El sentimiento se guarda para la casa, pero la humanidad no se pierde nunca."
+    },
+    {
+      "id": 40,
+      "categoria": "PRENSA",
+      "pregunta": "Un periodista le ofrece mil soles por dejarlo entrar a una escena del crimen antes que llegue el Fiscal para tomar fotos. Nadie se va a dar cuenta. ¿Qué hace?",
+      "puntos_clave": "Corrupción y reserva de la investigación.",
+      "respuesta_ideal": "Le digo que no y lo retiro del área. El dinero no vale nada comparado con la integridad de una investigación. Si se contamina la escena, el delincuente sale libre. Mi deber es proteger la justicia, no venderla por mil soles."
+    },
+    {
+      "id": 41,
+      "categoria": "TEMPLE",
+      "pregunta": "Dígame: ¿Usted me tiene miedo ahora mismo?",
+      "puntos_clave": "PREGUNTA DE PRESIÓN: Buscan ver si eres sumiso o si tienes respeto profesional.",
+      "respuesta_ideal": "No le tengo miedo, le tengo respeto. Usted es mi superior y yo estoy aquí para demostrar que soy apto. El miedo paraliza, el respeto motiva. Estoy concentrado en responder con la verdad."
+    },
+    {
+      "id": 42,
+      "categoria": "SOCIAL",
+      "pregunta": "¿Qué haría si ve a un indigente robando comida en un mercado porque tiene hambre?",
+      "puntos_clave": "Criterio y aplicación de la ley.",
+      "respuesta_ideal": "El robo es delito, así sea por hambre. Debo intervenir, pero también puedo usar mi humanidad para canalizar ayuda o hablar con el dueño del local. Mi deber es que se respete la propiedad, pero mi conciencia me obliga a buscar una solución de fondo."
+    },
+    {
+      "id": 43,
+      "categoria": "DISCIPLINA",
+      "pregunta": "¿Qué opina de los sindicatos policiales? ¿Cree que los policías deberían poder hacer huelga?",
+      "puntos_clave": "Orden interno y prohibición constitucional de huelga.",
+      "respuesta_ideal": "La Constitución es clara: la policía no tiene derecho a huelga porque nuestra labor es vital para el orden interno. Si paramos, el país se cae. Tenemos canales de bienestar, pero nunca podemos abandonar el servicio."
+    },
+    {
+      "id": 44,
+      "categoria": "ÉTICA",
+      "pregunta": "¿Si usted mata a un delincuente en defensa propia y no hay cámaras, sembraría un arma para estar más seguro de que no lo metan preso?",
+      "puntos_clave": "PREGUNTA TRAMPA: Corrupción procesal por miedo.",
+      "respuesta_ideal": "Jamás sembraría nada. Si actué en defensa propia, la verdad me va a salvar. Si miento o siembro pruebas, me convierto en delincuente. Prefiero enfrentar un proceso con la verdad que vivir como un corrupto por miedo."
+    },
+    {
+      "id": 45,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Usted cree que la policía es responsable de que haya tantos muertos en las protestas?",
+      "puntos_clave": "Responsabilidad institucional y contexto social.",
+      "respuesta_ideal": "La responsabilidad es de quienes incitan a la violencia. La policía sale a restaurar el orden. Es lamentable que haya vidas perdidas, pero nosotros no salimos a matar, salimos a proteger el estado de derecho bajo los protocolos que nos dan."
+    },
+    {
+      "id": 46,
+      "categoria": "ÉTICA",
+      "pregunta": "Usted detiene a un delincuente que acaba de robar a una anciana. El delincuente es su hermano menor. ¿Lo deja ir o lo detiene?",
+      "puntos_clave": "Conflicto de intereses. Familia vs Ley.",
+      "respuesta_ideal": "Lo detengo y lo pongo a disposición de la justicia. El uniforme que llevo está por encima de mis sentimientos personales. Sería el primero en llorar su situación, pero como policía, mi deber es proteger a la sociedad, incluso de mi propia familia si ellos delinquen."
+    },
+    {
+      "id": 47,
+      "categoria": "POLÍTICA",
+      "pregunta": "¿Qué opina usted del actual gobierno? ¿Cree que están haciendo un buen trabajo?",
+      "puntos_clave": "Neutralidad política de la PNP (Art. 169 Constitución).",
+      "respuesta_ideal": "Como miembro de la PNP, soy obediente y no deliberante en temas políticos. Mi función es servir a la nación y cumplir las leyes, independientemente de quién esté en el poder. Mi lealtad es con las instituciones y la Constitución, no con partidos políticos."
+    },
+    {
+      "id": 48,
+      "categoria": "PRESIÓN",
+      "pregunta": "Si un grupo de manifestantes rodea su patrullero y empiezan a lanzarle bombas molotov, ¿usaría su arma de fuego para despejar el camino?",
+      "puntos_clave": "Uso progresivo y diferenciado de la fuerza (DL 1186).",
+      "respuesta_ideal": "El arma de fuego es el último recurso ante una amenaza letal inminente contra mi vida o la de otros. Si el fuego pone en riesgo real mi integridad y no hay otra vía, actuaría bajo los protocolos de necesidad y proporcionalidad, siempre buscando neutralizar la amenaza con el menor daño posible."
+    },
+    {
+      "id": 49,
+      "categoria": "PERSONAL",
+      "pregunta": "Dígame tres defectos que usted tenga que lo harían un mal policía.",
+      "puntos_clave": "Autocrítica y honestidad. Evita 'defectos disfrazados de virtudes'.",
+      "respuesta_ideal": "A veces soy demasiado perfeccionista y me frustra el desorden, otra es que me cuesta delegar tareas y a veces soy muy impaciente con la falta de puntualidad. Estoy trabajando en ello porque sé que en la institución el trabajo en equipo y la paciencia operativa son vitales."
+    },
+    {
+      "id": 50,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Usted cree que la policía debería tener derecho a sindicarse para pedir mejores sueldos?",
+      "puntos_clave": "Prohibición de sindicación (Art. 42 Constitución).",
+      "respuesta_ideal": "No, porque nuestro servicio es esencial para la supervivencia del Estado. Un policía no puede dejar su puesto por un reclamo laboral. Entiendo que hay carencias, pero acepto las reglas de la institución al postular. El bienestar se gestiona por los canales internos legales."
+    },
+    {
+      "id": 51,
+      "categoria": "ÉTICA",
+      "pregunta": "Su jefe directo le ordena 'arreglar' un parte de ocurrencia para favorecer a un amigo suyo. ¿Lo hace?",
+      "puntos_clave": "Obediencia debida vs Legalidad.",
+      "respuesta_ideal": "No lo hago. La obediencia en la PNP no es ciega, se debe obedecer lo que es legal. Falsear un documento es un delito y va contra mi código de ética. Le informaría respetuosamente que no puedo cumplir esa orden y, si insiste, daría cuenta al órgano de control superior."
+    },
+    {
+      "id": 52,
+      "categoria": "RELIGIÓN",
+      "pregunta": "¿Usted cree en Dios? Si su religión le prohíbe usar armas los domingos, ¿qué haría?",
+      "puntos_clave": "Libertad de culto vs Deber policial.",
+      "respuesta_ideal": "Tengo mis creencias personales, pero al jurar ante la bandera y la institución, mi primer deber es el servicio. La policía no tiene feriados ni excepciones religiosas cuando se trata de proteger a la ciudadanía. Mi fe me guía en mis valores, pero no interfiere con mi operatividad."
+    },
+    {
+      "id": 53,
+      "categoria": "ACTUALIDAD",
+      "pregunta": "¿Qué opina de que los delincuentes extranjeros sean expulsados del país sin juicio?",
+      "puntos_clave": "Estado de derecho y debido proceso.",
+      "respuesta_ideal": "Como policía, mi trabajo es capturarlos y ponerlos a disposición de las autoridades competentes. La decisión de expulsión o juicio depende de las leyes migratorias y del Poder Judicial. Yo respeto la ley y los tratados internacionales de derechos humanos que el Perú ha firmado."
+    },
+    {
+      "id": 54,
+      "categoria": "TEMPLE",
+      "pregunta": "¿Qué siente usted cuando ve a la gente insultar a los policías en la calle?",
+      "puntos_clave": "Control emocional y resiliencia.",
+      "respuesta_ideal": "Siento que es una falta de respeto al uniforme, pero no me lo tomo personal. Entiendo que hay mucha frustración social, pero yo mantengo la compostura. Mi respuesta ante un insulto es un servicio impecable; esa es la mejor forma de recuperar la confianza de la gente."
+    },
+    {
+      "id": 55,
+      "categoria": "FAMILIA",
+      "pregunta": "Su esposa/o le pide que pida la baja porque el trabajo es muy peligroso. ¿Qué elige?",
+      "puntos_clave": "Prioridad de la vocación y apoyo familiar.",
+      "respuesta_ideal": "Elegiría hablar con mi familia para que entiendan que esto no es solo un trabajo, es mi proyecto de vida. Trataría de darles seguridad demostrando que estoy bien entrenado, pero mi compromiso con la PNP es firme. El peligro es parte del honor de servir."
+    },
+    {
+      "id": 56,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Usted cree que la pena de muerte reduciría la delincuencia en el Perú?",
+      "puntos_clave": "Opinión personal vs Marco legal actual (Pacto de San José).",
+      "respuesta_ideal": "Es un debate complejo que le corresponde al Congreso y a los especialistas en criminología. Como policía, mi deber es aplicar las leyes vigentes. Sea cual sea la pena, mi función es capturar al delincuente con pruebas sólidas para que no haya impunidad."
+    },
+    {
+      "id": 57,
+      "categoria": "ÉTICA",
+      "pregunta": "Usted encuentra una mochila con 100 mil dólares en un operativo, nadie lo está viendo y la cámara de su pecho está apagada. ¿Qué hace?",
+      "puntos_clave": "Integridad absoluta. El valor del dinero vs El valor del honor.",
+      "respuesta_ideal": "Informo inmediatamente por radio y protejo la evidencia. Ese dinero probablemente es fruto del delito y debe servir para la investigación. Mi honor no tiene precio; ningún monto de dinero me permitiría volver a mirar a los ojos a mi familia si lo robara."
+    },
+    {
+      "id": 58,
+      "categoria": "CORRUPCIÓN",
+      "pregunta": "Un compañero suyo está 'cobrando cupos' a los transportistas. Usted lo sabe. ¿Qué hace?",
+      "puntos_clave": "No ser cómplice por omisión. Limpieza institucional.",
+      "respuesta_ideal": "Hablo primero con él para que se detenga, pero si persiste o si el acto es grave, tengo la obligación moral e institucional de denunciarlo. El mal policía daña la imagen de todos nosotros y no merece llevar el uniforme. No puedo ser cómplice de lo que juré combatir."
+    },
+    {
+      "id": 59,
+      "categoria": "LIDERAZGO",
+      "pregunta": "Si un subordinado suyo se acobarda en un tiroteo y pone en riesgo al equipo, ¿qué medida toma?",
+      "puntos_clave": "Manejo de crisis y comando.",
+      "respuesta_ideal": "En el momento, trato de hacerlo reaccionar para salvar la situación. Después, informo del hecho para que sea reevaluado. La policía no es para todos; el miedo es natural, pero la parálisis en combate es inaceptable porque cuesta vidas de compañeros."
+    },
+    {
+      "id": 60,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Qué opina de las rondas campesinas haciendo justicia por mano propia?",
+      "puntos_clave": "Estado de derecho vs Justicia comunitaria.",
+      "respuesta_ideal": "Reconozco su rol histórico en zonas donde no llegaba el Estado, pero la justicia debe ser impartida bajo las leyes nacionales. La policía debe trabajar coordinadamente con ellos para que sus acciones no vulneren derechos fundamentales ni caigan en el delito."
+    },
+    {
+      "id": 61,
+      "categoria": "VALORES",
+      "pregunta": "¿Cuál es para usted la virtud más importante de un policía y por qué?",
+      "puntos_clave": "Identificación con valores institucionales.",
+      "respuesta_ideal": "La Integridad. Porque un policía puede ser muy valiente o muy inteligente, pero si no es íntegro, es un peligro para la sociedad. La integridad asegura que usemos nuestra fuerza y autoridad para el bien, incluso cuando nadie nos supervisa."
+    },
+    {
+      "id": 62,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Cree usted que los delincuentes juveniles deberían ser juzgados como adultos?",
+      "puntos_clave": "Opinión sobre política criminal.",
+      "respuesta_ideal": "Es una decisión legislativa basada en estudios de resocialización. Mi papel es intervenir según lo que dicte el Código de Responsabilidad Penal del Adolescente. Lo importante es que el sistema sea efectivo para que el joven no se convierta en un criminal reincidente."
+    },
+    {
+      "id": 63,
+      "categoria": "ÉTICA",
+      "pregunta": "¿Si usted ve a un Coronel ebrio causando disturbios en un restaurante, lo intervendría?",
+      "puntos_clave": "Igualdad ante la ley vs Temor reverencial.",
+      "respuesta_ideal": "Sí, lo intervengo con el respeto debido a su grado pero con la firmeza que exige la ley. El grado no da licencia para infringir las normas; al contrario, exige mayor ejemplo. Cumpliría con el procedimiento estándar y daría cuenta a la Inspectoría."
+    },
+    {
+      "id": 64,
+      "categoria": "PRESIÓN",
+      "pregunta": "Dígame por qué deberíamos elegirlo a usted y no al postulante que está afuera, que tiene mejores notas que usted.",
+      "puntos_clave": "Confianza en sí mismo y valor diferencial.",
+      "respuesta_ideal": "Las notas son importantes, pero la vocación y el temple se demuestran aquí. Yo traigo una resiliencia y una lealtad a prueba de todo. Mi preparación no solo ha sido académica, sino mental para soportar la presión del servicio. Yo no vengo por un trabajo, vengo por una misión."
+    },
+    {
+      "id": 65,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Qué opina usted de la legalización de la marihuana recreativa en el Perú?",
+      "puntos_clave": "Salud pública vs Lucha contra el tráfico.",
+      "respuesta_ideal": "Como policía, me ciño a la ley actual que la prohíbe. Es un tema de salud pública que debe ser debatido por el Ministerio de Salud y el Congreso. Mi labor es evitar que el tráfico de drogas genere violencia y crimen organizado en nuestras calles."
+    },
+    {
+      "id": 66,
+      "categoria": "TEMPLE",
+      "pregunta": "¿Qué haría si un superior lo humilla verbalmente frente a sus subordinados sin motivo?",
+      "puntos_clave": "Disciplina y canales jerárquicos.",
+      "respuesta_ideal": "Mantengo la posición de atención y guardo silencio. La disciplina es la base de la PNP. Después, buscaría el momento para hablar con él en privado y, si la falta es grave o sistemática, utilizaría los canales reglamentarios de denuncia por maltrato, sin faltar nunca al respeto."
+    },
+    {
+      "id": 67,
+      "categoria": "ÉTICA",
+      "pregunta": "¿Alguna vez ha robado algo, aunque sea un caramelo o un lapicero de niño?",
+      "puntos_clave": "Sinceridad extrema vs Perfil ideal.",
+      "respuesta_ideal": "De niño, quizás por curiosidad, pude haber tomado algo sin permiso, pero mis padres me enseñaron que eso estaba mal y lo corregí. Hoy tengo claro que la propiedad ajena es sagrada. Ser policía exige una honestidad que nace desde las pequeñas acciones diarias."
+    },
+    {
+      "id": 68,
+      "categoria": "CRITERIO",
+      "pregunta": "Un delincuente huye y entra a una iglesia llena de gente en plena misa. ¿Usted entra disparando?",
+      "puntos_clave": "Seguridad de terceros y principio de necesidad.",
+      "respuesta_ideal": "No disparo. El riesgo de daño colateral a civiles inocentes es demasiado alto. Priorizaría la vida de los ciudadanos. Establecería un cerco, pediría refuerzos y buscaría el momento oportuno para la captura sin poner en peligro a la congregación."
+    },
+    {
+      "id": 69,
+      "categoria": "PERSONAL",
+      "pregunta": "¿Usted consume alcohol? ¿Qué opina de los policías que se emborrachan uniformados?",
+      "puntos_clave": "Imagen institucional y decoro.",
+      "respuesta_ideal": "Consumo alcohol de forma muy ocasional y responsable en mi vida privada. El policía que se emborracha uniformado comete una falta gravísima de respeto a la institución y a la sociedad. El uniforme se respeta en todo momento; es un símbolo de autoridad que no puede verse degradado."
+    },
+    {
+      "id": 70,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Qué opina de las cuotas de género en la policía? ¿Debería haber un número obligatorio de mujeres?",
+      "puntos_clave": "Meritocracia vs Inclusión.",
+      "respuesta_ideal": "La PNP debe basarse en la meritocracia. Tanto hombres como mujeres deben pasar las mismas pruebas de aptitud. La inclusión es buena, pero lo más importante es que quienes vistan el uniforme sean los más capacitados para el servicio, sin distinción de género."
+    },
+    {
+      "id": 71,
+      "categoria": "ÉTICA",
+      "pregunta": "Si para salvar la vida de un compañero tiene que mentir en un informe judicial, ¿lo haría?",
+      "puntos_clave": "Lealtad mal entendida vs Verdad legal.",
+      "respuesta_ideal": "No mentiría. La lealtad a un compañero no justifica un delito. Si miento en un informe, pierdo toda credibilidad y pongo en riesgo la justicia. La mejor forma de ayudar a un compañero es actuando bajo la ley desde el principio para que no necesite que nadie mienta por él."
+    },
+    {
+      "id": 72,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Qué opina del linchamiento de delincuentes por parte de la población ('Chapa tu choro')?",
+      "puntos_clave": "Monopolio de la fuerza y estado de derecho.",
+      "respuesta_ideal": "Es una reacción ilegal a la inseguridad. La población tiene derecho a la defensa y al arresto ciudadano, pero no a la tortura ni al asesinato. La policía debe recuperar la confianza para que la gente entregue a los delincuentes a la ley en lugar de tomarse la justicia por sus manos."
+    },
+    {
+      "id": 73,
+      "categoria": "VOCACIÓN",
+      "pregunta": "¿Qué haría si después de 5 años de servicio se da cuenta de que el sueldo no le alcanza para mantener a su familia?",
+      "puntos_clave": "Persistencia y honestidad económica.",
+      "respuesta_ideal": "Buscaría formas legales y honestas de complementar mis ingresos en mi tiempo libre, si el reglamento lo permite, o ajustaría mis gastos. Pero jamás recurriría a la corrupción. La pobreza no es excusa para ser delincuente, mucho menos si eres policía."
+    },
+    {
+      "id": 74,
+      "categoria": "TEMPLE",
+      "pregunta": "Si un delincuente lo insulta y escupe en la cara durante una intervención, ¿qué hace?",
+      "puntos_clave": "Control de impulsos y profesionalismo.",
+      "respuesta_ideal": "Mantengo la calma y procedo con el uso de la fuerza necesario para reducirlo y enmarrocarlo. No respondo al insulto ni a la agresión física innecesaria. Mi objetivo es la captura legal, no la venganza personal. El profesionalismo es mi mejor escudo."
+    },
+    {
+      "id": 75,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Qué opina usted del uso de las redes sociales por parte de los policías uniformados (TikToks, etc.)?",
+      "puntos_clave": "Imagen institucional y disciplina.",
+      "respuesta_ideal": "Las redes pueden ser útiles para acercar la policía a la gente, pero debe hacerse con protocolos. Los videos que denigran el uniforme o muestran falta de seriedad en el servicio dañan la imagen de todos. El uniforme es para trabajar, no para buscar 'likes'."
+    },
+    {
+      "id": 76,
+      "categoria": "ÉTICA",
+      "pregunta": "¿Usted aceptaría una 'donación' de una empresa local para arreglar su comisaría a cambio de que patrullen más seguido su zona?",
+      "puntos_clave": "Corrupción pasiva y favoritismo.",
+      "respuesta_ideal": "Las donaciones deben ser institucionales y transparentes a través de los canales oficiales. No puedo comprometer el patrullaje, que es un bien público, a cambio de beneficios particulares. Todos los ciudadanos tienen el mismo derecho a la seguridad, paguen o no."
+    },
+    {
+      "id": 77,
+      "categoria": "PSICOLOGÍA",
+      "pregunta": "¿Cuál ha sido el momento más difícil de su vida y cómo lo superó?",
+      "puntos_clave": "Resiliencia y mecanismos de afrontamiento.",
+      "respuesta_ideal": "(Respuesta personalizada, ej: La pérdida de un familiar). Lo superé aceptando el dolor pero manteniendo mis responsabilidades. Aprendí que la vida sigue y que mi fortaleza mental es mi mejor herramienta para superar la adversidad."
+    },
+    {
+      "id": 78,
+      "categoria": "VALORES",
+      "pregunta": "¿Qué significa para usted el lema 'Dios, Patria y Ley'?",
+      "puntos_clave": "Mística institucional.",
+      "respuesta_ideal": "Significa que mis acciones están guiadas por una moral superior (Dios), que mi entrega es total para el bienestar de mi nación (Patria) y que mi límite y guía es siempre el marco jurídico (Ley). Es el equilibrio entre fe, patriotismo y justicia."
+    },
+    {
+      "id": 79,
+      "categoria": "ACTUALIDAD",
+      "pregunta": "¿Qué opina de la inseguridad ciudadana en el Perú? ¿Es culpa de la policía?",
+      "puntos_clave": "Análisis sistémico de la criminalidad.",
+      "respuesta_ideal": "Es un problema multicausal que involucra falta de oportunidades, fallas en el sistema judicial y leyes blandas. La policía es el brazo ejecutor, pero no puede sola. Se requiere un trabajo conjunto entre Estado, Justicia y Sociedad. Nosotros hacemos nuestra parte capturando a los delincuentes."
+    },
+    {
+      "id": 80,
+      "categoria": "TERMINAL",
+      "pregunta": "Si le digo ahora mismo que usted ha sido eliminado del proceso, ¿cuál es su reacción?",
+      "puntos_clave": "PREGUNTA DE PRESIÓN FINAL: Tolerancia a la frustración.",
+      "respuesta_ideal": "Aceptaría su decisión con respeto, pero le pediría me indicara mis fallas para mejorar. No me rendiría; me prepararía el doble y volvería en el próximo proceso. Mi vocación no depende de un solo intento, sino de mi determinación de servir a mi país."
+    },
+    {
+      "id": 81,
+      "categoria": "CRITERIO",
+      "pregunta": "¿Qué haría si ve a un compañero de armas durmiendo durante su servicio de guardia en una zona de emergencia?",
+      "puntos_clave": "Seguridad del personal y responsabilidad.",
+      "respuesta_ideal": "Lo despierto inmediatamente para que retome su puesto y le hago ver el peligro en el que nos pone a todos. Luego, informo al oficial de guardia. La seguridad del equipo no es negociable; un segundo de descuido puede ser fatal en una zona crítica."
+    },
+    {
+      "id": 82,
+      "categoria": "ÉTICA",
+      "pregunta": "Usted interviene un local donde se vende mercadería robada. El dueño le ofrece S/ 5,000 para que 'se olvide' de un cajón específico. ¿Qué hace?",
+      "puntos_clave": "Corrupción y cumplimiento del deber.",
+      "respuesta_ideal": "Rechazo el dinero y procedo con la incautación total y la detención del sujeto. Ese cajón es precisamente lo que más me interesa revisar ahora. Mi integridad no tiene precio y mi deber es erradicar el comercio ilícito que alimenta la delincuencia."
+    },
+    {
+      "id": 83,
+      "categoria": "PERSONAL",
+      "pregunta": "¿Usted se considera una persona violenta? ¿Cuándo fue la última vez que se peleó a golpes?",
+      "puntos_clave": "Control de impulsos y madurez.",
+      "respuesta_ideal": "No me considero violento, me considero firme. La última vez que tuve un conflicto físico fue hace años en una situación defensiva. He aprendido que la fuerza solo se usa como herramienta legal y profesional, no para resolver problemas personales."
+    },
+    {
+      "id": 84,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Qué opina de los policías que salen en noticias por actos de corrupción? ¿Le da vergüenza?",
+      "puntos_clave": "Identidad institucional y rechazo al delito.",
+      "respuesta_ideal": "Me da indignación, no vergüenza de mi uniforme, sino de la persona que lo mancha. Esos individuos no son policías, son delincuentes infiltrados. Mi meta es ser parte de la generación que limpie la imagen de la PNP con un trabajo honesto y transparente."
+    },
+    {
+      "id": 85,
+      "categoria": "PRESIÓN",
+      "pregunta": "Si su superior le grita: '¡Usted es un inútil!', ¿qué le responde?",
+      "puntos_clave": "Soportar la presión verbal y jerarquía.",
+      "respuesta_ideal": "Me mantengo en posición de atención y respondo: 'Lo lamento, mi [Grado], me esforzaré más para cumplir sus expectativas'. No permito que el insulto me afecte emocionalmente; me enfoco en corregir el error que causó su molestia."
+    },
+    {
+      "id": 86,
+      "categoria": "ACTUALIDAD",
+      "pregunta": "¿Cree que la policía debería usar armas no letales (como pistolas eléctricas) en todas las intervenciones?",
+      "puntos_clave": "Uso de la fuerza y equipamiento.",
+      "respuesta_ideal": "Sería una herramienta valiosa para graduar mejor el uso de la fuerza. Sin embargo, lo más importante es el criterio del policía y su entrenamiento. El equipo ayuda, pero la capacidad de decidir cuándo y cómo actuar es lo que realmente salva vidas."
+    },
+    {
+      "id": 87,
+      "categoria": "ÉTICA",
+      "pregunta": "Usted sabe que su mejor amigo en la escuela de policías está usando drogas los fines de semana. ¿Lo denuncia?",
+      "puntos_clave": "Lealtad institucional vs Amistad.",
+      "respuesta_ideal": "Sí. Un policía drogadicto es un peligro para sí mismo, para sus compañeros y para la sociedad. Si es mi amigo, lo ayudaría a buscar rehabilitación, pero mi deber es informar a la escuela. Alguien que no respeta la ley no puede ser quien la haga cumplir."
+    },
+    {
+      "id": 88,
+      "categoria": "TEMPLE",
+      "pregunta": "Usted está en una balacera y ve que un delincuente cae herido, pero sigue disparando. ¿Qué hace?",
+      "puntos_clave": "Neutralización de amenaza.",
+      "respuesta_ideal": "Debo neutralizar la amenaza inminente. Si sigue disparando, el peligro letal persiste. Actuaría para incapacitarlo totalmente y, una vez que ya no sea un riesgo, le brindaría los primeros auxilios y solicitaría atención médica, según los DD.HH."
+    },
+    {
+      "id": 89,
+      "categoria": "VALORES",
+      "pregunta": "¿Qué es más importante para usted: la justicia o la ley?",
+      "puntos_clave": "Dilema filosófico-legal.",
+      "respuesta_ideal": "La ley es el instrumento para alcanzar la justicia. Como policía, mi guía es la ley; no puedo aplicar mi propio concepto de justicia subjetiva. Mi deber es que la ley se cumpla para que el sistema de justicia pueda operar correctamente."
+    },
+    {
+      "id": 90,
+      "categoria": "CONTROVERSIAL",
+      "pregunta": "¿Usted cree que se debería permitir que los civiles porten armas libremente para defenderse?",
+      "puntos_clave": "Seguridad ciudadana y control de armas.",
+      "respuesta_ideal": "Es una decisión que debe tomar el Estado mediante regulaciones estrictas de SUCAMEC. Mi labor es proteger a todos los ciudadanos, porten armas o no. El monopolio de la fuerza pública debe ser la garantía principal de paz."
+    },
+    {
+      "id": 91,
+      "categoria": "ÉTICA",
+      "pregunta": "Un familiar suyo es detenido por una falta grave. Usted puede borrar el registro del sistema de la comisaría sin que nadie se entere. ¿Lo hace?",
+      "puntos_clave": "Integridad sistémica.",
+      "respuesta_ideal": "Jamás. Alterar registros oficiales es un delito grave. Mi familiar debe asumir las consecuencias de sus actos como cualquier ciudadano. Mi lealtad al sistema de justicia está por encima de cualquier vínculo de sangre."
+    },
+    {
+      "id": 92,
+      "categoria": "PSICOLOGÍA",
+      "pregunta": "¿Qué es lo que más le molesta de las personas?",
+      "puntos_clave": "Tolerancia y rasgos de personalidad.",
+      "respuesta_ideal": "Me molesta la falta de compromiso y la deshonestidad. Sin embargo, como policía, debo atender a todo tipo de personas con profesionalismo, independientemente de si su forma de ser me agrada o no."
+    },
+    {
+      "id": 93,
+      "categoria": "VOCACIÓN",
+      "pregunta": "¿Usted se siente capaz de matar a otra persona si el deber se lo exige?",
+      "puntos_clave": "Preparación mental para el uso letal de la fuerza.",
+      "respuesta_ideal": "No deseo quitarle la vida a nadie, pero estoy preparado mental y técnicamente para usar mi arma de fuego si es estrictamente necesario para proteger la vida de inocentes o la mía propia. Es una responsabilidad pesada que acepto con el uniforme."
+    },
+    {
+      "id": 94,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Qué opina de las críticas de la ONU sobre el uso excesivo de la fuerza en el Perú?",
+      "puntos_clave": "Visión internacional y respeto a DD.HH.",
+      "respuesta_ideal": "Las recomendaciones internacionales son importantes para mejorar nuestros protocolos. La PNP debe trabajar siempre respetando los derechos humanos. Si hubo excesos individuales, deben investigarse, pero la institución siempre busca actuar bajo la ley."
+    },
+    {
+      "id": 95,
+      "categoria": "TEMPLE",
+      "pregunta": "¿Qué haría si durante una intervención un grupo de ciudadanos intenta rescatar a un delincuente capturado?",
+      "puntos_clave": "Control de multitudes y firmeza.",
+      "respuesta_ideal": "Mantengo el control del detenido y pido refuerzos urgentes. Uso tácticas de disuasión verbal y, si la situación escala, aplico el uso progresivo de la fuerza para proteger la captura y la integridad del personal. La ley debe prevalecer."
+    },
+    {
+      "id": 96,
+      "categoria": "ÉTICA",
+      "pregunta": "¿Si usted ve a un compañero robando algo pequeño de un minimarket durante un patrullaje, qué hace?",
+      "puntos_clave": "Cero tolerancia a la pequeña corrupción.",
+      "respuesta_ideal": "Le exijo que lo devuelva y pague en el acto. Si se niega o lo hace con cinismo, informo a mi superior. No hay 'robo pequeño' para un policía; quien roba un dulce hoy, robará un banco mañana si tiene la oportunidad."
+    },
+    {
+      "id": 97,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Qué haría si su jefe le da una orden que usted sabe que va a fracasar tácticamente?",
+      "puntos_clave": "Asertividad operativa y jerarquía.",
+      "respuesta_ideal": "Le expreso mis dudas técnicamente y con respeto en privado. Sin embargo, si él mantiene la orden y no es ilegal, la cumplo con el mayor esfuerzo para que salga bien. En el terreno, la unidad de mando es crucial."
+    },
+    {
+      "id": 98,
+      "categoria": "PERSONAL",
+      "pregunta": "¿A qué le tiene miedo usted?",
+      "puntos_clave": "Humanidad y autoconocimiento.",
+      "respuesta_ideal": "Le tengo miedo a fallarle a mis principios o a mi familia. El miedo a la muerte es natural, pero mi sentido del deber es más fuerte. El miedo me mantiene alerta, no me paraliza."
+    },
+    {
+      "id": 99,
+      "categoria": "SOCIEDAD",
+      "pregunta": "¿Usted cree que la pobreza es la causa principal de la delincuencia?",
+      "puntos_clave": "Visión social y responsabilidad individual.",
+      "respuesta_ideal": "Es un factor que influye, pero no es una justificación. Hay miles de personas muy pobres que son honestas y trabajadoras. La delincuencia es una elección basada en la falta de valores. Mi deber es combatir al delincuente, no juzgar su origen social."
+    },
+    {
+      "id": 100,
+      "categoria": "FINAL",
+      "pregunta": "¿Por qué quiere ser policía en un país donde los matan y los desprecian?",
+      "puntos_clave": "Prueba final de vocación y patriotismo.",
+      "respuesta_ideal": "Precisamente por eso. Porque mi país necesita gente que esté dispuesta a dar la cara por los demás a pesar de la ingratitud. Mi amor por el Perú y mi vocación de servicio son más fuertes que cualquier crítica. Quiero ser parte de la solución."
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+    <rect width="400" height="300" fill="transparent"/>
+    
+        <circle cx="100" cy="150" r="40" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+        <text x="90" y="160" fill="#4FD1C5" font-size="24">A</text>
+        <circle cx="170" cy="150" r="20" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+        <text x="165" y="158" fill="#4FD1C5" font-size="16">B</text>
+        <circle cx="230" cy="150" r="30" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+        <text x="222" y="158" fill="#4FD1C5" font-size="20">C</text>
+        <path d="M260 150 L320 150" stroke="#4FD1C5" stroke-width="2" stroke-dasharray="5"/>
+        <circle cx="330" cy="150" r="25" fill="none" stroke="#4FD1C5" stroke-width="3"/>
+        <text x="322" y="158" fill="#4FD1C5" font-size="18">D</text>
+        <path d="M100 100 Q150 50 200 100" stroke="#4FD1C5" stroke-width="2" fill="none" marker-end="url(#arrow)"/>
+    
+</svg>

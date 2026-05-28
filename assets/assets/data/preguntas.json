@@ -1,0 +1,2641 @@
+{
+  "test_id": "PNP ADMISIÓN",
+  "preguntas": [
+    {
+      "pregunta_id": 11,
+      "texto": "Estás comprando en una tienda y te das cuenta de que el cajero te ha devuelto S/ 50 de más en el vuelto. ¿Qué haces?",
+      "opciones": {
+        "A": "Me los quedo, es un error del cajero y su responsabilidad.",
+        "B": "Dudo un poco, pero al final los devuelvo para no sentir culpa.",
+        "C": "Se lo hago notar inmediatamente y le devuelvo el dinero extra.",
+        "D": "Lo dono a una persona en la calle o a la caridad."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Honestidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_02",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corruptibilidad",
+      "pista": "La opción C refleja una integridad consolidada. La honestidad no debe depender de a quién se perjudica (el cajero) ni tratar de justificarse con 'buenas acciones' (D) cuando el dinero no es propio."
+    },
+    {
+      "pregunta_id": 12,
+      "texto": "Jamás en mi vida he dicho una mentira, ni siquiera una 'mentira piadosa'.",
+      "opciones": {
+        "A": "Totalmente cierto",
+        "B": "Casi siempre cierto",
+        "C": "Falso, alguna vez he mentido",
+        "D": "Totalmente falso"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Manipulación del Test",
+      "pista": "Todos los seres humanos han mentido alguna vez. Quien elige A está tratando de proyectar una imagen irreal y artificialmente perfecta, lo que invalida su perfil de sinceridad."
+    },
+    {
+      "pregunta_id": 13,
+      "texto": "Estás haciendo una larga fila en el banco y una persona se cuela descaradamente delante de ti. ¿Cómo reaccionas?",
+      "opciones": {
+        "A": "Le grito y lo empujo fuera de la fila para que respete.",
+        "B": "Me molesto mucho pero no digo nada para evitar problemas.",
+        "C": "Me dirijo a la persona con firmeza pero con respeto, pidiéndole que vaya al final.",
+        "D": "Me burlo de él en voz alta con los demás para que sienta vergüenza."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control de Impulsos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_03",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Agresividad Desproporcionada",
+      "pista": "La opción C demuestra asertividad y control emocional. Un perfil idóneo no es pasivo (B), pero tampoco recurre a la agresión física (A) ni psicológica (D) para resolver un conflicto menor."
+    },
+    {
+      "pregunta_id": 14,
+      "texto": "Vas conduciendo (o en bicicleta) de madrugada. Llegas a un semáforo en rojo, no hay ningún vehículo ni peatón a la vista en varias cuadras.",
+      "opciones": {
+        "A": "Cruzo rápido, no hay peligro ni nadie mirando.",
+        "B": "Espero a que cambie a verde, las normas están para cumplirse siempre.",
+        "C": "Avanzo despacio mirando a los lados por si acaso.",
+        "D": "Me detengo, pero si demora mucho, termino cruzando."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 1,
+        "D": 2
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Apego a las Normas",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_02",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Desacato a la Autoridad",
+      "pista": "La opción B refleja un locus de control interno fuerte respecto a la ley. El cumplimiento de las normas no debe depender de si hay vigilancia externa o conveniencia personal."
+    },
+    {
+      "pregunta_id": 15,
+      "texto": "Un buen amigo tuyo te pide que le pases las respuestas de un examen importante en la universidad o instituto porque corre el riesgo de jalar.",
+      "opciones": {
+        "A": "Se las paso; la amistad es lo más importante.",
+        "B": "Me niego rotundamente y le digo que debió estudiar.",
+        "C": "Le paso solo algunas para ayudarlo sin que sea tan evidente.",
+        "D": "Me niego amablemente y le ofrezco ayuda para estudiar la próxima vez."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 6,
+        "C": 0,
+        "D": 10
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Imparcialidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_03",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Favoritismo",
+      "pista": "La opción D mantiene la ética sin perder la empatía básica, marcando un límite claro. Poner las relaciones personales por encima de las reglas (A y C) es un predictor de nepotismo o favoritismo."
+    },
+    {
+      "pregunta_id": 16,
+      "texto": "Cuando participo en un trabajo grupal y nadie toma la iniciativa para organizarlo:",
+      "opciones": {
+        "A": "Espero a que el profesor asigne a alguien, no es mi problema.",
+        "B": "Hago mi parte por mi cuenta y me desentiendo del resto.",
+        "C": "Propongo reunirnos, reparto temas y organizo los tiempos de entrega.",
+        "D": "Me quejo con los demás de que nadie hace nada."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Proactividad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_03",
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Pasividad",
+      "pista": "La opción C evidencia iniciativa y capacidad de organización en grupos de pares, rasgos fundamentales para el liderazgo y el trabajo en equipo bajo escenarios no estructurados."
+    },
+    {
+      "pregunta_id": 17,
+      "texto": "Si no consigo una meta por la que me esforcé muchísimo (como un trabajo o ingresar a un equipo):",
+      "opciones": {
+        "A": "Siento que todo el esfuerzo fue en vano y me deprimo por mucho tiempo.",
+        "B": "Busco excusas o culpo a los evaluadores por mi fracaso.",
+        "C": "Analizo en qué fallé, mejoro mis debilidades y lo vuelvo a intentar.",
+        "D": "Me rindo con esa meta y busco algo mucho más fácil de lograr."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 3
+      },
+      "dimension": "Resiliencia",
+      "sub_dimension": "Tolerancia a la Frustración",
+      "es_escala_mentira": false,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Abandono ante la Adversidad",
+      "pista": "La opción C muestra madurez emocional. La carrera exige lidiar con el fracaso y el rechazo; externalizar la culpa (B) o abandonar ante el primer obstáculo (D) son indicadores de baja resiliencia."
+    },
+    {
+      "pregunta_id": 18,
+      "texto": "Nunca he sentido envidia de los logros o cosas materiales de otra persona.",
+      "opciones": {
+        "A": "Cierto, jamás he sentido envidia.",
+        "B": "Casi nunca he sentido envidia.",
+        "C": "A veces he sentido un poco de envidia.",
+        "D": "Falso, es normal sentir envidia en ocasiones."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "La envidia ocasional es un rasgo humano universal. Negarlo categóricamente (A) indica que el sujeto oculta sus verdaderos sentimientos para encajar en un ideal."
+    },
+    {
+      "pregunta_id": 19,
+      "texto": "Ves a una persona de la tercera edad intentando cruzar una avenida muy transitada y peligrosa, pero llevas mucha prisa para una cita médica.",
+      "opciones": {
+        "A": "Sigo mi camino, mi cita médica es mi prioridad.",
+        "B": "Le pido a alguien más que esté por ahí que la ayude.",
+        "C": "Pierdo unos minutos ayudándola a cruzar con seguridad y luego corro a mi cita.",
+        "D": "Siento pena por ella, pero asumo que alguien más la ayudará."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Empatía",
+      "sub_dimension": "Solidaridad Activa",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EMP_02",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Indiferencia Social",
+      "pista": "La opción C mide la solidaridad activa (actuar en lugar de solo sentir empatía). Un candidato ideal interviene ante el riesgo de un vulnerable, incluso si implica un costo personal menor."
+    },
+    {
+      "pregunta_id": 20,
+      "texto": "Estás en una fiesta y todos tus amigos deciden irse de un restaurante sin pagar la cuenta como una 'broma'.",
+      "opciones": {
+        "A": "Me voy con ellos para no quedar como el aguafiestas.",
+        "B": "Me voy, pero les digo después que eso estuvo muy mal.",
+        "C": "Me niego rotundamente a irme y pago mi parte de la cuenta.",
+        "D": "Les advierto que no lo hagan, y si lo hacen, pago la cuenta de todos para evitar problemas."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 5
+      },
+      "dimension": "Independencia de Criterio",
+      "sub_dimension": "Resistencia a la Presión de Grupo",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_03",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Influenciabilidad",
+      "pista": "La opción C evalúa la resistencia a la presión de los pares en conductas antisociales. Ceder ante el grupo por aceptación (A) es un grave riesgo operativo y ético futuro."
+    },
+    {
+      "pregunta_id": 21,
+      "texto": "Estás terminando un trabajo muy importante en la computadora y, de repente, se va la luz y pierdes todo tu avance de horas. ¿Cuál es tu reacción más probable?",
+      "opciones": {
+        "A": "Grito de rabia y golpeo la mesa o algún objeto por la frustración.",
+        "B": "Me deprimo, apago todo y decido que ya no entregaré el trabajo.",
+        "C": "Respiro profundo, acepto la pérdida y me organizo para empezar de nuevo lo antes posible.",
+        "D": "Busco a quién culpar en casa por no haber pagado un mejor servicio de internet o luz."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Tolerancia a la Frustración",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_04",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Descontrol de Impulsos",
+      "pista": "La opción C demuestra madurez emocional y capacidad para manejar contratiempos inesperados sin perder el enfoque. Las opciones A y D reflejan agresividad e incapacidad de asumir la realidad, mientras que la B muestra derrotismo."
+    },
+    {
+      "pregunta_id": 22,
+      "texto": "Jamás he hablado mal de alguien a sus espaldas, ni siquiera cuando estaba muy enojado con esa persona.",
+      "opciones": {
+        "A": "Totalmente de acuerdo, nunca lo he hecho.",
+        "B": "Casi nunca lo hago.",
+        "C": "En desacuerdo, a veces he criticado a alguien a sus espaldas.",
+        "D": "Totalmente en desacuerdo, es algo común."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 7
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Manipulación del Test",
+      "pista": "Hablar de otros, especialmente bajo enojo, es un comportamiento humano muy habitual (opción C). Afirmar que 'jamás' se ha hecho (A) es un intento de mostrar una pureza moral irreal para engañar la prueba."
+    },
+    {
+      "pregunta_id": 23,
+      "texto": "Encuentras una billetera tirada en un parque vacío. Al abrirla ves que tiene documentos de identidad y una cantidad regular de dinero en efectivo.",
+      "opciones": {
+        "A": "Me quedo con el dinero y dejo la billetera donde estaba.",
+        "B": "La ignoro y sigo mi camino, no es mi problema y no quiero líos.",
+        "C": "Busco la manera de contactar al dueño o la entrego en la comisaría más cercana.",
+        "D": "Me quedo con todo, el que la perdió debió ser más cuidadoso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_04",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Apropiación Ilícita",
+      "pista": "La opción C evalúa la integridad proactiva. Un aspirante debe proteger el bien ajeno. Tomar ventaja de la pérdida de otro (A y D) es inaceptable, y la indiferencia (B) muestra falta de espíritu cívico."
+    },
+    {
+      "pregunta_id": 24,
+      "texto": "Tu vecino está haciendo mucho ruido con música a altas horas de la madrugada y no te deja dormir, pero tienes que madrugar.",
+      "opciones": {
+        "A": "Voy a su puerta y le exijo a gritos que apague la música inmediatamente.",
+        "B": "Me acerco a su casa y le pido educadamente que baje el volumen porque necesito descansar.",
+        "C": "Llamo a la policía de inmediato sin intentar hablar con él primero.",
+        "D": "Me pongo tapones en los oídos y aguanto el ruido para evitar cualquier tipo de conflicto."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5,
+        "D": 2
+      },
+      "dimension": "Habilidades Sociales",
+      "sub_dimension": "Asertividad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "SOC_01",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Agresividad / Evasión",
+      "pista": "La asertividad (opción B) es clave. Un buen candidato primero intenta resolver conflictos menores mediante el diálogo directo y respetuoso. Escalar el problema agresivamente (A) o evitarlo por completo (D) revela deficiencias en el manejo de conflictos."
+    },
+    {
+      "pregunta_id": 25,
+      "texto": "Habías planificado minuciosamente un viaje de fin de semana con amigos, pero a última hora el transporte se cancela por mal clima.",
+      "opciones": {
+        "A": "Me pongo de muy mal humor y les reclamo a los organizadores del transporte.",
+        "B": "Me frustro, cancelo todo y me quedo encerrado en casa todo el fin de semana.",
+        "C": "Sugiero un plan alternativo rápido, como ir a comer o hacer algo en la ciudad.",
+        "D": "Culpo a mis amigos por haber elegido esa fecha y me alejo de ellos."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Adaptabilidad",
+      "sub_dimension": "Flexibilidad Cognitiva",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ADA_01",
+      "es_reversa": false,
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Rigidez Mental",
+      "pista": "La opción C muestra flexibilidad ante imprevistos. En la labor operativa, los planes cambian en segundos; quedarse estancado en el enojo (A y D) o la parálisis (B) es un indicador de pobre adaptabilidad."
+    },
+    {
+      "pregunta_id": 26,
+      "texto": "A veces, cuando cometo un error por descuido, intento ocultarlo para que nadie me regañe o me juzgue.",
+      "opciones": {
+        "A": "Totalmente de acuerdo, es un instinto natural.",
+        "B": "De acuerdo, a veces lo hago si el error es pequeño.",
+        "C": "En desacuerdo, prefiero admitirlo aunque haya consecuencias.",
+        "D": "Totalmente en desacuerdo, siempre asumo mis errores al instante."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 8
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Rendición de Cuentas (Accountability)",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_01",
+      "es_reversa": true,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Ocultamiento de Información",
+      "pista": "La opción C es la más madura (la D podría rozar en deseabilidad social exagerada, aunque es aceptable). El ocultamiento (A y B) es un rasgo muy peligroso, ya que un error oculto puede costar vidas o procedimientos legales."
+    },
+    {
+      "pregunta_id": 27,
+      "texto": "Estás liderando un grupo en la universidad y un compañero comete un error grave que afecta la nota de todos frente al profesor.",
+      "opciones": {
+        "A": "Le digo al profesor frente a todos que la culpa fue exclusivamente de ese compañero.",
+        "B": "Asumo la responsabilidad como líder del grupo y propongo una solución para corregirlo.",
+        "C": "Renuncio a liderar el grupo porque no quiero que me perjudiquen los errores ajenos.",
+        "D": "Intento convencer al profesor de que las instrucciones no fueron claras para evitar la mala nota."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 0,
+        "D": 3
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Asunción de Responsabilidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_04",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Falta de Compromiso",
+      "pista": "Un líder asume la responsabilidad del equipo (opción B). Echar la culpa públicamente (A) destruye la cohesión, huir (C) demuestra cobardía, y buscar excusas externas (D) revela falta de madurez."
+    },
+    {
+      "pregunta_id": 28,
+      "texto": "Te das cuenta al llegar a casa que la tienda por departamentos olvidó cobrarte uno de los artículos que llevas en la bolsa.",
+      "opciones": {
+        "A": "Lo considero mi día de suerte y me quedo con el artículo.",
+        "B": "Regreso a la tienda al día siguiente para explicar la situación y pagarlo.",
+        "C": "Regalo el artículo a otra persona para sentir que hice algo bueno.",
+        "D": "Solo regresaría a pagar si creo que tienen cámaras y me pueden rastrear."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Honradez",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_05",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Falta de Escrúpulos",
+      "pista": "La opción B define la integridad verdadera: hacer lo correcto incluso cuando nadie está mirando y ha sido un error de otro. La opción D revela que el candidato solo respeta la norma por miedo al castigo."
+    },
+    {
+      "pregunta_id": 29,
+      "texto": "Un compañero de tu trabajo o estudios es muy lento y le cuesta aprender, retrasando el ritmo del equipo.",
+      "opciones": {
+        "A": "Pido que lo saquen del equipo para no perjudicar mi rendimiento.",
+        "B": "Le hablo con impaciencia para que entienda que debe apurarse.",
+        "C": "Me tomo un tiempo libre para explicarle y ayudarle a mejorar su ritmo.",
+        "D": "Hago su parte del trabajo yo mismo para terminar rápido y no tener que lidiar con él."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 4
+      },
+      "dimension": "Empatía",
+      "sub_dimension": "Compañerismo",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EMP_03",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Individualismo Excesivo",
+      "pista": "La opción C mide el compañerismo y la vocación de instruir. El individualismo (A) o anular la capacidad de aprendizaje del otro asumiendo su trabajo (D) son actitudes perjudiciales para la dinámica de un escuadrón."
+    },
+    {
+      "pregunta_id": 30,
+      "texto": "Vas caminando por la calle y presencias cómo un ciclista sufre una caída leve; está consciente pero tiene un rasguño en la rodilla.",
+      "opciones": {
+        "A": "Saco mi celular para grabar la escena por si acaso.",
+        "B": "Paso de largo, seguro alguien más con más tiempo lo ayudará.",
+        "C": "Me acerco calmadamente, le pregunto si está bien y ofrezco ayuda o llamar a alguien.",
+        "D": "Me altero, grito pidiendo un médico y bloqueo el paso de la gente."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 3
+      },
+      "dimension": "Toma de Decisiones",
+      "sub_dimension": "Proactividad bajo Presión",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DEC_01",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Espectador / Parálisis",
+      "pista": "La opción C demuestra una aproximación calmada, evaluativa y de auxilio. Grabar (A) o ignorar (B) demuestran falta de empatía y proactividad, mientras que sobre-reaccionar (D) evidencia falta de temple."
+    },
+    {
+      "pregunta_id": 31,
+      "texto": "Un amigo te presta una herramienta o un equipo costoso y, por accidente, lo dañas de forma notable pero que aún funciona. ¿Qué haces al devolverlo?",
+      "opciones": {
+        "A": "Se lo entrego como si nada hubiera pasado, esperando que no se dé cuenta.",
+        "B": "Le echo la culpa a otra persona de mi familia que supuestamente lo usó.",
+        "C": "Se lo devuelvo, le explico exactamente qué pasó y me ofrezco a pagar la reparación.",
+        "D": "Trato de arreglarlo yo mismo con pegamento o cinta para ocultar el daño."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Rendición de Cuentas (Accountability)",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_02",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Ocultamiento / Deshonestidad",
+      "pista": "La opción C refleja integridad y asunción de consecuencias. Tratar de ocultar el daño (A y D) o culpar a un tercero (B) demuestra una severa falta de carácter y evitación de responsabilidad."
+    },
+    {
+      "pregunta_id": 32,
+      "texto": "Absolutamente nunca en toda mi vida me ha caído mal alguien que acabo de conocer.",
+      "opciones": {
+        "A": "Totalmente cierto, siempre le veo lo bueno a todos.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, a veces hay personas que me caen mal por intuición.",
+        "D": "Totalmente falso, es normal no tener afinidad con todos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Es una reacción psicológica normal sentir falta de afinidad o desagrado inicial hacia algunas personas (C o D). Afirmar que 'absolutamente nunca' ocurre (A) es un intento claro de fingir una personalidad angelical e irreal."
+    },
+    {
+      "pregunta_id": 33,
+      "texto": "Estás en un restaurante y notas que un cliente en la mesa de al lado está humillando a gritos al mesero por un pequeño error en su orden.",
+      "opciones": {
+        "A": "Me levanto y le grito al cliente para que vea lo que se siente.",
+        "B": "Saco mi celular para grabarlo y subirlo a redes sociales.",
+        "C": "Me acerco con calma para pedirle respeto o busco al administrador para que intervenga.",
+        "D": "Agacho la cabeza y sigo comiendo, prefiero no meterme en problemas ajenos."
+      },
+      "puntos_opciones": {
+        "A": 1,
+        "B": 2,
+        "C": 10,
+        "D": 3
+      },
+      "dimension": "Habilidades Sociales",
+      "sub_dimension": "Resolución de Conflictos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "SOC_02",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Pasividad / Agresividad",
+      "pista": "Intervenir asertivamente o buscar el canal adecuado (C) demuestra sentido de justicia sin perder el control. Agredir (A) escala el conflicto, grabar (B) es oportunista, y la indiferencia (D) muestra falta de compromiso social."
+    },
+    {
+      "pregunta_id": 34,
+      "texto": "Tienes un trabajo con una fecha límite muy ajustada. Un compañero de tu equipo no está haciendo su parte y pone en riesgo el proyecto de todos.",
+      "opciones": {
+        "A": "Hago su parte yo mismo en silencio para asegurar que terminemos a tiempo.",
+        "B": "Le hablo directamente pero con firmeza, exigiéndole que cumpla con sus tareas y buscando soluciones.",
+        "C": "Lo saboteo o le borro algunos archivos para que lo despidan.",
+        "D": "Le grito frente a toda la oficina para que le dé vergüenza."
+      },
+      "puntos_opciones": {
+        "A": 3,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Gestión de Personal",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_05",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Conducta Tóxica / Sumisión",
+      "pista": "La confrontación asertiva (B) es la única forma sana de resolver el problema. Hacer el trabajo por él (A) fomenta la irresponsabilidad, mientras que las opciones C y D revelan comportamientos tóxicos y destructivos en equipo."
+    },
+    {
+      "pregunta_id": 35,
+      "texto": "Descubres una 'falla' en el sistema de cobro de un servicio público o suscripción que te permitiría tenerlo gratis sin que nadie se dé cuenta.",
+      "opciones": {
+        "A": "Aprovecho la falla, las empresas ganan mucho dinero de todos modos.",
+        "B": "Siento un poco de culpa, pero lo uso temporalmente para ahorrar dinero.",
+        "C": "No la utilizo y reporto el error al servicio de atención al cliente.",
+        "D": "Le cuento el truco a mis amigos para que también ahorren dinero."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_06",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corruptibilidad Menor",
+      "pista": "La integridad (C) implica no robar ni aprovecharse, independientemente de la magnitud del afectado (una gran empresa). Racionalizar el robo (A) o promoverlo (D) son indicadores críticos de una moral laxa."
+    },
+    {
+      "pregunta_id": 36,
+      "texto": "Un conocido tuyo empieza a contarte rumores dañinos y muy personales sobre uno de tus mejores amigos.",
+      "opciones": {
+        "A": "Escucho con curiosidad, siempre es bueno saber qué dicen los demás.",
+        "B": "Lo detengo inmediatamente, le digo que no me interesa y defiendo a mi amigo.",
+        "C": "Le sigo la corriente para no parecer rudo, pero luego se lo cuento a mi amigo.",
+        "D": "Tomo esa información y se la cuento a otras personas para ver qué opinan."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Ética e Integridad",
+      "sub_dimension": "Lealtad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_07",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Deslealtad / Chismorreo",
+      "pista": "La lealtad activa (B) exige detener las conductas destructivas hacia los pares. Tolerar o difundir rumores (A y D) demuestra falta de principios y es muy perjudicial para el 'espíritu de cuerpo' bien entendido."
+    },
+    {
+      "pregunta_id": 37,
+      "texto": "Recibes una crítica bastante dura sobre un trabajo que te costó mucho esfuerzo realizar por parte de un profesor o jefe.",
+      "opciones": {
+        "A": "Me enojo, asumo que me tiene manía y empiezo a discutir de mala manera.",
+        "B": "Me deprimo profundamente y pienso en renunciar a la clase o trabajo.",
+        "C": "Escucho atentamente, trato de controlar mi frustración y pregunto cómo puedo mejorarlo.",
+        "D": "Hago como que lo escucho, pero en el fondo creo que mi trabajo estaba perfecto y él se equivoca."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 3
+      },
+      "dimension": "Resiliencia",
+      "sub_dimension": "Tolerancia a la Crítica",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_03",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Inmadurez Emocional",
+      "pista": "La asimilación constructiva de la crítica (C) es vital para el adiestramiento. Reaccionar con rebeldía (A), hundirse emocionalmente (B) o tener un orgullo ciego (D) dificultan el aprendizaje institucional."
+    },
+    {
+      "pregunta_id": 38,
+      "texto": "Siempre, todos los días de mi vida, me siento completamente feliz y lleno de energía.",
+      "opciones": {
+        "A": "Totalmente de acuerdo, nunca tengo días malos.",
+        "B": "Generalmente es así.",
+        "C": "En desacuerdo, tengo días normales y a veces malos.",
+        "D": "Totalmente en desacuerdo, la tristeza y el cansancio son partes de la vida."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Nadie está exento de días malos (C y D). Marcar la opción A es un claro intento de manipulación para aparentar una estabilidad emocional sobrehumana."
+    },
+    {
+      "pregunta_id": 39,
+      "texto": "En tu lugar de estudio o trabajo, imponen una nueva norma de seguridad que te parece exagerada y que hace las tareas mucho más lentas y aburridas.",
+      "opciones": {
+        "A": "La ignoro por completo siempre que el supervisor no me esté mirando.",
+        "B": "Me quejo constantemente con mis compañeros generando un mal ambiente.",
+        "C": "La cumplo disciplinadamente, e intento sugerir mejoras constructivas por el canal regular.",
+        "D": "Renuncio o dejo de esforzarme porque no me gusta que me controlen tanto."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Apego a las Normas",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_04",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Desacato / Rebeldía",
+      "pista": "La opción C refleja obediencia inteligente y madurez. Ignorar directivas de seguridad por conveniencia (A) o incentivar la indisciplina (B) son conductas de alto riesgo para una organización jerárquica."
+    },
+    {
+      "pregunta_id": 40,
+      "texto": "Estás en una reunión y uno de tus amigos hace un comentario o una broma que claramente discrimina u ofende a una persona presente.",
+      "opciones": {
+        "A": "Me río para no incomodar a mi amigo, aunque sé que está mal.",
+        "B": "Me quedo callado mirando al suelo, esperando que alguien más diga algo.",
+        "C": "Expreso mi desacuerdo de forma educada pero clara, pidiendo respeto.",
+        "D": "Insulto a mi amigo frente a todos para que aprenda una lección."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Independencia de Criterio",
+      "sub_dimension": "Resistencia a la Presión de Grupo",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "IND_01",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Influenciabilidad / Tolerancia al Abuso",
+      "pista": "Marcar límites ante la presión de pares (C) es esencial para la prevención de abusos éticos. Ser cómplice por omisión (B) o por aceptación (A) evidencia debilidad de carácter."
+    },
+    {
+      "pregunta_id": 41,
+      "texto": "Encuentras un teléfono inteligente costoso y desbloqueado en el asiento de un autobús público. ¿Qué haces?",
+      "opciones": {
+        "A": "Lo reviso para buscar un contacto y llamar al dueño para devolverlo.",
+        "B": "Lo apago, le saco el chip y me lo quedo o lo vendo.",
+        "C": "Se lo entrego al conductor del autobús y me desentiendo.",
+        "D": "Lo dejo donde está, no es mi problema y no quiero que me acusen de robo."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 5,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_08",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Apropiación Ilícita",
+      "pista": "La opción A demuestra una actitud proactiva hacia la honradez. Robarlo (B) es inaceptable, y la evasión de responsabilidad ciudadana (D) o delegarla sin garantías (C) muestran falta de compromiso ético."
+    },
+    {
+      "pregunta_id": 42,
+      "texto": "Absolutamente nunca, en toda mi vida, he llegado tarde a una cita, clase o compromiso.",
+      "opciones": {
+        "A": "Totalmente cierto, soy la puntualidad en persona.",
+        "B": "Casi siempre cierto, es muy raro que llegue tarde.",
+        "C": "Falso, alguna vez he llegado tarde por imprevistos.",
+        "D": "Totalmente falso, me cuesta ser puntual a veces."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 10,
+        "D": 7
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Manipulación del Test",
+      "pista": "Es humanamente imposible no haber llegado tarde nunca debido a factores externos. La opción A indica un claro intento de falsear el test para proyectar perfección."
+    },
+    {
+      "pregunta_id": 43,
+      "texto": "Vas caminando con prisa y alguien choca accidentalmente contigo, derramando un poco de café en tu ropa.",
+      "opciones": {
+        "A": "Le grito y le exijo que me pague la limpieza o la ropa nueva.",
+        "B": "Me molesto mucho y lo insulto por lo bajo mientras me voy.",
+        "C": "Acepto sus disculpas si fue un accidente, me limpio un poco y sigo mi camino.",
+        "D": "Lo empujo como reacción automática por la molestia."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control de Impulsos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_05",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Agresividad Reactiva",
+      "pista": "El control de impulsos ante provocaciones o accidentes menores (C) es vital. Reaccionar con violencia verbal (A, B) o física (D) es un rasgo descalificatorio para portar armas y autoridad."
+    },
+    {
+      "pregunta_id": 44,
+      "texto": "Necesitas un programa de computadora costoso para un trabajo y un amigo te ofrece instalártelo con una versión pirata.",
+      "opciones": {
+        "A": "Acepto de inmediato, los programas originales son un robo.",
+        "B": "Acepto porque todos lo hacen y no pasa nada malo.",
+        "C": "Prefiero buscar una alternativa gratuita o de código abierto que sea legal.",
+        "D": "Me niego, pero le pido que me preste su computadora para hacerlo allí."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 4
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Respeto a la Propiedad Intelectual/Normas",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_05",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Justificación del Delito Menor",
+      "pista": "La opción C respeta la legalidad buscando soluciones éticas. Normalizar la piratería (A y B) demuestra una moralidad flexible donde el fin justifica los medios ilícitos."
+    },
+    {
+      "pregunta_id": 45,
+      "texto": "Estás en un centro comercial y una persona se desmaya repentinamente a pocos metros de ti.",
+      "opciones": {
+        "A": "Me acerco rápidamente, evalúo si respira y pido a alguien específico que llame a emergencias.",
+        "B": "Me quedo mirando desde lejos asumiendo que los guardias del centro comercial se encargarán.",
+        "C": "Saco mi teléfono para grabar, es una situación inusual.",
+        "D": "Me asusto mucho y me alejo rápidamente de la zona."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 2,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Liderazgo y Toma de Decisiones",
+      "sub_dimension": "Proactividad en Crisis",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DEC_02",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Pasividad / Cobardía",
+      "pista": "La proactividad y asunción del liderazgo en emergencias (A) es el rasgo deseado. La inacción (B), el morbo (C) o la huida (D) son incompatibles con el perfil de un futuro protector del orden."
+    },
+    {
+      "pregunta_id": 46,
+      "texto": "Estás en la fila del supermercado y el cajero es nuevo, muy lento y comete errores al cobrarte.",
+      "opciones": {
+        "A": "Le llamo la atención en voz alta para que se apure.",
+        "B": "Me quejo con los otros clientes en la fila para presionarlo.",
+        "C": "Tengo paciencia, entiendo que está aprendiendo y lo trato con amabilidad.",
+        "D": "Exijo hablar con el gerente para que lo cambien por alguien más rápido."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 3
+      },
+      "dimension": "Empatía",
+      "sub_dimension": "Tolerancia",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EMP_04",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Falta de Empatía / Intolerancia",
+      "pista": "La opción C demuestra madurez y empatía hacia los procesos de los demás. La intolerancia (A, B, D) refleja prepotencia, un riesgo al interactuar con ciudadanos en situación de vulnerabilidad."
+    },
+    {
+      "pregunta_id": 47,
+      "texto": "Un superior (profesor, jefe) te acusa públicamente de un error grave que tú estás seguro de no haber cometido.",
+      "opciones": {
+        "A": "Le respondo a gritos frente a todos para defender mi honor inmediatamente.",
+        "B": "Me callo por miedo a represalias, aunque me gane una mala calificación o sanción.",
+        "C": "Solicito hablar con él en privado para presentarle las pruebas de mi inocencia con calma.",
+        "D": "Renuncio a ese trabajo o clase, no soporto las injusticias."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Manejo de la Presión e Injusticia",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_06",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Insubordinación / Sumisión",
+      "pista": "La asertividad y respeto por la jerarquía (C) son claves. Escalar a un conflicto público (A), ser excesivamente sumiso (B) o huir (D) demuestran falta de recursos emocionales."
+    },
+    {
+      "pregunta_id": 48,
+      "texto": "Nunca, ni una sola vez en mi vida, he dejado para mañana algo que podía hacer hoy.",
+      "opciones": {
+        "A": "Totalmente cierto, soy perfectamente organizado.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, alguna vez he postergado cosas.",
+        "D": "Totalmente falso, la procrastinación me pasa a menudo."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 7
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "La procrastinación ocasional es universal (C y D). Marcar la A es un indicador clínico de deseabilidad social alta (intentar parecer el candidato perfecto ocultando defectos humanos)."
+    },
+    {
+      "pregunta_id": 49,
+      "texto": "Vas a hacer un trámite engorroso del Estado y te das cuenta de que el guardia de seguridad es un familiar tuyo. La fila dura horas.",
+      "opciones": {
+        "A": "Le pido que me haga pasar primero, para eso está la familia.",
+        "B": "Lo saludo y hago mi fila como cualquier otro ciudadano.",
+        "C": "Le pido que al menos me adelante un poco en la fila sin que se note mucho.",
+        "D": "Espero en la fila, pero le pido que me ayude con los papeles por dentro."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Imparcialidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_09",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Tráfico de Influencias",
+      "pista": "La opción B refleja imparcialidad, pilar del futuro funcionario público. Aprovechar conexiones (A, C, D) predispone al abuso de autoridad y tráfico de influencias institucionales."
+    },
+    {
+      "pregunta_id": 50,
+      "texto": "Durante una conversación en grupo, hay una persona que te interrumpe constantemente y no te deja terminar tus ideas.",
+      "opciones": {
+        "A": "Me quedo callado el resto de la reunión, ya no tiene sentido hablar.",
+        "B": "Le grito que se calle y me deje hablar de una vez.",
+        "C": "Le digo educada pero firmemente: 'Disculpa, me gustaría terminar mi idea'.",
+        "D": "Empiezo a interrumpirlo a él también para que vea qué se siente."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Habilidades Sociales",
+      "sub_dimension": "Asertividad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "SOC_03",
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Evasión / Hostilidad",
+      "pista": "La asertividad (C) permite poner límites respetuosos. El retraimiento (A) denota inseguridad, mientras que la agresividad o venganza infantil (B y D) muestran escasa inteligencia emocional."
+    },
+    {
+      "pregunta_id": 51,
+      "texto": "Te quedaste dormido y llegaste muy tarde a un examen o entrega importante. ¿Qué excusa le das al encargado?",
+      "opciones": {
+        "A": "Invento que tuve un accidente o una emergencia médica familiar.",
+        "B": "Le digo que el tráfico estaba imposible o el transporte falló.",
+        "C": "Digo la verdad: que mi alarma no sonó o me quedé dormido, y asumo las consecuencias.",
+        "D": "No digo nada, simplemente entrego el trabajo y espero que no pregunte."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 4
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Rendición de Cuentas (Accountability)",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_04",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Mitomanía / Evasión",
+      "pista": "Asumir la culpa sin excusas externas (C) refleja madurez. Mentir para evitar el castigo (A y B) es un rasgo descalificador para la elaboración de actas y partes policiales futuros."
+    },
+    {
+      "pregunta_id": 52,
+      "texto": "Te cambian de área en tu trabajo o de salón en el instituto. El nuevo grupo tiene reglas completamente diferentes a las que estabas acostumbrado.",
+      "opciones": {
+        "A": "Me niego a seguirlas y trato de imponer la forma en que yo hacía las cosas.",
+        "B": "Me quejo todos los días de lo mal que trabajan aquí en comparación con mi grupo anterior.",
+        "C": "Observo, pregunto y adapto mi forma de trabajar a las nuevas normativas.",
+        "D": "Pido mi traslado inmediato porque no soporto los cambios bruscos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Adaptabilidad",
+      "sub_dimension": "Flexibilidad al Cambio",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ADA_02",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Rigidez Mental",
+      "pista": "La carrera policial exige rotación constante y cambios de unidad. La flexibilidad (C) es innegociable. La rigidez (A, B, D) genera conflictos insubordinados en la institución."
+    },
+    {
+      "pregunta_id": 53,
+      "texto": "Ves claramente a un compañero de clase o de trabajo robando pequeños suministros (lapiceros, hojas, grapas) de la oficina para llevárselos a casa.",
+      "opciones": {
+        "A": "Hago lo mismo, total, son cosas baratas y la institución tiene mucho dinero.",
+        "B": "Lo ignoro, no es dinero en efectivo así que no es realmente un robo grave.",
+        "C": "Le hablo en privado y le digo que eso es incorrecto y debe detenerse.",
+        "D": "Le pido que me pase algunos a mí también a cambio de mi silencio."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad Menor",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_10",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Corruptibilidad Menor",
+      "pista": "Minimizar el robo por el valor del objeto (A y B) o participar en él (D) es el inicio de la cadena de corrupción. Intervenir ante faltas éticas menores (C) previene delitos mayores."
+    },
+    {
+      "pregunta_id": 54,
+      "texto": "Estás en una fiesta y el conductor designado, que es tu amigo, ha bebido alcohol pero insiste en que está 'perfectamente bien' para manejar y llevarte a casa.",
+      "opciones": {
+        "A": "Me subo al auto, confío en él y no quiero causar una escena.",
+        "B": "Me niego rotundamente a subir, le quito las llaves y busco otra forma de regresar para ambos.",
+        "C": "Me voy por mi cuenta en taxi y dejo que él se vaya manejando solo.",
+        "D": "Le digo que maneje despacio y por calles secundarias para evitar a la policía."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Independencia de Criterio",
+      "sub_dimension": "Resistencia a la Presión de Grupo",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "IND_02",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Complicidad en Riesgo",
+      "pista": "Prevenir un delito y accidente (B) muestra liderazgo moral. Ceder a la presión (A), aconsejar cómo evadir la ley (D) o ser egoísta (C) son contraproducentes para la seguridad ciudadana."
+    },
+    {
+      "pregunta_id": 55,
+      "texto": "Absolutamente nunca en mi vida he roto una regla de tránsito, ni siquiera como peatón (como cruzar por la mitad de la calle).",
+      "opciones": {
+        "A": "Totalmente cierto.",
+        "B": "Probablemente cierto.",
+        "C": "Falso, alguna vez he cruzado por donde no debía o cometido una falta leve.",
+        "D": "Totalmente falso, las cometo a diario."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 5
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Manipulación del Test",
+      "pista": "En el contexto latinoamericano, casi todo ciudadano ha cometido una infracción peatonal alguna vez. Negarlo rotundamente (A) es un intento de mostrar un perfil inmaculado irreal."
+    },
+    {
+      "pregunta_id": 56,
+      "texto": "Estás aprendiendo una nueva habilidad compleja (como un idioma o a tocar un instrumento) y después de meses sientes que no avanzas nada.",
+      "opciones": {
+        "A": "Abandono la actividad, claramente no tengo talento para esto.",
+        "B": "Me enojo, culpo al profesor o al método y dejo de intentarlo.",
+        "C": "Busco nuevas formas de estudio, pido ayuda y sigo practicando con más esfuerzo.",
+        "D": "Sigo yendo pero dejo de esforzarme, solo para cumplir con la asistencia."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Resiliencia",
+      "sub_dimension": "Perseverancia",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_05",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Abandono",
+      "pista": "La perseverancia ante la curva de aprendizaje (C) es vital para el adiestramiento policial (tiro, táctica, leyes). La renuncia rápida (A y B) o la mediocridad (D) indican falta de temple."
+    },
+    {
+      "pregunta_id": 57,
+      "texto": "Ves a un turista visiblemente perdido mirando un mapa en la calle, pero vas con el tiempo justo a una reunión con tus amigos.",
+      "opciones": {
+        "A": "Lo ignoro, mis amigos me están esperando.",
+        "B": "Me detengo un momento, le indico rápidamente la dirección correcta y sigo mi camino.",
+        "C": "Me quedo con él todo el tiempo que necesite hasta acompañarlo, aunque llegue muy tarde.",
+        "D": "Le digo una dirección equivocada por diversión."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 4,
+        "D": -5
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Solidaridad Cotidiana",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "VOC_02",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Indiferencia / Antisocial",
+      "pista": "La opción B equilibra el deber cívico con la responsabilidad personal. La C denota falta de manejo del propio tiempo. La D revela rasgos antisociales graves incompatibles con la PNP."
+    },
+    {
+      "pregunta_id": 58,
+      "texto": "En un grupo de trabajo, surge un debate acalorado sobre cómo resolver un problema y todos empiezan a discutir sin llegar a un acuerdo.",
+      "opciones": {
+        "A": "Me callo y espero a que alguien más lo resuelva.",
+        "B": "Impongo mi idea alzando la voz para que me hagan caso de una vez.",
+        "C": "Intervengo para calmar los ánimos, resumo las ideas de todos y propongo una votación.",
+        "D": "Me retiro del grupo argumentando que no se puede trabajar con gente así."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Mediación de Conflictos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_06",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Autoritarismo / Evasión",
+      "pista": "El liderazgo constructivo requiere mediación (C). El autoritarismo irracional (B) no funciona en equipos de alto rendimiento, y la evasión (A y D) demuestra falta de compromiso grupal."
+    },
+    {
+      "pregunta_id": 59,
+      "texto": "Descubres que un compañero al que admiras mucho ha hecho trampa en el examen final para poder graduarse.",
+      "opciones": {
+        "A": "Me decepciono, pero lo encubro porque lo admiro y es mi amigo.",
+        "B": "Lo chantajeo para que me haga favores a cambio de no decir nada.",
+        "C": "Le insto a que confiese al profesor, y si no lo hace, me veo en la obligación moral de reportarlo.",
+        "D": "Empiezo a hacer trampa yo también, ya que veo que sí funciona."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad Institucional",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_11",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corrupción por Simpatía",
+      "pista": "La ética debe prevalecer sobre la admiración o amistad (C). Encubrir (A), chantajear (B) o emular el acto ilícito (D) son indicadores rotundos de un perfil altamente corruptible."
+    },
+    {
+      "pregunta_id": 60,
+      "texto": "Recibes una llamada telefónica de una persona que se equivocó de número, pero empieza a contarte algo muy urgente pensando que eres otra persona.",
+      "opciones": {
+        "A": "Le cuelgo inmediatamente sin decir nada.",
+        "B": "Le sigo la corriente por diversión para ver qué más me cuenta.",
+        "C": "Lo interrumpo amablemente y le aclaro rápido que se ha equivocado de número.",
+        "D": "Me molesto y le grito que preste más atención al marcar antes de colgar."
+      },
+      "puntos_opciones": {
+        "A": 3,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Habilidades Sociales",
+      "sub_dimension": "Comunicación Asertiva",
+      "es_escala_mentira": false,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Hostilidad",
+      "pista": "La claridad y amabilidad (C) reflejan un buen manejo comunicacional."
+    },
+    {
+      "pregunta_id": 61,
+      "texto": "Durante una intervención de alto impacto, un subordinado cuestiona tus órdenes de manera pública y airada frente a los ciudadanos. ¿Cómo procedes?",
+      "opciones": {
+        "A": "Le grito más fuerte para imponer mi autoridad de inmediato.",
+        "B": "Lo ignoro por el momento y luego lo sanciono sin darle explicaciones.",
+        "C": "Mantengo la calma, ordeno el cumplimiento de la orden y postergo la corrección disciplinaria para una reunión privada.",
+        "D": "Le permito tomar el mando para evitar que la situación con el público escale."
+      },
+      "puntos_opciones": {
+        "A": 3,
+        "B": 5,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Liderazgo y Mando",
+      "sub_dimension": "Manejo de Conflictos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "CMD_01",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Debilidad de Mando",
+      "pista": "Un oficial debe mantener el control emocional (C)."
+    },
+    {
+      "pregunta_id": 62,
+      "texto": "Un oficial superior en retiro, con gran influencia, te solicita 'flexibilidad' en la intervención de un familiar directo por conducir ebrio. ¿Qué decisión tomas?",
+      "opciones": {
+        "A": "Accedo por respeto a su trayectoria y rango anterior.",
+        "B": "Le informo respetuosamente que el procedimiento se realizará conforme a ley sin excepciones.",
+        "C": "Trato de delegar la intervención a otro efectivo para no quedar mal con el superior.",
+        "D": "Le pido algo a cambio para equilibrar el favor solicitado."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad Institucional",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_EO_01",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corruptibilidad",
+      "pista": "La integridad de un Oficial de la PNP no es negociable (B)."
+    },
+    {
+      "pregunta_id": 63,
+      "texto": "Estás persiguiendo a un delincuente armado que ingresa a un mercado concurrido. Tienes oportunidad de disparar, pero hay civiles cerca. ¿Qué haces?",
+      "opciones": {
+        "A": "Disparo inmediatamente para asegurar la captura del delincuente.",
+        "B": "Priorizo la seguridad de los civiles, evito disparar y busco una táctica de cerco o captura física.",
+        "C": "Disparo al aire para asustar al delincuente y a los civiles.",
+        "D": "Me detengo y espero a que el delincuente salga por su cuenta."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 4
+      },
+      "dimension": "Toma de Decisiones",
+      "sub_dimension": "Juicio Táctico",
+      "es_escala_mentira": false,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Imprudencia Operativa",
+      "pista": "La protección de la vida es el fin supremo (B)."
+    },
+    {
+      "pregunta_id": 64,
+      "texto": "Descubres que un compañero de tu misma promoción está omitiendo información en los partes de ocurrencias para favorecer a un informante. ¿Cómo actúas?",
+      "opciones": {
+        "A": "Lo encubro por lealtad a mi promoción.",
+        "B": "Hablo con él y le pido que sea más cuidadoso, pero no informo nada.",
+        "C": "Doy cuenta de la irregularidad a mis superiores conforme al reglamento disciplinario.",
+        "D": "Empiezo a hacer lo mismo para obtener los mismos resultados operativos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Lealtad Institucional",
+      "sub_dimension": "Honestidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LOY_02",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Espíritu de Cuerpo Negativo",
+      "pista": "La lealtad a la ley y a la institución está por encima de la lealtad personal (C)."
+    },
+    {
+      "pregunta_id": 65,
+      "texto": "Te asignan el mando de una unidad en una zona declarada en emergencia donde los recursos son escasos y la moral del personal es baja. ¿Cuál es tu prioridad?",
+      "opciones": {
+        "A": "Exigir resultados inmediatos bajo amenaza de sanción para motivarlos.",
+        "B": "Identificar las necesidades críticas del personal, liderar con el ejemplo en el campo y gestionar mejoras.",
+        "C": "Mantener un perfil bajo y esperar a que pase el tiempo para mi próximo traslado.",
+        "D": "Hacerme amigo de todos y permitir cierta indisciplina para que estén contentos."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 0,
+        "D": 2
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Gestión de Equipos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Incapacidad de Liderazgo",
+      "pista": "El oficial lidera con el ejemplo y gestionando el bienestar (B)."
+    },
+    {
+      "pregunta_id": 66,
+      "texto": "Al finalizar una diligencia compleja, te percatas de que cometiste un error de procedimiento que podría invalidar la prueba, pero nadie más se ha dado cuenta.",
+      "opciones": {
+        "A": "Destruyo el acta y la vuelvo a hacer sin que nadie vea.",
+        "B": "Informo el error inmediatamente, asumo la responsabilidad y busco la forma legal de subsanarlo.",
+        "C": "Lo dejo pasar, si nadie se da cuenta no hay problema con la investigación.",
+        "D": "Culpo a un subordinado del error para salvar mi legajo."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 0
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Integridad Profesional",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_01",
+      "es_reversa": false,
+      "peso_critico": 2.7,
+      "tipo_riesgo": "Falta de Ética",
+      "pista": "La verdad y la responsabilidad son pilares del Oficial (B)."
+    },
+    {
+      "pregunta_id": 67,
+      "texto": "Un grupo de manifestantes te insulta y provoca directamente durante el control de una protesta. ¿Cuál es tu reacción?",
+      "opciones": {
+        "A": "Los insulto también para que vean que no tengo miedo.",
+        "B": "Uso la fuerza física de inmediato para dispersar a los que insultan.",
+        "C": "Mantengo una postura profesional, serena y firmo, sin responder a provocaciones verbales.",
+        "D": "Me retiro del lugar para no perder los papeles."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 1,
+        "C": 10,
+        "D": 4
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control de Impulsos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "STB_01",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Agresividad",
+      "pista": "El Oficial debe ser un modelo de autocontrol (C)."
+    },
+    {
+      "pregunta_id": 68,
+      "texto": "Se te ordena realizar una tarea administrativa que consideras por debajo de tu capacidad profesional. ¿Cómo actúas?",
+      "opciones": {
+        "A": "La realizo de mala gana y con lentitud para que no me vuelvan a mandar.",
+        "B": "Hago mi mejor esfuerzo, la termino con excelencia y demuestro que soy eficiente en todo nivel.",
+        "C": "Reclamo airadamente ante mi superior por la asignación de esa tarea.",
+        "D": "Le ordeno a un subordinado que la haga por mí sin supervisar."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 0,
+        "D": 3
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Disciplina",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "VOC_02",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Soberbia",
+      "pista": "Toda misión contribuye al éxito institucional (B)."
+    },
+    {
+      "pregunta_id": 69,
+      "texto": "Para ti, ¿qué es más importante en el ejercicio de la función policial?",
+      "opciones": {
+        "A": "Tener el poder de mandar sobre los demás.",
+        "B": "Servir a la sociedad y proteger los derechos fundamentales.",
+        "C": "Obtener beneficios económicos y estabilidad para mi familia.",
+        "D": "Hacerme famoso por mis capturas."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 4,
+        "D": 2
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Aptitud Policial",
+      "es_escala_mentira": true,
+      "inconsistencia_id": "LIE_DETECTOR",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Ambicición Negativa",
+      "pista": "La respuesta B es la única que se alinea con la misión."
+    },
+    {
+      "pregunta_id": 71,
+      "texto": "Un colega te confiesa que ha estado alterando sus informes de patrullaje para parecer más productivo.",
+      "opciones": {
+        "A": "No digo nada, no quiero ser un soplón.",
+        "B": "Le advierto que está mal pero no lo reporto.",
+        "C": "Le insto a que se rectifique y, si no lo hace, informo a mi superior.",
+        "D": "Le pido que me enseñe cómo hacerlo para yo también mejorar mis números."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 4,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Lealtad Institucional",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_09",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Complicidad",
+      "pista": "La integridad institucional prima sobre la lealtad mal entendida entre colegas. Falsear información es una falta grave."
+    },
+    {
+      "pregunta_id": 72,
+      "texto": "Jamás he sentido rabia o deseos de gritarle a alguien en toda mi vida.",
+      "opciones": {
+        "A": "Totalmente cierto, soy siempre pacífico.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, he sentido rabia en ocasiones justificadas.",
+        "D": "Totalmente falso, soy de carácter fuerte."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 5
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "La rabia es una emoción humana básica. Negarla por completo indica que el candidato está mintiendo para agradar."
+    },
+    {
+      "pregunta_id": 73,
+      "texto": "Durante un operativo, un civil te ofrece una 'propina' generosa para que ignores una falta menor de tránsito.",
+      "opciones": {
+        "A": "Acepto, es solo una falta menor y necesito el dinero.",
+        "B": "Rechazo el dinero y le pongo la multa correspondiente.",
+        "C": "Le advierto que intentar sobornar a un oficial es un delito y procedo legalmente.",
+        "D": "Le pido más dinero argumentando que es poco para el riesgo."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 8,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Honestidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_10",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corrupción",
+      "pista": "El soborno es el mayor riesgo en la carrera policial. La opción C es la única respuesta profesional y ética."
+    },
+    {
+      "pregunta_id": 74,
+      "texto": "Si recibes una orden directa de un superior que no entiendes bien, pero él parece tener mucha prisa:",
+      "opciones": {
+        "A": "Hago lo que creo que quiso decir para no molestarlo.",
+        "B": "Le pido aclaración inmediata antes de proceder, aunque se moleste.",
+        "C": "Ignoro la orden y espero a que se calme para preguntarle.",
+        "D": "Le pregunto a otro compañero qué cree que deba hacer."
+      },
+      "puntos_opciones": {
+        "A": 3,
+        "B": 10,
+        "C": 0,
+        "D": 4
+      },
+      "dimension": "Toma de Decisiones",
+      "sub_dimension": "Claridad Operativa",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DEC_02",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Error por Ambigüedad",
+      "pista": "En operaciones policiales, la claridad es vida. Es mejor una molestia momentánea que un error por suposición."
+    },
+    {
+      "pregunta_id": 75,
+      "texto": "Siempre cumplo con mis promesas, sin importar cuán pequeñas o insignificantes sean.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "Casi siempre cumplo.",
+        "C": "A veces olvido algunas pequeñas.",
+        "D": "Falso, no siempre se pueden cumplir."
+      },
+      "puntos_opciones": {
+        "A": 4,
+        "B": 8,
+        "C": 10,
+        "D": 6
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Deseabilidad Social",
+      "pista": "Cumplir 'siempre' y 'todas' las promesas es un ideal difícil. La opción B o C suelen ser más honestas."
+    },
+    {
+      "pregunta_id": 76,
+      "texto": "Un superior te asigna una tarea monótona y tediosa que nadie quiere hacer durante todo tu turno.",
+      "opciones": {
+        "A": "La hago de mala gana y quejándome.",
+        "B": "Busco la manera de evadirla o hacer que parezca que la hago.",
+        "C": "La realizo con la misma diligencia que cualquier otra tarea importante.",
+        "D": "Trato de convencer a un subordinado para que la haga por mí."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Abnegación",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_05",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Falta de Compromiso",
+      "pista": "La disciplina implica cumplir la misión sin importar su nivel de gratificación personal."
+    },
+    {
+      "pregunta_id": 77,
+      "texto": "Si ves que un compañero está siendo injustamente tratado por un superior frente a otros:",
+      "opciones": {
+        "A": "Me quedo callado para no ganarme problemas con el jefe.",
+        "B": "Me uno a la burla para encajar en el grupo dominante.",
+        "C": "Espero a estar en privado con el superior para manifestar mi desacuerdo con respeto.",
+        "D": "Intervengo gritando y desafiando la autoridad del superior en ese momento."
+      },
+      "puntos_opciones": {
+        "A": 4,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Integridad de Mando",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_06",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Pasividad / Insubordinación",
+      "pista": "El respeto a la jerarquía es vital, pero la justicia también. La opción C equilibra ambos valores."
+    },
+    {
+      "pregunta_id": 78,
+      "texto": "Nunca he sentido deseos de rendirme cuando algo se pone verdaderamente difícil.",
+      "opciones": {
+        "A": "Totalmente cierto, mi voluntad es de acero.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, he sentido deseos de rendirme pero he continuado.",
+        "D": "Falso, a veces me rindo si no vale la pena."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 5
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Sentir deseos de rendirse ante el agotamiento es natural. Lo que importa es la acción de continuar (C)."
+    },
+    {
+      "pregunta_id": 79,
+      "texto": "Te enteras de que un familiar cercano ha cometido un delito menor. ¿Qué haces?",
+      "opciones": {
+        "A": "Lo oculto y lo ayudo a evadir la justicia por ser mi sangre.",
+        "B": "Le aconsejo que se entregue y asuma su responsabilidad.",
+        "C": "Informo a mis superiores sobre la situación para que se proceda conforme a ley.",
+        "D": "Le pido que no me cuente nada para no tener que actuar."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_11",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Nepotismo / Encubrimiento",
+      "pista": "El uniforme exige imparcialidad absoluta, incluso frente a la familia. La opción C es la más íntegra."
+    },
+    {
+      "pregunta_id": 80,
+      "texto": "Si un ciudadano te insulta mientras realizas una intervención legal y pacífica:",
+      "opciones": {
+        "A": "Le respondo con insultos más fuertes para que aprenda a respetar.",
+        "B": "Lo golpeo o uso fuerza excesiva para someterlo por su falta de respeto.",
+        "C": "Mantengo la calma, ignoro los insultos personales y continúo con el procedimiento legal.",
+        "D": "Me retiro del lugar para no entrar en conflicto con el ciudadano."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control de Impulsos",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_06",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Brutalidad Policial",
+      "pista": "Un oficial debe ser emocionalmente inexpugnable. El insulto al uniforme se procesa legalmente, no físicamente."
+    },
+    {
+      "pregunta_id": 81,
+      "texto": "Estás cansado después de un turno doble y ves a alguien hurtando algo pequeño en un mercado.",
+      "opciones": {
+        "A": "Hago como que no vi nada, estoy demasiado agotado.",
+        "B": "Intervengo de inmediato, el deber no conoce de cansancio.",
+        "C": "Llamo a otros colegas que estén de servicio para que se encarguen.",
+        "D": "Espero a ver si alguien más se da cuenta primero."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 7,
+        "D": 2
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Sentido del Deber",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "VOC_01",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Omisión de Funciones",
+      "pista": "El policía es policía las 24 horas. La omisión por cansancio es un riesgo operativo grave."
+    },
+    {
+      "pregunta_id": 82,
+      "texto": "Jamás he juzgado a una persona por su apariencia física o forma de vestir.",
+      "opciones": {
+        "A": "Totalmente cierto, soy imparcial.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, a veces los prejuicios aparecen inconscientemente.",
+        "D": "Totalmente falso, la apariencia dice mucho."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 5
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Los sesgos cognitivos son universales. Reconocerlos (C) es el primer paso para no dejar que afecten el juicio profesional."
+    },
+    {
+      "pregunta_id": 83,
+      "texto": "Si detectas que un equipo de seguridad de la comisaría está fallando por falta de mantenimiento:",
+      "opciones": {
+        "A": "No digo nada, no es mi responsabilidad el mantenimiento.",
+        "B": "Lo reporto por escrito de inmediato a la oficina técnica correspondiente.",
+        "C": "Espero a que alguien más lo reporte para no quedar como quejoso.",
+        "D": "Trato de arreglarlo yo mismo aunque no sepa cómo."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 3
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Cuidado del Patrimonio",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_03",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Negligencia",
+      "pista": "El cuidado de los recursos institucionales es deber de todos los efectivos."
+    },
+    {
+      "pregunta_id": 84,
+      "texto": "Durante una persecución a pie, el sospechoso se rinde y se tira al suelo con las manos en alto.",
+      "opciones": {
+        "A": "Le doy un golpe para desahogar la adrenalina de la persecución.",
+        "B": "Lo engrilletó siguiendo el protocolo sin usar fuerza innecesaria.",
+        "C": "Le grito insultos mientras lo detengo.",
+        "D": "Lo apunto con el arma cargada muy cerca de su cabeza para asustarlo."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Uso Proporcional de la Fuerza",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_07",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Abuso de Autoridad",
+      "pista": "Una vez que el sujeto se rinde, el uso de la fuerza debe cesar inmediatamente."
+    },
+    {
+      "pregunta_id": 85,
+      "texto": "Prefiero que otros tomen las decisiones difíciles para no tener que asumir la culpa si algo sale mal.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo en parte.",
+        "C": "En desacuerdo, asumo mi responsabilidad.",
+        "D": "Totalmente en desacuerdo, me gusta liderar decisiones."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Autogestión",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_07",
+      "es_reversa": true,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Pasividad",
+      "pista": "Un oficial debe ser capaz de tomar decisiones y responder por ellas."
+    },
+    {
+      "pregunta_id": 86,
+      "texto": "He devuelto cada céntimo que he encontrado o que me han dado de más en toda mi vida.",
+      "opciones": {
+        "A": "Cierto, siempre lo he hecho.",
+        "B": "Casi siempre.",
+        "C": "Falso, alguna vez me he quedado con algo pequeño.",
+        "D": "Totalmente falso, me quedo con lo que encuentro."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "La honestidad absoluta en cada moneda es un rasgo de santidad irreal. Admitir pequeños fallos (C) es más sincero."
+    },
+    {
+      "pregunta_id": 87,
+      "texto": "Si descubres que un grupo de colegas está utilizando bienes del estado para fines personales recreativos:",
+      "opciones": {
+        "A": "Me uno a ellos, si todos lo hacen no hay problema.",
+        "B": "Los ignoro, no es asunto mío.",
+        "C": "Informo a la inspectoría o al superior inmediato sobre el mal uso.",
+        "D": "Les pido que me den algo a cambio de mi silencio."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_12",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corrupción",
+      "pista": "El patrimonio del estado es sagrado. La denuncia administrativa es el camino correcto."
+    },
+    {
+      "pregunta_id": 88,
+      "texto": "Considero que las leyes son sugerencias que pueden ignorarse si uno tiene una buena razón personal.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo en ocasiones.",
+        "C": "En desacuerdo, la ley es la ley.",
+        "D": "Totalmente en desacuerdo, el orden jurídico es fundamental."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Apego a las Normas",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_06",
+      "es_reversa": true,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Anomia Social",
+      "pista": "Un policía no puede interpretar la ley a su conveniencia personal."
+    },
+    {
+      "pregunta_id": 89,
+      "texto": "Si un compañero de estudios te pide ayuda para hacer una trampa mínima en un examen de conocimientos:",
+      "opciones": {
+        "A": "Lo ayudo, para eso están los amigos.",
+        "B": "Me niego pero no digo nada.",
+        "C": "Me niego y le advierto que si lo intenta lo denunciaré.",
+        "D": "Le paso las respuestas mal para que aprenda."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 6,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Rectitud",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_13",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Falta de Ética Académica",
+      "pista": "La formación del policía empieza con la honestidad en el estudio."
+    },
+    {
+      "pregunta_id": 90,
+      "texto": "Me aburro rápidamente de las tareas que requieren mucha atención al detalle y precisión.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo, soy muy meticuloso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Atención al Detalle",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_04",
+      "es_reversa": true,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Negligencia Operativa",
+      "pista": "El trabajo policial requiere precisión en actas e informes."
+    },
+    {
+      "pregunta_id": 91,
+      "texto": "Absolutamente nunca he sentido ganas de vengarme de alguien que me ha hecho daño.",
+      "opciones": {
+        "A": "Cierto, nunca he sentido eso.",
+        "B": "Casi nunca.",
+        "C": "Falso, he sentido deseos de venganza pero los he controlado.",
+        "D": "Totalmente falso, creo en el 'ojo por ojo'."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "El deseo de revancha es una reacción primitiva humana. Negarlo es fingir perfección (A)."
+    },
+    {
+      "pregunta_id": 92,
+      "texto": "Si un ciudadano humilde te pide ayuda para un trámite que no te corresponde, pero sabes cómo hacerlo:",
+      "opciones": {
+        "A": "Le digo que no es mi trabajo y que se vaya.",
+        "B": "Le doy instrucciones básicas para que lo haga solo.",
+        "C": "Lo oriento pacientemente y lo acompaño si es posible para asegurar que lo logre.",
+        "D": "Le pido algo a cambio de mi tiempo extra."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 5,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Empatía Social",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "VOC_02",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Deshumanización",
+      "pista": "El policía es un servidor público, la ayuda al vulnerable es prioritaria."
+    },
+    {
+      "pregunta_id": 93,
+      "texto": "Cuando cometo un error en un procedimiento frente a mis subordinados:",
+      "opciones": {
+        "A": "Trato de ocultarlo para no perder autoridad.",
+        "B": "Culpo a uno de ellos por haberme distraído.",
+        "C": "Reconozco el error abiertamente y lo corrijo como ejemplo de aprendizaje.",
+        "D": "Digo que fue una prueba para ver si se daban cuenta."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Liderazgo",
+      "sub_dimension": "Honestidad de Mando",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "LID_08",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Falta de Autenticidad",
+      "pista": "La verdadera autoridad se basa en la integridad, no en la infalibilidad fingida."
+    },
+    {
+      "pregunta_id": 94,
+      "texto": "He leído cada libro y artículo que he dicho que he leído en mi vida.",
+      "opciones": {
+        "A": "Cierto, jamás he mentido sobre eso.",
+        "B": "Casi siempre.",
+        "C": "Falso, alguna vez he exagerado lo que he leído.",
+        "D": "Totalmente falso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 10,
+        "D": 6
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Exagerar logros intelectuales es una falta de sinceridad común (C)."
+    },
+    {
+      "pregunta_id": 95,
+      "texto": "Si un superior te ordena realizar un acto que claramente vulnera los derechos humanos de un detenido:",
+      "opciones": {
+        "A": "Lo hago, las órdenes se cumplen sin dudas ni murmuraciones.",
+        "B": "Me niego y fundamento mi negativa en el código de ética y la ley.",
+        "C": "Lo hago, pero luego lo reporto de forma anónima.",
+        "D": "Le pido a un compañero que lo haga para yo no mancharme las manos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Obediencia Debida",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_14",
+      "es_reversa": false,
+      "peso_critico": 3.5,
+      "tipo_riesgo": "Violación de DDHH",
+      "pista": "La obediencia en la policía no es ciega ante órdenes manifiestamente ilegales."
+    },
+    {
+      "pregunta_id": 96,
+      "texto": "Me resulta muy difícil controlar mi lenguaje cuando estoy muy estresado o bajo presión.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo, siempre soy moderado."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autocontrol Verbal",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_08",
+      "es_reversa": true,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Falta de Profesionalismo",
+      "pista": "Un oficial debe mantener las formas incluso en situaciones extremas."
+    },
+    {
+      "pregunta_id": 97,
+      "texto": "Si ves a un colega recibiendo una coima pequeña de un vendedor ambulante para dejarlo trabajar:",
+      "opciones": {
+        "A": "No digo nada, es su vida y su riesgo.",
+        "B": "Le pido una parte para no delatarlo.",
+        "C": "Intervengo o informo a la superioridad de inmediato.",
+        "D": "Le aconsejo que no lo haga porque hay cámaras."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 0,
+        "C": 10,
+        "D": 1
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_15",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corrupción",
+      "pista": "La tolerancia a la corrupción es el primer paso para la degradación institucional."
+    },
+    {
+      "pregunta_id": 98,
+      "texto": "Jamás he ignorado a una persona que me estaba hablando, ni siquiera por accidente.",
+      "opciones": {
+        "A": "Cierto, soy siempre atento.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, alguna vez me ha pasado.",
+        "D": "Totalmente falso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 6
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Ignorar a alguien por distracción es un fallo cotidiano humano. Negarlo (A) indica falsedad."
+    },
+    {
+      "pregunta_id": 99,
+      "texto": "Si un amigo te pide que uses tu influencia o uniforme para asustar a alguien que le debe dinero:",
+      "opciones": {
+        "A": "Lo hago, los amigos se apoyan.",
+        "B": "Me niego rotundamente y le explico que eso es abuso de autoridad.",
+        "C": "Le digo que lo haga él mismo usando mi nombre.",
+        "D": "Le pido una comisión por el favor."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Abuso de Autoridad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_16",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Extorsión / Abuso",
+      "pista": "El uniforme es para proteger la ley, no para intereses personales o de terceros."
+    },
+    {
+      "pregunta_id": 100,
+      "texto": "He llegado a la conclusión de que la mayoría de las personas son básicamente deshonestas si creen que no las atraparán.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo, confío en la gente."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Paranoia / Visión del Mundo",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_09",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Cinismo Operativo",
+      "pista": "Una visión excesivamente cínica (A) puede llevar al maltrato preventivo de ciudadanos."
+    },
+    {
+      "pregunta_id": 101,
+      "texto": "Siempre pido permiso antes de usar algo que no es mío, incluso si es algo pequeño como un lapicero.",
+      "opciones": {
+        "A": "Cierto, siempre lo hago.",
+        "B": "Casi siempre.",
+        "C": "Falso, a veces lo tomo si tengo confianza.",
+        "D": "Totalmente falso."
+      },
+      "puntos_opciones": {
+        "A": 4,
+        "B": 8,
+        "C": 10,
+        "D": 2
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Autoengaño",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Deseabilidad Social",
+      "pista": "En ambientes de confianza se suelen tomar cosas pequeñas sin permiso formal. Negarlo (A) es poco creíble."
+    },
+    {
+      "pregunta_id": 102,
+      "texto": "Si un detenido intenta suicidarse en su celda bajo tu custodia, ¿cuál es tu primera acción?",
+      "opciones": {
+        "A": "Llamo a mi superior y espero órdenes.",
+        "B": "Intervengo de inmediato para salvarle la vida siguiendo el protocolo de primeros auxilios.",
+        "C": "Grito pidiendo ayuda pero no entro a la celda por miedo.",
+        "D": "Lo grabo para tener evidencia de que yo no hice nada malo."
+      },
+      "puntos_opciones": {
+        "A": 5,
+        "B": 10,
+        "C": 2,
+        "D": 0
+      },
+      "dimension": "Toma de Decisiones",
+      "sub_dimension": "Reacción en Emergencia",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DEC_03",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Omisión de Auxilio",
+      "pista": "La vida del detenido es responsabilidad absoluta del custodio."
+    },
+    {
+      "pregunta_id": 103,
+      "texto": "Me siento muy mal y culpable cuando recibo órdenes de personas que considero menos inteligentes que yo.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo, respeto el grado, no el CI."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Respeto a la Jerarquía",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_07",
+      "es_reversa": true,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Soberbia / Indisciplina",
+      "pista": "En una institución jerarquizada, el respeto al grado es la base del orden."
+    },
+    {
+      "pregunta_id": 104,
+      "texto": "He mentido en este test para dar una mejor imagen de mí mismo.",
+      "opciones": {
+        "A": "Totalmente cierto.",
+        "B": "Casi nunca.",
+        "C": "No, he sido totalmente honesto.",
+        "D": "He exagerado solo un poco."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 8,
+        "C": 0,
+        "D": 9
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Detector de Mentiras Directo",
+      "es_escala_mentira": true,
+      "inconsistencia_id": "LIE_DETECTOR",
+      "es_reversa": false,
+      "peso_critico": 4.0,
+      "tipo_riesgo": "Falseamiento de Prueba",
+      "pista": "Esta es una pregunta trampa de honestidad radical. Quien dice C suele estar mintiendo."
+    },
+    {
+      "pregunta_id": 105,
+      "texto": "Si ves a un superior cometiendo un acto de corrupción grave, pero él te amenaza con arruinar tu carrera si hablas:",
+      "opciones": {
+        "A": "Me quedo callado, mi carrera y familia son lo primero.",
+        "B": "Denuncio el hecho ante la fiscalía o inspectoría general de forma valiente.",
+        "C": "Le pido dinero a cambio de mi silencio.",
+        "D": "Pido mi baja para no estar involucrado."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 0,
+        "D": 4
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Valor Civil",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_17",
+      "es_reversa": false,
+      "peso_critico": 4.0,
+      "tipo_riesgo": "Cobardía Ética",
+      "pista": "La integridad policial requiere valor civil para enfrentar la corrupción interna."
+    },
+    {
+      "pregunta_id": 106,
+      "texto": "Absolutamente nunca he sentido envidia por la buena suerte de un amigo.",
+      "opciones": {
+        "A": "Cierto, jamás lo he sentido.",
+        "B": "Casi nunca.",
+        "C": "Falso, a veces he sentido un poco de envidia sana.",
+        "D": "Totalmente falso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 8
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "La envidia es un sentimiento humano común. Negarlo indica falseamiento (A)."
+    },
+    {
+      "pregunta_id": 107,
+      "texto": "Si un colega comete un error en un informe que te beneficia a ti injustamente:",
+      "opciones": {
+        "A": "No digo nada y disfruto del beneficio.",
+        "B": "Se lo hago notar para que lo corrija, aunque me perjudique.",
+        "C": "Le doy las gracias en privado.",
+        "D": "Le pido que lo haga más seguido."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Honestidad Profesional",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_18",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Ventajismo",
+      "pista": "La honestidad profesional no depende de si el error te favorece o no."
+    },
+    {
+      "pregunta_id": 108,
+      "texto": "Me considero una persona capaz de mantener el secreto profesional bajo cualquier circunstancia, excepto ante la ley.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 8,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Confidencialidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "RES_05",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Indiscreción",
+      "pista": "El manejo de información sensible es crítico en la labor policial."
+    },
+    {
+      "pregunta_id": 109,
+      "texto": "Jamás he perdido la paciencia con un niño o una persona mayor.",
+      "opciones": {
+        "A": "Cierto, soy un ángel de paciencia.",
+        "B": "Casi siempre cierto.",
+        "C": "Falso, alguna vez he perdido la paciencia.",
+        "D": "Totalmente falso."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 3,
+        "C": 10,
+        "D": 6
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Perder la paciencia es una reacción humana. Negarlo es fingir una personalidad irreal (A)."
+    },
+    {
+      "pregunta_id": 111,
+      "texto": "Consideras que la lealtad a un compañero es más importante que denunciar una falta administrativa menor.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo, la ley prima."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Lealtad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_20",
+      "es_reversa": true,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Espíritu de Cuerpo Malentendido",
+      "pista": "La lealtad nunca debe ser cómplice de la falta."
+    },
+    {
+      "pregunta_id": 112,
+      "texto": "Si un ciudadano te grita improperios mientras lo auxilias en un accidente:",
+      "opciones": {
+        "A": "Lo dejo de ayudar por malagradecido.",
+        "B": "Le respondo con calma que estoy para ayudarlo.",
+        "C": "Lo ignoro y sigo con el auxilio médico.",
+        "D": "Le pido a la policía que lo detenga por insultos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 8,
+        "D": 2
+      },
+      "dimension": "Vocación de Servicio",
+      "sub_dimension": "Templanza",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "VOC_03",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Falta de Vocación",
+      "pista": "El servicio no depende del humor del beneficiario."
+    },
+    {
+      "pregunta_id": 113,
+      "texto": "Nunca he sentido miedo ante una situación de peligro real.",
+      "opciones": {
+        "A": "Cierto, soy valiente.",
+        "B": "Falso, el miedo es natural pero lo controlo.",
+        "C": "Casi nunca siento miedo.",
+        "D": "Totalmente cierto."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 2,
+        "D": 0
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "El miedo es una respuesta biológica. Negarlo es mentir (B)."
+    },
+    {
+      "pregunta_id": 114,
+      "texto": "Si un amigo te ofrece un negocio 'gris' que no es ilegal pero es poco ético:",
+      "opciones": {
+        "A": "Acepto si hay buen dinero.",
+        "B": "Me niego, mi ética no tiene precio.",
+        "C": "Lo consulto con un abogado primero.",
+        "D": "Lo hago solo una vez."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Probidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_21",
+      "es_reversa": false,
+      "peso_critico": 2.8,
+      "tipo_riesgo": "Falta de Principios",
+      "pista": "La integridad no se negocia por dinero."
+    },
+    {
+      "pregunta_id": 115,
+      "texto": "Cuando tengo mucha presión en el trabajo, tiendo a tratar mal a las personas de mi entorno cercano.",
+      "opciones": {
+        "A": "Totalmente cierto.",
+        "B": "A veces me pasa.",
+        "C": "Rara vez.",
+        "D": "Nunca, controlo mi estrés."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 4,
+        "C": 8,
+        "D": 10
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Manejo del Estrés",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_10",
+      "es_reversa": true,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Inestabilidad",
+      "pista": "El estrés no justifica el maltrato."
+    },
+    {
+      "pregunta_id": 116,
+      "texto": "Absolutamente nunca he tomado algo que no fuera mío por error.",
+      "opciones": {
+        "A": "Cierto, jamás.",
+        "B": "Falso, alguna vez me llevé un lapicero ajeno.",
+        "C": "Casi nunca.",
+        "D": "Totalmente cierto."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Sinceridad",
+      "sub_dimension": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "inconsistencia_id": null,
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Perfil Falso",
+      "pista": "Los errores pequeños son comunes. Negarlos es sospechoso (B)."
+    },
+    {
+      "pregunta_id": 117,
+      "texto": "Si un civil te ofrece un regalo (como una comida) en agradecimiento por tu servicio:",
+      "opciones": {
+        "A": "Acepto con gusto.",
+        "B": "Rechazo amablemente diciendo que es mi deber.",
+        "C": "Acepto solo si es algo muy pequeño.",
+        "D": "Lo acepto y lo comparto con el grupo."
+      },
+      "puntos_opciones": {
+        "A": 2,
+        "B": 10,
+        "C": 5,
+        "D": 3
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Gratificaciones",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_22",
+      "es_reversa": false,
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Vulnerabilidad a Dádivas",
+      "pista": "El servicio policial no debe aceptar recompensas externas (B)."
+    },
+    {
+      "pregunta_id": 118,
+      "texto": "Prefiero seguir las reglas al pie de la letra aunque el resultado sea más lento.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo, prefiero los atajos.",
+        "D": "Totalmente en desacuerdo."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 8,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Apego a Normas",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_08",
+      "es_reversa": false,
+      "peso_critico": 2.5,
+      "tipo_riesgo": "Indisciplina",
+      "pista": "Los atajos suelen comprometer la legalidad del acto."
+    },
+    {
+      "pregunta_id": 119,
+      "texto": "He llegado a pensar que algunas leyes son estúpidas y no merecen ser cumplidas.",
+      "opciones": {
+        "A": "Totalmente cierto.",
+        "B": "A veces lo pienso.",
+        "C": "Nunca lo he pensado.",
+        "D": "Casi nunca."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 2,
+        "C": 10,
+        "D": 8
+      },
+      "dimension": "Disciplina",
+      "sub_dimension": "Respeto a la Ley",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "DIS_09",
+      "es_reversa": true,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Rebeldía",
+      "pista": "Un oficial debe respetar la ley aunque no esté de acuerdo personalmente."
+    },
+    {
+      "pregunta_id": 120,
+      "texto": "Me considero una persona extremadamente paciente, incluso con personas muy difíciles.",
+      "opciones": {
+        "A": "Totalmente de acuerdo.",
+        "B": "De acuerdo.",
+        "C": "En desacuerdo.",
+        "D": "Totalmente en desacuerdo."
+      },
+      "puntos_opciones": {
+        "A": 6,
+        "B": 10,
+        "C": 4,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Paciencia",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "EST_11",
+      "es_reversa": false,
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Irritabilidad",
+      "pista": "La paciencia moderada (B) es más realista que la extrema (A)."
+    },
+    {
+      "pregunta_id": 121,
+      "texto": "Si mi jefe me pide que mienta para encubrir un error administrativo que no daña a nadie:",
+      "opciones": {
+        "A": "Lo hago, es mi jefe.",
+        "B": "Me niego, la verdad es una sola.",
+        "C": "Lo hago si me promete un ascenso.",
+        "D": "Digo que lo haré pero no lo hago."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0,
+        "D": 2
+      },
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Veracidad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_23",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Falsedad Ideológica",
+      "pista": "Mentir por orden de un superior sigue siendo mentir."
+    },
+    {
+      "pregunta_id": 122,
+      "texto": "Si un oficial superior me pide realizar una tarea que no es ética, yo:",
+      "opciones": {
+        "A": "Obedezco sin cuestionar.",
+        "B": "Me niego respetuosamente y lo reporto.",
+        "C": "Busco a otro compañero para que lo haga.",
+        "D": "Lo hago y luego me quejo con mis amigos."
+      },
+      "correcta": "B",
+      "dimension": "Etica e Integridad",
+      "sub_dimension": "Integridad",
+      "es_escala_mentira": false,
+      "inconsistencia_id": "ETI_21",
+      "es_reversa": false,
+      "peso_critico": 3.0,
+      "tipo_riesgo": "Corruptibilidad",
+      "pista": "La ética institucional prevalece sobre cualquier orden ilegal."
+    }
+  ]
+}
+

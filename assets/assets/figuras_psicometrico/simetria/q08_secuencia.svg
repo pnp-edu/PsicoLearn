@@ -1,0 +1,37 @@
+<svg viewBox="0 0 500 130" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <g id="grid">
+      <rect x="6" y="6" width="78" height="78" fill="none" stroke="#4FD1C5" stroke-width="2.5" rx="4"/>
+      <rect x="32" y="32" width="26" height="26" fill="none" stroke="#4FD1C5" stroke-width="2.5" rx="2"/>
+      <line x1="32" y1="6" x2="32" y2="32" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="58" y1="6" x2="58" y2="32" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="32" y1="58" x2="32" y2="84" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="58" y1="58" x2="58" y2="84" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="6" y1="32" x2="32" y2="32" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="58" y1="32" x2="84" y2="32" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="6" y1="58" x2="32" y2="58" stroke="#4FD1C5" stroke-width="2.5"/>
+      <line x1="58" y1="58" x2="84" y2="58" stroke="#4FD1C5" stroke-width="2.5"/>
+    </g>
+  </defs>
+
+  <g transform="translate(100, 15)">
+    <use href="#grid"/>
+    <g transform="translate(45, 19)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+    <g transform="translate(71, 45)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+    <g transform="translate(19, 71)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+  </g>
+
+  <g transform="translate(205, 15)">
+    <use href="#grid"/>
+    <text x="45" y="53" font-family="sans-serif" font-size="30" font-weight="bold" fill="#f6ad55" text-anchor="middle">?</text>
+  </g>
+
+  <g transform="translate(310, 15)">
+    <use href="#grid"/>
+    <g transform="translate(45, 19)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+    <g transform="translate(19, 45)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+    <g transform="translate(71, 71)" stroke="#4FD1C5" stroke-width="2" stroke-linecap="round"><line x1="0" y1="-5" x2="0" y2="5"/><line x1="-3.5" y1="-3.5" x2="3.5" y2="3.5"/><line x1="-5" y1="0" x2="5" y2="0"/><line x1="-3.5" y1="3.5" x2="3.5" y2="-3.5"/></g>
+  </g>
+
+  <text x="250" y="120" font-family="sans-serif" font-size="14" font-weight="bold" fill="#A0AEC0" text-anchor="middle" letter-spacing="1">IDENTIFICA LA IMAGEN EN ESPEJO</text>
+</svg>

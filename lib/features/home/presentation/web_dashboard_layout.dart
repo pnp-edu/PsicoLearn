@@ -35,7 +35,7 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final isWide = kIsWeb && width >= 900;
+    const isWide = true; // Force sidebar layout on mobile too
 
     if (!isWide) {
       // Original mobile layout — return content unchanged

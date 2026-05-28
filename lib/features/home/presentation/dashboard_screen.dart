@@ -313,7 +313,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    final isWideWeb = kIsWeb && width >= 900;
+    const isWideWeb = true; // Force web layout everywhere
 
     // On web wide layout, navigation is handled by the sidebar
     // The Scaffold still wraps everything but without a bottom nav bar.
@@ -331,30 +331,7 @@ class _DashboardScreenState extends State<DashboardScreen>
         ),
       ),
       bottomNavigationBar: isWideWeb ? null : _buildNavBar(),
-      floatingActionButton: (!isWideWeb && _selectedIndex == 0)
-          ? FloatingActionButton.extended(
-              onPressed: sl<SecurityService>().isAdmin
-                  ? () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const AdminPanelScreen()))
-                  : _contactAdmin,
-              backgroundColor: sl<SecurityService>().isAdmin
-                      ? Colors.redAccent
-                      : Colors.amber,
-              icon: Icon(
-                  sl<SecurityService>().isAdmin
-                      ? Icons.admin_panel_settings
-                      : Icons.star_rounded,
-                  color: Colors.black),
-              label: Text(
-                  sl<SecurityService>().isAdmin
-                      ? 'ADMIN PANEL'
-                      : 'MISIÓN TÁCTICA',
-                  style: const TextStyle(
-                      color: Colors.black, fontWeight: FontWeight.bold)),
-            )
-          : null,
+      floatingActionButton: null,
     );
   }
 
@@ -426,7 +403,7 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Widget _buildHomeTab() {
     final width = MediaQuery.of(context).size.width;
-    final isWideWeb = kIsWeb && width >= 900;
+    const isWideWeb = true; // Force desktop home view on mobile too
 
     if (isWideWeb) {
       return _buildWebHomeTab();

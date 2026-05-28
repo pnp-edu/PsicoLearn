@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500" height="250" viewBox="0 0 500 250" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo -->
+  <rect width="500" height="250" fill="#ffffff"/>
+
+  <!-- Mitad superior: Pregunta centrada -->
+  <g transform="translate(250, 75)">
+    <!-- Círculo base -->
+    <circle cx="0" cy="0" r="20" fill="#e0e0e0" stroke="#000" stroke-width="2"/>
+
+    <!-- Flecha indicando rotación -->
+    <path d="M -15,-15 L 0,-5 L 15,-15" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="M 0,-5 L 0,15" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Texto de la pregunta -->
+  <text x="250" y="35" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#333">
+    ¿Cuál es la siguiente figura en la secuencia?
+  </text>
+
+  <!-- Mitad inferior: 5 alternativas distribuidas en bloques de 100 unidades -->
+  <!-- Opción A (0-100) -->
+  <g transform="translate(50, 175)">
+    <text x="0" y="-25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">A</text>
+    <circle cx="0" cy="0" r="18" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+    <path d="M -12,-12 L -2,-2 L 12,-12" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="M -2,-2 L -2,12" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Opción B (100-200) -->
+  <g transform="translate(150, 175)">
+    <text x="0" y="-25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">B</text>
+    <circle cx="0" cy="0" r="18" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+    <circle cx="-8" cy="-8" r="3" fill="#000"/>
+    <circle cx="8" cy="-8" r="3" fill="#000"/>
+    <circle cx="0" cy="8" r="3" fill="#000"/>
+  </g>
+
+  <!-- Opción C (200-300) - Respuesta correcta -->
+  <g transform="translate(250, 175)">
+    <text x="0" y="-25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">C</text>
+    <circle cx="0" cy="0" r="18" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+    <path d="M -12,12 L -2,2 L 12,12" fill="none" stroke="#000" stroke-width="2"/>
+    <path d="M -2,2 L -2,-12" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Opción D (300-400) -->
+  <g transform="translate(350, 175)">
+    <text x="0" y="-25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">D</text>
+    <circle cx="0" cy="0" r="18" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+    <rect x="-10" y="-10" width="20" height="20" fill="none" stroke="#000" stroke-width="2"/>
+    <circle cx="0" cy="0" r="5" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Opción E (400-500) -->
+  <g transform="translate(450, 175)">
+    <text x="0" y="-25" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">E</text>
+    <circle cx="0" cy="0" r="18" fill="#f8f9fa" stroke="#000" stroke-width="2"/>
+    <polygon points="-12,-8 0,8 12,-8" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+
+  <!-- Líneas divisorias sutiles para las opciones -->
+  <line x1="100" y1="125" x2="100" y2="225" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="200" y1="125" x2="200" y2="225" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="300" y1="125" x2="300" y2="225" stroke="#e0e0e0" stroke-width="1"/>
+  <line x1="400" y1="125" x2="400" y2="225" stroke="#e0e0e0" stroke-width="1"/>
+</svg>
