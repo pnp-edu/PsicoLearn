@@ -499,9 +499,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                   width: 1,
                 ),
               ),
-                  isMobile
-                      ? Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
+              child: isMobile
+                  ? Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
