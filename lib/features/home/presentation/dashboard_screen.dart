@@ -268,7 +268,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Future<void> _contactAdmin() async {
-    final url = Uri.parse('https://wa.me/51952226290?text=Hola,%20quiero%20activar%20mi%20cuenta%20PRO%20de%20PsicoLearn');
+    final url = Uri.parse('https://wa.me/51955285763?text=Hola,%20quiero%20activar%20mi%20cuenta%20PRO%20de%20PsicoLearn');
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     }
@@ -491,7 +491,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               title: 'EXAMEN MÉDICO',
               subtitle: 'Psicología (Entrevista)',
               icon: sl<SecurityService>().isPremium
-                  ? Icons.medical_services_rounded
+                  ? Icons.forum_rounded
                   : Icons.lock_rounded,
               color: Colors.blueAccent,
               onTap: _startMedicalExam,
@@ -509,18 +509,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   Widget _buildWebHomeTab() {
     final secService = sl<SecurityService>();
     return Container(
-      decoration: BoxDecoration(
-        gradient: RadialGradient(
-          center: Alignment.topLeft,
-          radius: 1.8,
-          colors: [
-            const Color(0xFF1A1A2E),
-            const Color(0xFF16213E),
-            const Color(0xFF0F0F23),
-          ],
-          stops: const [0.0, 0.6, 1.0],
-        ),
-      ),
+      color: Colors.transparent,
       child: SingleChildScrollView(
         padding: const EdgeInsets.all(32),
         child: Column(
@@ -672,7 +661,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     'Preguntas Respondidas',
                     '$_questionsAnswered',
                     'En total',
-                    Icons.quiz_rounded,
+                    Icons.task_alt_rounded,
                     const Color(0xFF06B6D4),
                   ),
                 ),
@@ -682,7 +671,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     'Errores Cometidos',
                     '$_failedCount',
                     'Para mejorar',
-                    Icons.trending_down_rounded,
+                    Icons.assignment_late_rounded,
                     const Color(0xFFF97316),
                   ),
                 ),
@@ -692,7 +681,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     'Dimensión Débil',
                     _weakestDim.isEmpty ? 'N/A' : _weakestDim,
                     '${_weakestScore.toStringAsFixed(1)}% precisión',
-                    Icons.psychology_rounded,
+                    Icons.track_changes_rounded,
                     const Color(0xFFEF4444),
                   ),
                 ),
@@ -754,7 +743,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                 _buildActionCard(
                   'ENTREVISTA MÉDICA',
                   'Evaluación psicológica personal',
-                  secService.isPremium ? Icons.medical_services_rounded : Icons.lock_rounded,
+                  secService.isPremium ? Icons.forum_rounded : Icons.lock_rounded,
                   const LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFDB2777)]),
                   _startMedicalExam,
                   isLocked: !secService.isPremium,

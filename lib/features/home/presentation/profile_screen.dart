@@ -378,10 +378,20 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                       ],
                     ),
                   ),
-                  const SizedBox(height: 24),
                 ],
-
-
+                const SizedBox(height: 24),
+                Center(
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(24),
+                    child: Image.asset(
+                      'assets/portada-pnp.png',
+                      width: 500,
+                      height: 250,
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 40),
               ],
             ),
           );
