@@ -522,13 +522,13 @@ class _DashboardScreenState extends State<DashboardScreen>
         ),
       ),
       child: SingleChildScrollView(
-        padding: const EdgeInsets.all(40),
+        padding: const EdgeInsets.all(32),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // ── Enhanced Gemini-style header ──
             Container(
-              padding: const EdgeInsets.all(40),
+              padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 24),
               decoration: BoxDecoration(
                 gradient: RadialGradient(
                   center: Alignment.topLeft,
@@ -538,7 +538,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     Colors.transparent,
                   ],
                 ),
-                borderRadius: BorderRadius.circular(32),
+                borderRadius: BorderRadius.circular(24),
                 border: Border.all(
                   color: AppTheme.accentColor.withOpacity(0.2),
                   width: 1,
@@ -547,15 +547,15 @@ class _DashboardScreenState extends State<DashboardScreen>
               child: Row(
                 children: [
                   Expanded(
-                    flex: 2,
+                    flex: 3,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         // Floating welcome badge
                         Container(
                           padding: const EdgeInsets.symmetric(
-                            horizontal: 20,
-                            vertical: 10,
+                            horizontal: 14,
+                            vertical: 6,
                           ),
                           decoration: BoxDecoration(
                             gradient: LinearGradient(
@@ -576,14 +576,14 @@ class _DashboardScreenState extends State<DashboardScreen>
                               Icon(
                                 Icons.psychology_rounded,
                                 color: AppTheme.accentColor,
-                                size: 20,
+                                size: 16,
                               ),
-                              const SizedBox(width: 8),
+                              const SizedBox(width: 6),
                               Text(
                                 '¡Bienvenido de vuelta!',
                                 style: TextStyle(
                                   color: AppTheme.accentColor,
-                                  fontSize: 14,
+                                  fontSize: 12,
                                   fontWeight: FontWeight.w600,
                                   letterSpacing: 0.5,
                                 ),
@@ -592,7 +592,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                           ),
                         ),
                         
-                        const SizedBox(height: 24),
+                        const SizedBox(height: 16),
 
                         // Animated diagnosis status
                         AnimatedBuilder(
@@ -621,9 +621,9 @@ class _DashboardScreenState extends State<DashboardScreen>
                                 'ESTADO: $_diagnosis',
                                 style: const TextStyle(
                                   color: Colors.white,
-                                  fontSize: 42,
+                                  fontSize: 30,
                                   fontWeight: FontWeight.w900,
-                                  letterSpacing: 2.0,
+                                  letterSpacing: 1.5,
                                   height: 1.1,
                                 ),
                               ),
@@ -631,13 +631,13 @@ class _DashboardScreenState extends State<DashboardScreen>
                           },
                         ),
 
-                        const SizedBox(height: 16),
+                        const SizedBox(height: 10),
 
                         Text(
                           'Tu progreso actual en la evaluación psicométrica integral',
                           style: TextStyle(
                             color: Colors.white.withOpacity(0.8),
-                            fontSize: 18,
+                            fontSize: 14,
                             height: 1.4,
                             letterSpacing: 0.3,
                           ),
@@ -646,10 +646,11 @@ class _DashboardScreenState extends State<DashboardScreen>
                     ),
                   ),
                   
-                  const SizedBox(width: 40),
+                  const SizedBox(width: 32),
                   
                   // Enhanced daily mission card
                   Expanded(
+                    flex: 2,
                     child: _WebDailyBadge(
                       todayCompleted: _todayCompleted,
                       questionsAnswered: _questionsAnswered,
@@ -661,7 +662,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               ),
             ),
             
-            const SizedBox(height: 50),
+            const SizedBox(height: 24),
 
             // ── Enhanced stats grid ──
             Row(
@@ -698,7 +699,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               ],
             ),
 
-            const SizedBox(height: 50),
+            const SizedBox(height: 32),
 
             // ── Section title ──
             _WebSectionTitle('Módulos de Entrenamiento'),
@@ -781,19 +782,19 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Widget _buildStatCard(String title, String value, String subtitle, IconData icon, Color color) {
     return Container(
-      padding: const EdgeInsets.all(28),
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
       decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [color, color.withOpacity(0.8)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
+        color: const Color(0xFF1E1F20).withOpacity(0.4),
         borderRadius: BorderRadius.circular(24),
+        border: Border.all(
+          color: color.withOpacity(0.25),
+          width: 1.5,
+        ),
         boxShadow: [
           BoxShadow(
-            color: color.withOpacity(0.3),
+            color: color.withOpacity(0.05),
             blurRadius: 15,
-            offset: const Offset(0, 8),
+            offset: const Offset(0, 6),
           ),
         ],
       ),
@@ -803,42 +804,46 @@ class _DashboardScreenState extends State<DashboardScreen>
           Row(
             children: [
               Container(
-                padding: const EdgeInsets.all(16),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(16),
+                  color: color.withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(12),
                 ),
-                child: Icon(icon, color: Colors.white, size: 28),
+                child: Icon(icon, color: color, size: 20),
               ),
               const Spacer(),
               Text(
                 value,
-                style: const TextStyle(
-                  fontSize: 32,
+                style: TextStyle(
+                  fontSize: 26,
                   fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                  letterSpacing: -1,
+                  color: color,
+                  letterSpacing: -0.5,
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 20),
+          const SizedBox(height: 16),
           Text(
             title,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w700,
+              fontSize: 14,
+              fontWeight: FontWeight.bold,
               color: Colors.white,
-              letterSpacing: 0.5,
+              letterSpacing: 0.2,
             ),
           ),
           const SizedBox(height: 4),
           Text(
             subtitle,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              fontSize: 14,
-              color: Colors.white.withOpacity(0.8),
-              height: 1.3,
+              fontSize: 12,
+              color: const Color(0xFFC4C7C5),
+              fontWeight: FontWeight.w400,
             ),
           ),
         ],
