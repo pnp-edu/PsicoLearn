@@ -51,7 +51,6 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
   }
 
   Widget _buildWebBody() {
-    final sidebarW = _sidebarCollapsed ? 72.0 : 220.0;
     return Row(
       children: [
         _WebSidebar(
@@ -62,7 +61,23 @@ class _WebDashboardLayoutState extends State<WebDashboardLayout> {
               setState(() => _sidebarCollapsed = !_sidebarCollapsed),
           onContactAdmin: widget.onContactAdmin,
         ),
-        Expanded(child: _buildContent()),
+        Expanded(
+          child: Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
+                colors: [
+                  const Color(0xFF0D1117),
+                  const Color(0xFF161B22),
+                  const Color(0xFF21262D),
+                ],
+                stops: const [0.0, 0.5, 1.0],
+              ),
+            ),
+            child: _buildContent(),
+          ),
+        ),
       ],
     );
   }
@@ -107,162 +122,281 @@ class _WebSidebar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final w = collapsed ? 72.0 : 220.0;
+    final w = collapsed ? 80.0 : 280.0;
     final secService = sl<SecurityService>();
 
     return AnimatedContainer(
-      duration: const Duration(milliseconds: 220),
-      curve: Curves.easeInOut,
+      duration: const Duration(milliseconds: 300),
+      curve: Curves.easeInOutCubic,
       width: w,
-      child: ClipRect(
-        child: BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 20, sigmaY: 20),
-          child: Container(
-            decoration: BoxDecoration(
-              color: const Color(0xFF0D1117).withOpacity(0.92),
-              border: Border(
-                right: BorderSide(
-                  color: AppTheme.accentColor.withOpacity(0.15),
-                  width: 1,
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              const Color(0xFF0D1117),
+              const Color(0xFF161B22),
+              const Color(0xFF21262D),
+            ],
+            stops: const [0.0, 0.6, 1.0],
+          ),
+          border: Border(
+            right: BorderSide(
+              color: AppTheme.accentColor.withOpacity(0.2),
+              width: 1,
+            ),
+          ),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.3),
+              blurRadius: 20,
+              offset: const Offset(2, 0),
+            ),
+          ],
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // Logo area with enhanced design
+            Container(
+              height: 80,
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              decoration: BoxDecoration(
+                border: Border(
+                  bottom: BorderSide(
+                    color: AppTheme.accentColor.withOpacity(0.1),
+                    width: 1,
+                  ),
                 ),
               ),
+              child: Row(
+                mainAxisAlignment: collapsed
+                    ? MainAxisAlignment.center
+                    : MainAxisAlignment.start,
+                children: [
+                  Container(
+                    width: 48,
+                    height: 48,
+                    decoration: BoxDecoration(
+                      gradient: LinearGradient(
+                        colors: [
+                          AppTheme.accentColor,
+                          AppTheme.accentColor.withOpacity(0.8),
+                        ],
+                        begin: Alignment.topLeft,
+                        end: Alignment.bottomRight,
+                      ),
+                      borderRadius: BorderRadius.circular(16),
+                      boxShadow: [
+                        BoxShadow(
+                          color: AppTheme.accentColor.withOpacity(0.3),
+                          blurRadius: 12,
+                          offset: const Offset(0, 4),
+                        ),
+                      ],
+                    ),
+                    child: Icon(
+                      Icons.psychology_rounded,
+                      color: Colors.black,
+                      size: 28,
+                    ),
+                  ),
+                  if (!collapsed) ...[
+                    const SizedBox(width: 16),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          ShaderMask(
+                            shaderCallback: (bounds) => LinearGradient(
+                              colors: [
+                                AppTheme.accentColor,
+                                Colors.white,
+                              ],
+                            ).createShader(bounds),
+                            child: Text(
+                              'PsicoLearn',
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontWeight: FontWeight.w900,
+                                fontSize: 20,
+                                letterSpacing: -0.5,
+                              ),
+                            ),
+                          ),
+                          Text(
+                            'Plataforma Pro',
+                            style: TextStyle(
+                              color: AppTheme.accentColor.withOpacity(0.7),
+                              fontSize: 12,
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.5,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ],
+              ),
             ),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                // Logo area
-                Container(
-                  height: 70,
-                  padding: const EdgeInsets.symmetric(horizontal: 12),
+            
+            const SizedBox(height: 24),
+
+            // Navigation section
+            if (!collapsed)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Text(
+                  'NAVEGACIÓN',
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.4),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+              ),
+            const SizedBox(height: 12),
+
+            // Nav items with enhanced design
+            _NavItem(
+              icon: Icons.dashboard_rounded,
+              label: 'Dashboard',
+              selected: selectedIndex == 0,
+              collapsed: collapsed,
+              onTap: () => onTabChanged(0),
+            ),
+            _NavItem(
+              icon: Icons.person_rounded,
+              label: 'Mi Perfil',
+              selected: selectedIndex == 1,
+              collapsed: collapsed,
+              onTap: () => onTabChanged(1),
+            ),
+            _NavItem(
+              icon: Icons.trending_up_rounded,
+              label: 'Progreso',
+              selected: selectedIndex == 2,
+              collapsed: collapsed,
+              onTap: () => onTabChanged(2),
+            ),
+            _NavItem(
+              icon: Icons.settings_rounded,
+              label: 'Configuración',
+              selected: selectedIndex == 3,
+              collapsed: collapsed,
+              onTap: () => onTabChanged(3),
+            ),
+
+            const SizedBox(height: 24),
+
+            // Tools section
+            if (!collapsed)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16),
+                child: Text(
+                  'HERRAMIENTAS',
+                  style: TextStyle(
+                    color: Colors.white.withOpacity(0.4),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w700,
+                    letterSpacing: 1.2,
+                  ),
+                ),
+              ),
+            const SizedBox(height: 12),
+
+            // Contact admin button
+            _NavItem(
+              icon: Icons.support_agent_rounded,
+              label: 'Soporte',
+              selected: false,
+              collapsed: collapsed,
+              accent: AppTheme.accentColor,
+              onTap: onContactAdmin,
+            ),
+
+            const Spacer(),
+
+            // Admin section
+            if (secService.isAdmin) ...[
+              Container(
+                margin: const EdgeInsets.symmetric(horizontal: 12),
+                height: 1,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.transparent,
+                      Colors.redAccent.withOpacity(0.3),
+                      Colors.transparent,
+                    ],
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
+              _NavItem(
+                icon: Icons.admin_panel_settings_rounded,
+                label: 'Panel Admin',
+                selected: false,
+                collapsed: collapsed,
+                accent: Colors.redAccent,
+                onTap: () => Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (_) => const AdminPanelScreen()),
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+
+            // Collapse toggle with enhanced design
+            Container(
+              margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 16),
+              child: InkWell(
+                onTap: onToggleCollapse,
+                borderRadius: BorderRadius.circular(12),
+                child: Container(
+                  height: 48,
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.05),
+                    borderRadius: BorderRadius.circular(12),
+                    border: Border.all(
+                      color: Colors.white.withOpacity(0.1),
+                      width: 1,
+                    ),
+                  ),
                   child: Row(
                     mainAxisAlignment: collapsed
                         ? MainAxisAlignment.center
-                        : MainAxisAlignment.start,
+                        : MainAxisAlignment.center,
                     children: [
-                      Container(
-                        width: 38,
-                        height: 38,
-                        decoration: BoxDecoration(
-                          color: AppTheme.accentColor.withOpacity(0.15),
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(
-                            color: AppTheme.accentColor.withOpacity(0.3),
-                            width: 1,
-                          ),
-                        ),
-                        child: Icon(
-                          Icons.psychology,
-                          color: AppTheme.accentColor,
-                          size: 22,
-                        ),
+                      Icon(
+                        collapsed
+                            ? Icons.keyboard_double_arrow_right_rounded
+                            : Icons.keyboard_double_arrow_left_rounded,
+                        color: Colors.white.withOpacity(0.6),
+                        size: 20,
                       ),
                       if (!collapsed) ...[
-                        const SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            'PsicoLearn',
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontWeight: FontWeight.w900,
-                              fontSize: 17,
-                              letterSpacing: -0.5,
-                            ),
-                            overflow: TextOverflow.ellipsis,
+                        const SizedBox(width: 8),
+                        Text(
+                          'Contraer',
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.6),
+                            fontSize: 13,
+                            fontWeight: FontWeight.w500,
                           ),
                         ),
                       ],
                     ],
                   ),
                 ),
-                const Divider(color: Colors.white10, height: 1),
-                const SizedBox(height: 12),
-
-                // Nav items
-                _NavItem(
-                  icon: Icons.home_rounded,
-                  label: 'Inicio',
-                  selected: selectedIndex == 0,
-                  collapsed: collapsed,
-                  onTap: () => onTabChanged(0),
-                ),
-                _NavItem(
-                  icon: Icons.person_rounded,
-                  label: 'Perfil',
-                  selected: selectedIndex == 1,
-                  collapsed: collapsed,
-                  onTap: () => onTabChanged(1),
-                ),
-                _NavItem(
-                  icon: Icons.bar_chart_rounded,
-                  label: 'Progreso',
-                  selected: selectedIndex == 2,
-                  collapsed: collapsed,
-                  onTap: () => onTabChanged(2),
-                ),
-                _NavItem(
-                  icon: Icons.settings_rounded,
-                  label: 'Ajustes',
-                  selected: selectedIndex == 3,
-                  collapsed: collapsed,
-                  onTap: () => onTabChanged(3),
-                ),
-
-                const Spacer(),
-                const Divider(color: Colors.white10, height: 1),
-
-                // Admin button
-                if (secService.isAdmin)
-                  _NavItem(
-                    icon: Icons.admin_panel_settings_rounded,
-                    label: 'Admin',
-                    selected: false,
-                    collapsed: collapsed,
-                    accent: Colors.redAccent,
-                    onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const AdminPanelScreen()),
-                    ),
-                  ),
-
-                // Collapse toggle
-                InkWell(
-                  onTap: onToggleCollapse,
-                  borderRadius: BorderRadius.circular(10),
-                  child: Container(
-                    height: 48,
-                    padding: EdgeInsets.symmetric(
-                        horizontal: collapsed ? 16 : 14),
-                    child: Row(
-                      mainAxisAlignment: collapsed
-                          ? MainAxisAlignment.center
-                          : MainAxisAlignment.start,
-                      children: [
-                        Icon(
-                          collapsed
-                              ? Icons.keyboard_double_arrow_right_rounded
-                              : Icons.keyboard_double_arrow_left_rounded,
-                          color: Colors.white38,
-                          size: 20,
-                        ),
-                        if (!collapsed) ...[
-                          const SizedBox(width: 10),
-                          Text(
-                            'Contraer',
-                            style: TextStyle(
-                              color: Colors.white38,
-                              fontSize: 13,
-                            ),
-                          ),
-                        ],
-                      ],
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 12),
-              ],
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );
@@ -288,44 +422,77 @@ class _NavItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = accent ?? (selected ? AppTheme.accentColor : Colors.white60);
+    final color = accent ?? (selected ? AppTheme.accentColor : Colors.white.withOpacity(0.7));
     final bgColor = selected
-        ? AppTheme.accentColor.withOpacity(0.12)
+        ? AppTheme.accentColor.withOpacity(0.15)
         : Colors.transparent;
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 2),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 3),
       child: InkWell(
         onTap: onTap,
-        borderRadius: BorderRadius.circular(10),
+        borderRadius: BorderRadius.circular(14),
         child: AnimatedContainer(
-          duration: const Duration(milliseconds: 180),
-          height: 44,
+          duration: const Duration(milliseconds: 200),
+          height: 52,
           decoration: BoxDecoration(
             color: bgColor,
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(14),
             border: selected
                 ? Border.all(
-                    color: AppTheme.accentColor.withOpacity(0.3), width: 1)
+                    color: AppTheme.accentColor.withOpacity(0.3), 
+                    width: 1.5
+                  )
                 : null,
+            boxShadow: selected ? [
+              BoxShadow(
+                color: AppTheme.accentColor.withOpacity(0.2),
+                blurRadius: 8,
+                offset: const Offset(0, 2),
+              ),
+            ] : null,
           ),
-          padding: EdgeInsets.symmetric(horizontal: collapsed ? 8 : 12),
+          padding: EdgeInsets.symmetric(horizontal: collapsed ? 8 : 16),
           child: Row(
             mainAxisAlignment:
                 collapsed ? MainAxisAlignment.center : MainAxisAlignment.start,
             children: [
-              Icon(icon, color: color, size: 20),
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: selected 
+                      ? AppTheme.accentColor.withOpacity(0.2)
+                      : Colors.transparent,
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: Icon(
+                  icon, 
+                  color: color, 
+                  size: 22
+                ),
+              ),
               if (!collapsed) ...[
-                const SizedBox(width: 12),
-                Text(
-                  label,
-                  style: TextStyle(
-                    color: color,
-                    fontSize: 14,
-                    fontWeight:
-                        selected ? FontWeight.w700 : FontWeight.w400,
+                const SizedBox(width: 16),
+                Expanded(
+                  child: Text(
+                    label,
+                    style: TextStyle(
+                      color: color,
+                      fontSize: 15,
+                      fontWeight: selected ? FontWeight.w700 : FontWeight.w500,
+                      letterSpacing: 0.2,
+                    ),
                   ),
                 ),
+                if (selected)
+                  Container(
+                    width: 6,
+                    height: 6,
+                    decoration: BoxDecoration(
+                      color: AppTheme.accentColor,
+                      shape: BoxShape.circle,
+                    ),
+                  ),
               ],
             ],
           ),

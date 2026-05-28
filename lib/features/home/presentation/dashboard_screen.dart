@@ -504,172 +504,481 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   // ──────────────────────────────────────────
-  // Wide-screen web home layout
+  // Wide-screen web home layout - Gemini Inspired
   // ──────────────────────────────────────────
   Widget _buildWebHomeTab() {
     final secService = sl<SecurityService>();
-    return SingleChildScrollView(
-      padding: const EdgeInsets.fromLTRB(32, 32, 32, 32),
+    return Container(
+      decoration: BoxDecoration(
+        gradient: RadialGradient(
+          center: Alignment.topLeft,
+          radius: 1.8,
+          colors: [
+            const Color(0xFF1A1A2E),
+            const Color(0xFF16213E),
+            const Color(0xFF0F0F23),
+          ],
+          stops: const [0.0, 0.6, 1.0],
+        ),
+      ),
+      child: SingleChildScrollView(
+        padding: const EdgeInsets.all(40),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            // ── Enhanced Gemini-style header ──
+            Container(
+              padding: const EdgeInsets.all(40),
+              decoration: BoxDecoration(
+                gradient: RadialGradient(
+                  center: Alignment.topLeft,
+                  radius: 2.0,
+                  colors: [
+                    AppTheme.accentColor.withOpacity(0.15),
+                    Colors.transparent,
+                  ],
+                ),
+                borderRadius: BorderRadius.circular(32),
+                border: Border.all(
+                  color: AppTheme.accentColor.withOpacity(0.2),
+                  width: 1,
+                ),
+              ),
+              child: Row(
+                children: [
+                  Expanded(
+                    flex: 2,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        // Floating welcome badge
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                            horizontal: 20,
+                            vertical: 10,
+                          ),
+                          decoration: BoxDecoration(
+                            gradient: LinearGradient(
+                              colors: [
+                                AppTheme.accentColor.withOpacity(0.3),
+                                AppTheme.accentColor.withOpacity(0.1),
+                              ],
+                            ),
+                            borderRadius: BorderRadius.circular(25),
+                            border: Border.all(
+                              color: AppTheme.accentColor.withOpacity(0.4),
+                              width: 1,
+                            ),
+                          ),
+                          child: Row(
+                            mainAxisSize: MainAxisSize.min,
+                            children: [
+                              Icon(
+                                Icons.psychology_rounded,
+                                color: AppTheme.accentColor,
+                                size: 20,
+                              ),
+                              const SizedBox(width: 8),
+                              Text(
+                                '¡Bienvenido de vuelta!',
+                                style: TextStyle(
+                                  color: AppTheme.accentColor,
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.w600,
+                                  letterSpacing: 0.5,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        
+                        const SizedBox(height: 24),
+
+                        // Animated diagnosis status
+                        AnimatedBuilder(
+                          animation: _pulseAnimation,
+                          builder: (context, _) {
+                            final baseColor = _diagnosis == 'APTO'
+                                ? const Color(0xFF10B981)
+                                : (_diagnosis == 'PENDIENTE' || _diagnosis == '...'
+                                    ? const Color(0xFFF59E0B)
+                                    : const Color(0xFFEF4444));
+                            
+                            return ShaderMask(
+                              shaderCallback: (bounds) => LinearGradient(
+                                colors: [
+                                  baseColor.withOpacity(0.6),
+                                  baseColor,
+                                  Colors.white,
+                                  baseColor,
+                                  baseColor.withOpacity(0.6),
+                                ],
+                                stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
+                                begin: Alignment(_pulseAnimation.value - 1, 0),
+                                end: Alignment(_pulseAnimation.value + 1, 0),
+                              ).createShader(bounds),
+                              child: Text(
+                                'ESTADO: $_diagnosis',
+                                style: const TextStyle(
+                                  color: Colors.white,
+                                  fontSize: 42,
+                                  fontWeight: FontWeight.w900,
+                                  letterSpacing: 2.0,
+                                  height: 1.1,
+                                ),
+                              ),
+                            );
+                          },
+                        ),
+
+                        const SizedBox(height: 16),
+
+                        Text(
+                          'Tu progreso actual en la evaluación psicométrica integral',
+                          style: TextStyle(
+                            color: Colors.white.withOpacity(0.8),
+                            fontSize: 18,
+                            height: 1.4,
+                            letterSpacing: 0.3,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  
+                  const SizedBox(width: 40),
+                  
+                  // Enhanced daily mission card
+                  Expanded(
+                    child: _WebDailyBadge(
+                      todayCompleted: _todayCompleted,
+                      questionsAnswered: _questionsAnswered,
+                      totalQuestions: _totalQuestionsInDaily,
+                      onTap: _startDailyTest,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            
+            const SizedBox(height: 50),
+
+            // ── Enhanced stats grid ──
+            Row(
+              children: [
+                Expanded(
+                  child: _buildStatCard(
+                    'Preguntas Respondidas',
+                    '$_questionsAnswered',
+                    'En total',
+                    Icons.quiz_rounded,
+                    const Color(0xFF06B6D4),
+                  ),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: _buildStatCard(
+                    'Errores Cometidos',
+                    '$_failedCount',
+                    'Para mejorar',
+                    Icons.trending_down_rounded,
+                    const Color(0xFFF97316),
+                  ),
+                ),
+                const SizedBox(width: 20),
+                Expanded(
+                  child: _buildStatCard(
+                    'Dimensión Débil',
+                    _weakestDim.isEmpty ? 'N/A' : _weakestDim,
+                    '${_weakestScore.toStringAsFixed(1)}% precisión',
+                    Icons.psychology_rounded,
+                    const Color(0xFFEF4444),
+                  ),
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 50),
+
+            // ── Section title ──
+            _WebSectionTitle('Módulos de Entrenamiento'),
+            const SizedBox(height: 30),
+
+            // ── Enhanced cards grid ──
+            GridView.count(
+              shrinkWrap: true,
+              physics: const NeverScrollableScrollPhysics(),
+              crossAxisCount: 3,
+              crossAxisSpacing: 24,
+              mainAxisSpacing: 24,
+              childAspectRatio: 1.2,
+              children: [
+                _buildActionCard(
+                  'MISIÓN DIARIA',
+                  _todayCompleted
+                      ? '¡Completada hoy!'
+                      : '$_questionsAnswered / $_totalQuestionsInDaily preguntas',
+                  _todayCompleted ? Icons.check_circle_rounded : Icons.bolt_rounded,
+                  _todayCompleted 
+                      ? const LinearGradient(colors: [Color(0xFF10B981), Color(0xFF059669)])
+                      : const LinearGradient(colors: [Color(0xFF06B6D4), Color(0xFF0891B2)]),
+                  _todayCompleted ? null : _startDailyTest,
+                  isCompleted: _todayCompleted,
+                ),
+                _buildActionCard(
+                  'PSICOTÉCNICO',
+                  'Razonamiento espacial y lógico',
+                  Icons.extension_rounded,
+                  const LinearGradient(colors: [Color(0xFF8B5CF6), Color(0xFF7C3AED)]),
+                  _startPsychotechnicalTest,
+                ),
+                _buildActionCard(
+                  'PONTE A PRUEBA',
+                  'Simulación de examen real',
+                  secService.isPremium ? Icons.timer_rounded : Icons.lock_rounded,
+                  const LinearGradient(colors: [Color(0xFF3B82F6), Color(0xFF2563EB)]),
+                  _startExamSimulation,
+                  isLocked: !secService.isPremium,
+                ),
+                _buildActionCard(
+                  'LA ESCUELITA',
+                  'Refuerzo de errores cometidos',
+                  secService.isPremium ? Icons.school_rounded : Icons.lock_rounded,
+                  const LinearGradient(colors: [Color(0xFFF97316), Color(0xFFEA580C)]),
+                  _startEscuelita,
+                  isLocked: !secService.isPremium,
+                ),
+                _buildActionCard(
+                  'ENTREVISTA MÉDICA',
+                  'Evaluación psicológica personal',
+                  secService.isPremium ? Icons.medical_services_rounded : Icons.lock_rounded,
+                  const LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFDB2777)]),
+                  _startMedicalExam,
+                  isLocked: !secService.isPremium,
+                ),
+                if (secService.isAdmin)
+                  _buildActionCard(
+                    'ADMIN PANEL',
+                    'Gestión de usuarios y sistema',
+                    Icons.admin_panel_settings_rounded,
+                    const LinearGradient(colors: [Color(0xFFEF4444), Color(0xFFDC2626)]),
+                    () => Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (_) => const AdminPanelScreen())),
+                  ),
+              ],
+            ),
+            
+            const SizedBox(height: 40),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildStatCard(String title, String value, String subtitle, IconData icon, Color color) {
+    return Container(
+      padding: const EdgeInsets.all(28),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: [color, color.withOpacity(0.8)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(24),
+        boxShadow: [
+          BoxShadow(
+            color: color.withOpacity(0.3),
+            blurRadius: 15,
+            offset: const Offset(0, 8),
+          ),
+        ],
+      ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // ── Top header row ──
           Row(
+            children: [
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  color: Colors.white.withOpacity(0.2),
+                  borderRadius: BorderRadius.circular(16),
+                ),
+                child: Icon(icon, color: Colors.white, size: 28),
+              ),
+              const Spacer(),
+              Text(
+                value,
+                style: const TextStyle(
+                  fontSize: 32,
+                  fontWeight: FontWeight.w900,
+                  color: Colors.white,
+                  letterSpacing: -1,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 20),
+          Text(
+            title,
+            style: const TextStyle(
+              fontSize: 16,
+              fontWeight: FontWeight.w700,
+              color: Colors.white,
+              letterSpacing: 0.5,
+            ),
+          ),
+          const SizedBox(height: 4),
+          Text(
+            subtitle,
+            style: TextStyle(
+              fontSize: 14,
+              color: Colors.white.withOpacity(0.8),
+              height: 1.3,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildActionCard(
+    String title,
+    String subtitle,
+    IconData icon,
+    Gradient gradient,
+    VoidCallback? onTap, {
+    bool isLocked = false,
+    bool isCompleted = false,
+  }) {
+    return InkWell(
+      onTap: isLocked ? null : onTap,
+      borderRadius: BorderRadius.circular(32),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: isLocked 
+              ? LinearGradient(colors: [Colors.grey.shade700, Colors.grey.shade800])
+              : gradient,
+          borderRadius: BorderRadius.circular(32),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.4),
+              blurRadius: 15,
+              offset: const Offset(0, 10),
+            ),
+          ],
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(32),
+          child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Expanded(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(
-                      'Bienvenido de vuelta',
-                      style: TextStyle(
-                          color: Colors.white54,
-                          fontSize: 14,
-                          letterSpacing: 0.5),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    padding: const EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.2),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    const SizedBox(height: 4),
-                    AnimatedBuilder(
-                      animation: _pulseAnimation,
-                      builder: (context, _) {
-                        final baseColor = _diagnosis == 'APTO'
-                            ? Colors.greenAccent
-                            : (_diagnosis == 'PENDIENTE' ||
-                                    _diagnosis == '...'
-                                ? Colors.amberAccent
-                                : Colors.redAccent);
-                        return ShaderMask(
-                          shaderCallback: (bounds) => LinearGradient(
-                            colors: [
-                              baseColor.withOpacity(0.7),
-                              baseColor,
-                              Colors.white,
-                              baseColor,
-                              baseColor.withOpacity(0.7),
-                            ],
-                            stops: const [0.0, 0.4, 0.5, 0.6, 1.0],
-                            begin: Alignment(_pulseAnimation.value - 1, 0),
-                            end: Alignment(_pulseAnimation.value + 1, 0),
-                          ).createShader(bounds),
-                          child: Text(
-                            'ESTADO: $_diagnosis',
-                            style: const TextStyle(
-                              color: Colors.white,
-                              fontSize: 32,
-                              fontWeight: FontWeight.w900,
-                              letterSpacing: 1.5,
-                            ),
-                          ),
-                        );
-                      },
+                    child: Icon(icon, color: Colors.white, size: 32),
+                  ),
+                  if (isCompleted)
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: BoxDecoration(
+                        color: Colors.white.withOpacity(0.2),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.check_rounded, color: Colors.white, size: 20),
                     ),
-                  ],
+                ],
+              ),
+              const Spacer(),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                      fontWeight: FontWeight.w900,
+                      letterSpacing: 0.8,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  Text(
+                    subtitle,
+                    style: TextStyle(
+                      color: Colors.white.withOpacity(0.9),
+                      fontSize: 14,
+                      height: 1.4,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 24),
+              if (!isLocked && onTap != null)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.white.withOpacity(0.2),
+                    borderRadius: BorderRadius.circular(25),
+                    border: Border.all(color: Colors.white.withOpacity(0.4), width: 1.5),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text(
+                        isCompleted ? 'COMPLETADO' : 'COMENZAR',
+                        style: const TextStyle(
+                          color: Colors.white,
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                      const SizedBox(width: 8),
+                      Icon(
+                        isCompleted ? Icons.check_circle_rounded : Icons.arrow_forward_rounded,
+                        color: Colors.white,
+                        size: 16,
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-              // Daily mission compact badge
-              _WebDailyBadge(
-                todayCompleted: _todayCompleted,
-                questionsAnswered: _questionsAnswered,
-                totalQuestions: _totalQuestionsInDaily,
-                onTap: _startDailyTest,
-              ),
-            ],
-          ),
-          const SizedBox(height: 28),
-
-          // ── Section title ──
-          _WebSectionTitle('Módulos de Entrenamiento'),
-          const SizedBox(height: 16),
-
-          // ── Cards grid ──
-          GridView.count(
-            shrinkWrap: true,
-            physics: const NeverScrollableScrollPhysics(),
-            crossAxisCount: 2,
-            crossAxisSpacing: 16,
-            mainAxisSpacing: 16,
-            childAspectRatio: 2.2,
-            children: [
-              _WebActionCard(
-                title: 'MISIÓN DIARIA',
-                subtitle: _todayCompleted
-                    ? '¡Completada hoy!'
-                    : '$_questionsAnswered / $_totalQuestionsInDaily preguntas',
-                icon: Icons.bolt_rounded,
-                gradient: const LinearGradient(
-                    colors: [Color(0xFF2DD4BF), Color(0xFF0D9488)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight),
-                onTap: _todayCompleted ? null : _startDailyTest,
-                badge: _todayCompleted ? '✓' : null,
-              ),
-              _WebActionCard(
-                title: 'PSICOTÉCNICO',
-                subtitle: 'Razonamiento espacial',
-                icon: Icons.extension_rounded,
-                gradient: const LinearGradient(
-                    colors: [Color(0xFF00897B), Color(0xFF00695C)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight),
-                onTap: _startPsychotechnicalTest,
-              ),
-              _WebActionCard(
-                title: 'PONTE A PRUEBA',
-                subtitle: 'Simulación de examen real',
-                icon: secService.isPremium
-                    ? Icons.timer_rounded
-                    : Icons.lock_rounded,
-                gradient: const LinearGradient(
-                    colors: [Color(0xFF0277BD), Color(0xFF01579B)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight),
-                onTap: _startExamSimulation,
-                isLocked: !secService.isPremium,
-              ),
-              _WebActionCard(
-                title: 'LA ESCUELITA',
-                subtitle: 'Refuerzo de errores',
-                icon: secService.isPremium
-                    ? Icons.school_rounded
-                    : Icons.lock_rounded,
-                gradient: const LinearGradient(
-                    colors: [Color(0xFFE65100), Color(0xFFBF360C)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight),
-                onTap: _startEscuelita,
-                isLocked: !secService.isPremium,
-              ),
-              _WebActionCard(
-                title: 'ENTREVISTA MÉDICA',
-                subtitle: 'Psicología personal',
-                icon: secService.isPremium
-                    ? Icons.medical_services_rounded
-                    : Icons.lock_rounded,
-                gradient: const LinearGradient(
-                    colors: [Color(0xFF4527A0), Color(0xFF311B92)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight),
-                onTap: _startMedicalExam,
-                isLocked: !secService.isPremium,
-              ),
-              if (secService.isAdmin)
-                _WebActionCard(
-                  title: 'ADMIN PANEL',
-                  subtitle: 'Gestionar usuarios',
-                  icon: Icons.admin_panel_settings_rounded,
-                  gradient: const LinearGradient(
-                      colors: [Colors.redAccent, Color(0xFFB71C1C)],
-                      begin: Alignment.topLeft,
-                      end: Alignment.bottomRight),
-                  onTap: () => Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (_) => const AdminPanelScreen())),
+              if (isLocked)
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+                  decoration: BoxDecoration(
+                    color: Colors.black.withOpacity(0.6),
+                    borderRadius: BorderRadius.circular(25),
+                  ),
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.lock_rounded, color: Colors.white.withOpacity(0.8), size: 16),
+                      const SizedBox(width: 8),
+                      Text(
+                        'PREMIUM',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.8),
+                          fontSize: 12,
+                          fontWeight: FontWeight.w700,
+                          letterSpacing: 1.5,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
             ],
           ),
-          const SizedBox(height: 32),
-        ],
+        ),
       ),
     );
   }
