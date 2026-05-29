@@ -361,7 +361,8 @@ class _DashboardScreenState extends State<DashboardScreen>
             width: 1.5,
           ),
         ),
-        child: SafeArea(
+        child: ClipRRect(
+          borderRadius: BorderRadius.circular(32),
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
             child: BottomNavigationBar(
