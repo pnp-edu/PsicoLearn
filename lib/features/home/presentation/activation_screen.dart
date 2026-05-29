@@ -139,10 +139,9 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
     showDialog(
       context: context,
       builder: (context) {
-        return BackdropFilter(
-          filter: ImageFilter.blur(sigmaX: 8, sigmaY: 8),
-          child: Dialog(
-            backgroundColor: const Color(0xFF0C101B),
+        if (kIsWeb) {
+          return Dialog(
+            backgroundColor: const Color(0xFF0C101B).withOpacity(0.95),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(24),
               side: BorderSide(color: Colors.white.withOpacity(0.08), width: 1.0),
@@ -368,10 +367,12 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
                 ),
                 Positioned.fill(
                   child: IgnorePointer(
-                    child: BackdropFilter(
-                      filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
-                      child: const SizedBox.shrink(),
-                    ),
+                    child: kIsWeb
+                        ? const SizedBox.shrink()
+                        : BackdropFilter(
+                            filter: ImageFilter.blur(sigmaX: 80, sigmaY: 80),
+                            child: const SizedBox.shrink(),
+                          ),
                   ),
                 ),
               ],
@@ -1119,11 +1120,9 @@ class _BentoCardRedesignState extends State<_BentoCardRedesign> {
         ),
         child: ClipRRect(
           borderRadius: BorderRadius.circular(16),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 16, sigmaY: 16),
-            child: Stack(
-              children: [
-                AnimatedContainer(
+          child: Stack(
+            children: [
+              AnimatedContainer(
                   duration: const Duration(milliseconds: 250),
                   color: Colors.white.withOpacity(_isHovered ? 0.05 : 0.03),
                 ),

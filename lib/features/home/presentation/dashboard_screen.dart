@@ -361,53 +361,40 @@ class _DashboardScreenState extends State<DashboardScreen>
             width: 1.5,
           ),
         ),
-        child: Stack(
-          children: [
-            Positioned.fill(
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(32),
-                child: BackdropFilter(
-                  filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-                  child: Container(color: Colors.transparent),
-                ),
-              ),
+        child: SafeArea(
+          child: BottomNavigationBar(
+            currentIndex: _selectedIndex.clamp(0, 2),
+            backgroundColor: Colors.transparent,
+            type: BottomNavigationBarType.fixed,
+            elevation: 0,
+            selectedItemColor: AppTheme.accentColor,
+            unselectedItemColor: isDark ? Colors.white38 : Colors.black38,
+            showSelectedLabels: true,
+            showUnselectedLabels: false,
+            selectedLabelStyle: const TextStyle(
+              fontWeight: FontWeight.w900,
+              fontSize: 10,
+              letterSpacing: 1.0,
             ),
-            SafeArea(
-              child: BottomNavigationBar(
-              currentIndex: _selectedIndex.clamp(0, 2),
-              backgroundColor: Colors.transparent,
-              type: BottomNavigationBarType.fixed,
-              elevation: 0,
-              selectedItemColor: AppTheme.accentColor,
-              unselectedItemColor: isDark ? Colors.white38 : Colors.black38,
-              showSelectedLabels: true,
-              showUnselectedLabels: false,
-              selectedLabelStyle: const TextStyle(
-                fontWeight: FontWeight.w900,
-                fontSize: 10,
-                letterSpacing: 1.0,
+            onTap: (i) => setState(() => _selectedIndex = i),
+            items: const [
+              BottomNavigationBarItem(
+                icon: Icon(Icons.home_rounded),
+                activeIcon: Icon(Icons.home_rounded, size: 26),
+                label: 'INICIO',
               ),
-              onTap: (i) => setState(() => _selectedIndex = i),
-              items: const [
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.home_rounded),
-                  activeIcon: Icon(Icons.home_rounded, size: 26),
-                  label: 'INICIO',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.person_rounded),
-                  activeIcon: Icon(Icons.person_rounded, size: 26),
-                  label: 'PERFIL',
-                ),
-                BottomNavigationBarItem(
-                  icon: Icon(Icons.settings_rounded),
-                  activeIcon: Icon(Icons.settings_rounded, size: 26),
-                  label: 'AJUSTES',
-                ),
-              ],
-            ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.person_rounded),
+                activeIcon: Icon(Icons.person_rounded, size: 26),
+                label: 'PERFIL',
+              ),
+              BottomNavigationBarItem(
+                icon: Icon(Icons.settings_rounded),
+                activeIcon: Icon(Icons.settings_rounded, size: 26),
+                label: 'AJUSTES',
+              ),
+            ],
           ),
-          ],
         ),
       ),
     );
