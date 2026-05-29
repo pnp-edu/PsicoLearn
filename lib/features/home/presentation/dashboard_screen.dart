@@ -361,11 +361,19 @@ class _DashboardScreenState extends State<DashboardScreen>
             width: 1.5,
           ),
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(32),
-          child: BackdropFilter(
-            filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
-            child: BottomNavigationBar(
+        child: Stack(
+          children: [
+            Positioned.fill(
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(32),
+                child: BackdropFilter(
+                  filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
+                  child: Container(color: Colors.transparent),
+                ),
+              ),
+            ),
+            SafeArea(
+              child: BottomNavigationBar(
               currentIndex: _selectedIndex.clamp(0, 2),
               backgroundColor: Colors.transparent,
               type: BottomNavigationBarType.fixed,
@@ -399,6 +407,7 @@ class _DashboardScreenState extends State<DashboardScreen>
               ],
             ),
           ),
+          ],
         ),
       ),
     );
