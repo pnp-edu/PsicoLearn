@@ -139,9 +139,8 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
     showDialog(
       context: context,
       builder: (context) {
-        if (kIsWeb) {
-          return Dialog(
-            backgroundColor: const Color(0xFF0C101B).withOpacity(0.95),
+        return Dialog(
+          backgroundColor: const Color(0xFF0C101B).withOpacity(0.95),
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(24),
               side: BorderSide(color: Colors.white.withOpacity(0.08), width: 1.0),
