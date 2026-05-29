@@ -102,108 +102,211 @@ class _OptionsSelectorState extends State<OptionsSelector>
   Widget build(BuildContext context) {
     final isDark = Theme.of(context).brightness == Brightness.dark;
     final screenWidth = MediaQuery.of(context).size.width;
-    final orientation = MediaQuery.of(context).orientation;
-    final isLandscape = orientation == Orientation.landscape;
+    final isLandscape = screenWidth > 600;
 
     final scale = (screenWidth / 375.0).clamp(0.8, 1.0);
 
-    // Usamos GridView para mejor control del espacio
-    return GridView.count(
-      shrinkWrap: true,
-      physics: const NeverScrollableScrollPhysics(),
-      crossAxisCount: isLandscape ? 4 : 2, // 4 columnas en landscape, 2 en portrait
-      mainAxisSpacing: isLandscape ? 8 : 14,
-      crossAxisSpacing: 8,
-      childAspectRatio: isLandscape ? 1.2 : (screenWidth < 360 ? 0.85 : 0.95),
-      children: widget.options.entries.map((entry) {
-        final state = _stateFor(entry.key);
+    final children = widget.options.entries.map((entry) {
+      final state = _stateFor(entry.key);
 
-        return GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onTap: _locked
-              ? null
-              : () {
-                  final isCorrect = entry.key == widget.correctAnswer;
-                  if (isCorrect) {
-                    HapticFeedback.lightImpact();
-                  } else {
-                    HapticFeedback.mediumImpact();
-                    _shakeCtrl.forward(from: 0);
-                  }
+      return GestureDetector(
+        behavior: HitTestBehavior.opaque,
+        onTap: _locked
+            ? null
+            : () {
+                final isCorrect = entry.key == widget.correctAnswer;
+                if (isCorrect) {
+                  HapticFeedback.lightImpact();
+                } else {
+                  HapticFeedback.mediumImpact();
+                  _shakeCtrl.forward(from: 0);
+                }
 
-                  setState(() {
-                    _selectedValue = entry.key;
-                    if (!widget.isExamMode) _locked = true;
-                  });
+                setState(() {
+                  _selectedValue = entry.key;
+                  if (!widget.isExamMode) _locked = true;
+                });
 
-                  widget.onChanged(entry.key);
-                },
-          child: _buildOption(entry, state, isDark, scale),
-        );
-      }).toList(),
-    );
+                widget.onChanged(entry.key);
+              },
+        child: isLandscape
+            ? Padding(
+                padding: const EdgeInsets.only(bottom: 16.0),
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 600),
+                  child: _buildDesktopOption(entry, state, isDark, scale),
+                ),
+              )
+            : ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 140),
+                child: _buildMobileOption(entry, state, isDark, scale),
+              ),
+      );
+    }).toList();
+
+    if (isLandscape) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: children,
+      );
+    } else {
+      return Wrap(
+        alignment: WrapAlignment.center,
+        spacing: 16.0,
+        runSpacing: 24.0,
+        children: children,
+      );
+    }
   }
 
-  Widget _buildOption(MapEntry<String, String> entry, OptionState state, bool isDark, double scale) {
-    final isWrong = state == OptionState.selectedWrong;
-
-    Color circleColor;
-    Color borderColor;
-    Color textColor;
-    List<BoxShadow> shadows = [];
-    Widget? icon;
-
+  void _getOptionColors(OptionState state, bool isDark, outColors) {
     switch (state) {
       case OptionState.selectedCorrect:
         final color = widget.isExamMode ? const Color(0xFF00E5FF) : Colors.greenAccent;
-        circleColor = color.withOpacity(0.2);
-        borderColor = color;
-        textColor = color;
-        if (widget.isExamMode) {
-          return AnimatedBuilder(
-            animation: _pulseCtrl,
-            builder: (context, child) {
-              final glow = 14 + (6 * _pulseCtrl.value);
-              return _buildBaseOption(entry, scale, circleColor, borderColor, textColor, 
-                [BoxShadow(color: color.withOpacity(0.4), blurRadius: glow, spreadRadius: 2 * _pulseCtrl.value)],
-                Icon(Icons.radio_button_checked, size: 22, color: color), isWrong);
-            },
-          );
-        }
-        shadows = [BoxShadow(color: color.withOpacity(0.4), blurRadius: 14, spreadRadius: 2)];
-        icon = Icon(widget.isExamMode ? Icons.radio_button_checked : Icons.check_rounded, size: 22, color: color);
+        outColors['circle'] = color.withOpacity(0.2);
+        outColors['border'] = color;
+        outColors['text'] = color;
+        outColors['icon'] = Icon(widget.isExamMode ? Icons.radio_button_checked : Icons.check_rounded, size: 22, color: color);
+        outColors['shadows'] = [BoxShadow(color: color.withOpacity(0.4), blurRadius: 14, spreadRadius: 2)];
         break;
       case OptionState.selectedWrong:
-        circleColor = Colors.redAccent.withOpacity(0.2);
-        borderColor = Colors.redAccent;
-        textColor = Colors.redAccent;
-        shadows = [BoxShadow(color: Colors.redAccent.withOpacity(0.4), blurRadius: 14, spreadRadius: 2)];
-        icon = const Icon(Icons.close_rounded, size: 22, color: Colors.redAccent);
+        outColors['circle'] = Colors.redAccent.withOpacity(0.2);
+        outColors['border'] = Colors.redAccent;
+        outColors['text'] = Colors.redAccent;
+        outColors['icon'] = const Icon(Icons.close_rounded, size: 22, color: Colors.redAccent);
+        outColors['shadows'] = [BoxShadow(color: Colors.redAccent.withOpacity(0.4), blurRadius: 14, spreadRadius: 2)];
         break;
       case OptionState.revealedCorrect:
-        circleColor = Colors.greenAccent.withOpacity(0.1);
-        borderColor = Colors.greenAccent.withOpacity(0.7);
-        textColor = Colors.greenAccent;
-        shadows = [BoxShadow(color: Colors.greenAccent.withOpacity(0.2), blurRadius: 10)];
-        icon = Icon(Icons.check_circle_outline_rounded, size: 22, color: Colors.greenAccent.withOpacity(0.8));
+        outColors['circle'] = Colors.greenAccent.withOpacity(0.1);
+        outColors['border'] = Colors.greenAccent.withOpacity(0.7);
+        outColors['text'] = Colors.greenAccent;
+        outColors['icon'] = Icon(Icons.check_circle_outline_rounded, size: 22, color: Colors.greenAccent.withOpacity(0.8));
+        outColors['shadows'] = [BoxShadow(color: Colors.greenAccent.withOpacity(0.2), blurRadius: 10)];
         break;
       case OptionState.idle:
         final unselected = isDark ? Colors.white.withOpacity(0.2) : Colors.black.withOpacity(0.2);
-        circleColor = Colors.transparent;
-        borderColor = unselected;
-        textColor = isDark ? Colors.white70 : Colors.black87;
+        outColors['circle'] = Colors.transparent;
+        outColors['border'] = unselected;
+        outColors['text'] = isDark ? Colors.white70 : Colors.black87;
+        outColors['icon'] = null;
+        outColors['shadows'] = <BoxShadow>[];
         break;
     }
-
-    return _buildBaseOption(entry, scale, circleColor, borderColor, textColor, shadows, icon, isWrong);
   }
 
-  Widget _buildBaseOption(MapEntry<String, String> entry, double scale, Color circleColor, Color borderColor, Color textColor, List<BoxShadow> shadows, Widget? icon, bool isWrong) {
+  Widget _buildDesktopOption(MapEntry<String, String> entry, OptionState state, bool isDark, double scale) {
+    final isWrong = state == OptionState.selectedWrong;
+    final Map<String, dynamic> colors = {};
+    _getOptionColors(state, isDark, colors);
+
+    Color circleColor = colors['circle'];
+    Color borderColor = colors['border'];
+    Color textColor = colors['text'];
+    Widget? icon = colors['icon'];
+    List<BoxShadow> shadows = colors['shadows'];
+
+    if (widget.isExamMode && state == OptionState.selectedCorrect) {
+       return AnimatedBuilder(
+          animation: _pulseCtrl,
+          builder: (context, child) {
+             final glow = 14 + (6 * _pulseCtrl.value);
+             shadows = [BoxShadow(color: borderColor.withOpacity(0.4), blurRadius: glow, spreadRadius: 2 * _pulseCtrl.value)];
+             return _buildDesktopCard(entry, scale, circleColor, borderColor, textColor, shadows, icon, isWrong, isDark);
+          },
+       );
+    }
+    return _buildDesktopCard(entry, scale, circleColor, borderColor, textColor, shadows, icon, isWrong, isDark);
+  }
+
+  Widget _buildDesktopCard(MapEntry<String, String> entry, double scale, Color circleColor, Color borderColor, Color textColor, List<BoxShadow> shadows, Widget? icon, bool isWrong, bool isDark) {
+    final baseBg = isDark ? Colors.white.withOpacity(0.04) : Colors.black.withOpacity(0.02);
+    final cardBg = circleColor == Colors.transparent ? baseBg : circleColor.withOpacity(0.15);
+
+    final bubble = Container(
+      width: 32,
+      height: 32,
+      decoration: BoxDecoration(
+        shape: BoxShape.circle,
+        color: circleColor,
+        border: Border.all(color: borderColor, width: 2.0),
+      ),
+      child: Center(child: icon != null ? Transform.scale(scale: 0.9, child: icon) : null),
+    );
+
+    final card = AnimatedContainer(
+      duration: const Duration(milliseconds: 280),
+      curve: Curves.easeOutCubic,
+      width: double.infinity,
+      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+      decoration: BoxDecoration(
+        color: cardBg,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: borderColor, width: 2.0),
+        boxShadow: shadows,
+      ),
+      child: Row(
+        children: [
+          bubble,
+          const SizedBox(width: 20),
+          Expanded(
+            child: AnimatedDefaultTextStyle(
+              duration: const Duration(milliseconds: 280),
+              style: TextStyle(
+                color: textColor,
+                fontSize: 18 * scale,
+                fontWeight: textColor != (isDark ? Colors.white70 : Colors.black87) ? FontWeight.w800 : FontWeight.w600,
+                height: 1.2,
+              ),
+              child: Text(entry.value),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    if (isWrong) {
+      return AnimatedBuilder(
+        animation: _shakeAnim,
+        builder: (ctx, child) {
+          final dx = 6 * (0.5 - (_shakeAnim.value % 0.25 / 0.25)).abs() * (1 - _shakeCtrl.value);
+          return Transform.translate(offset: Offset(dx, 0), child: child);
+        },
+        child: card,
+      );
+    }
+    return card;
+  }
+
+  Widget _buildMobileOption(MapEntry<String, String> entry, OptionState state, bool isDark, double scale) {
+    final isWrong = state == OptionState.selectedWrong;
+    final Map<String, dynamic> colors = {};
+    _getOptionColors(state, isDark, colors);
+
+    Color circleColor = colors['circle'];
+    Color borderColor = colors['border'];
+    Color textColor = colors['text'];
+    Widget? icon = colors['icon'];
+    List<BoxShadow> shadows = colors['shadows'];
+
+    if (widget.isExamMode && state == OptionState.selectedCorrect) {
+       return AnimatedBuilder(
+          animation: _pulseCtrl,
+          builder: (context, child) {
+             final glow = 14 + (6 * _pulseCtrl.value);
+             shadows = [BoxShadow(color: borderColor.withOpacity(0.4), blurRadius: glow, spreadRadius: 2 * _pulseCtrl.value)];
+             return _buildMobileBaseOption(entry, scale, circleColor, borderColor, textColor, shadows, icon, isWrong);
+          },
+       );
+    }
+    return _buildMobileBaseOption(entry, scale, circleColor, borderColor, textColor, shadows, icon, isWrong);
+  }
+
+  Widget _buildMobileBaseOption(MapEntry<String, String> entry, double scale, Color circleColor, Color borderColor, Color textColor, List<BoxShadow> shadows, Widget? icon, bool isWrong) {
     final bubble = AnimatedContainer(
       duration: const Duration(milliseconds: 280),
       curve: Curves.easeOutCubic,
-      width: 48 * scale,
-      height: 48 * scale,
+      width: 48.0 * scale,
+      height: 48.0 * scale,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: circleColor,
@@ -228,28 +331,26 @@ class _OptionsSelectorState extends State<OptionsSelector>
               )
             : bubble,
         const SizedBox(height: 10),
-        Expanded(
-          child: AnimatedDefaultTextStyle(
-            duration: const Duration(milliseconds: 280),
-            style: TextStyle(
-              color: textColor,
-              fontSize: 11 * scale,
-              fontWeight: textColor != (Theme.of(context).brightness == Brightness.dark ? Colors.white70 : Colors.black87) ? FontWeight.w800 : FontWeight.w600,
-              height: 1.15,
-            ),
-            child: Text(
-              entry.value,
-              textAlign: TextAlign.center,
-              maxLines: 5,
-              overflow: TextOverflow.visible,
-            ),
+        AnimatedDefaultTextStyle(
+          duration: const Duration(milliseconds: 280),
+          style: TextStyle(
+            color: textColor,
+            fontSize: 13.0 * scale,
+            fontWeight: textColor != (Theme.of(context).brightness == Brightness.dark ? Colors.white70 : Colors.black87) ? FontWeight.w800 : FontWeight.w600,
+            height: 1.25,
+          ),
+          child: Text(
+            entry.value,
+            textAlign: TextAlign.center,
+            maxLines: 5,
+            overflow: TextOverflow.visible,
           ),
         ),
       ],
     );
 
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 6),
+      padding: const EdgeInsets.symmetric(horizontal: 8),
       child: content,
     );
   }

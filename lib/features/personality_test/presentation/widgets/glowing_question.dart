@@ -62,7 +62,7 @@ class _GlowingQuestionState extends State<GlowingQuestion>
             textAlign: TextAlign.center,
             style: TextStyle(
               color: textColor,
-              fontSize: Responsive.titleFontSize(context, mobile: 20),
+              fontSize: Responsive.titleFontSize(context, mobile: 22, desktop: 32),
               fontWeight: FontWeight.w800,
               height: 1.3,
               letterSpacing: -0.3,

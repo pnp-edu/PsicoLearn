@@ -337,6 +337,7 @@ class _DashboardScreenState extends State<DashboardScreen>
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return SafeArea(
       child: Container(
+        clipBehavior: Clip.antiAlias,
         margin: EdgeInsets.fromLTRB(
           Responsive.horizontalPadding(context),
           0,
@@ -360,8 +361,7 @@ class _DashboardScreenState extends State<DashboardScreen>
             width: 1.5,
           ),
         ),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(32),
+        child: SafeArea(
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
             child: BottomNavigationBar(
@@ -560,16 +560,14 @@ class _DashboardScreenState extends State<DashboardScreen>
           ),
           const SizedBox(height: 14),
 
-          // Action cards grid - 2 columns on mobile
-          GridView(
+          // Action cards grid - responsive extent
+          GridView.extent(
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-              crossAxisCount: 2,
-              crossAxisSpacing: 10,
-              mainAxisSpacing: 10,
-              childAspectRatio: 1.1,
-            ),
+            maxCrossAxisExtent: 180,
+            crossAxisSpacing: 10,
+            mainAxisSpacing: 10,
+            childAspectRatio: 0.95,
             children: [
               _buildMobileActionCard(
                 'MISIÓN DIARIA',
@@ -651,16 +649,18 @@ class _DashboardScreenState extends State<DashboardScreen>
               child: Icon(icon, color: Colors.white, size: 22),
             ),
             const Spacer(),
-            Text(
-              title,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 12,
-                fontWeight: FontWeight.w900,
-                letterSpacing: 0.5,
+            Expanded(
+              child: Text(
+                title,
+                style: const TextStyle(
+                  color: Colors.white,
+                  fontSize: 11,
+                  fontWeight: FontWeight.w900,
+                  letterSpacing: 0.5,
+                ),
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
               ),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
             ),
             const SizedBox(height: 2),
             Text(

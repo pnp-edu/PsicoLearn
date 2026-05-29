@@ -451,10 +451,10 @@ class _TestScreenState extends State<TestScreen> with TickerProviderStateMixin {
                 builder: (context, constraints) {
                   return Padding(
                     padding: EdgeInsets.fromLTRB(
-                      24,
-                      widget.isCorrectingErrors ? 80 : 56,
-                      24,
-                      _showingFeedback ? 260 : 24,
+                      MediaQuery.of(context).size.width > 600 ? 40 : 24,
+                      widget.isCorrectingErrors ? 60 : 40,
+                      MediaQuery.of(context).size.width > 600 ? 40 : 24,
+                      _showingFeedback ? 260 : (MediaQuery.of(context).size.width > 600 ? 40 : 24),
                     ),
                     child: Column(
                       children: [
