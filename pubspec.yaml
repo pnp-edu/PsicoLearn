@@ -53,3 +53,15 @@ flutter:
     - assets/figuras_psicometrico/simetria/
     - assets/figuras_psicometrico/logica/
     - assets/figuras_psicometrico/cerillos_common/
+    - assets/figuras_psicometrico/problema01/
+    - assets/figuras_psicometrico/problema04/
+    - assets/figuras_psicometrico/problema06/
+    - assets/figuras_psicometrico/problema07/
+    - assets/figuras_psicometrico/problema09/
+    - assets/figuras_psicometrico/problema18/
+    - assets/figuras_psicometrico/problema20/
+    - assets/figuras_psicometrico/problema21/
+    - assets/figuras_psicometrico/problema23/
+    - assets/figuras_psicometrico/problema24/
+    - assets/figuras_psicometrico/problema28/
+    - assets/figuras_psicometrico/problema30/
