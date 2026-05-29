@@ -127,8 +127,10 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
   }
 
   Future<void> _contactAdmin() async {
-    final Uri url = Uri.parse('https://wa.me/51955285763?text=Hola,%20solicito%20activación%20para%20PsicoLearn');
-    if (!await launchUrl(url, mode: LaunchMode.externalApplication)) {
+    final Uri url = Uri.parse('https://wa.me/51955285763?text=necesito%20ayuda');
+    if (await canLaunchUrl(url)) {
+      await launchUrl(url);
+    } else {
       _showErrorSnackBar('No se pudo abrir el enlace de soporte.');
     }
   }

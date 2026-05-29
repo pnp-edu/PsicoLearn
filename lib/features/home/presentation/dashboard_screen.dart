@@ -13,9 +13,7 @@ import 'profile_screen.dart';
 import 'settings_screen.dart';
 import '../../interview/presentation/interview_screen.dart';
 import 'package:psicolearn/core/theme/app_theme.dart';
-import 'widgets/dashboard_header.dart';
-import 'widgets/daily_mission_card.dart';
-import 'widgets/action_card_carousel.dart';
+
 import '../../home/presentation/activation_screen.dart';
 import '../../../core/services/security_service.dart';
 import 'admin_panel_screen.dart';
@@ -267,7 +265,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Future<void> _contactAdmin() async {
-    final url = Uri.parse('https://wa.me/51955285763?text=Hola,%20quiero%20activar%20mi%20cuenta%20PRO%20de%20PsicoLearn');
+    final url = Uri.parse('https://wa.me/51955285763?text=necesito%20ayuda');
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     }
@@ -313,10 +311,10 @@ class _DashboardScreenState extends State<DashboardScreen>
   @override
   Widget build(BuildContext context) {
     final width = MediaQuery.of(context).size.width;
-    const isWideWeb = true; // Force web layout everywhere
+    final isWideWeb = width >= 900;
 
-    // On web wide layout, navigation is handled by the sidebar
-    // The Scaffold still wraps everything but without a bottom nav bar.
+    // On wide screens, navigation is handled by the sidebar.
+    // On mobile, use the bottom nav bar.
     return Scaffold(
       extendBody: !isWideWeb,
       body: LaboratoryBackground(
@@ -336,7 +334,6 @@ class _DashboardScreenState extends State<DashboardScreen>
   }
 
   Widget _buildNavBar() {
-    if (_selectedIndex > 1) return const SizedBox.shrink();
     final isDark = Theme.of(context).brightness == Brightness.dark;
     return SafeArea(
       child: Container(
@@ -368,7 +365,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           child: BackdropFilter(
             filter: ImageFilter.blur(sigmaX: 15, sigmaY: 15),
             child: BottomNavigationBar(
-              currentIndex: _selectedIndex > 1 ? 0 : _selectedIndex,
+              currentIndex: _selectedIndex.clamp(0, 2),
               backgroundColor: Colors.transparent,
               type: BottomNavigationBarType.fixed,
               elevation: 0,
@@ -393,6 +390,11 @@ class _DashboardScreenState extends State<DashboardScreen>
                   activeIcon: Icon(Icons.person_rounded, size: 26),
                   label: 'PERFIL',
                 ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.settings_rounded),
+                  activeIcon: Icon(Icons.settings_rounded, size: 26),
+                  label: 'AJUSTES',
+                ),
               ],
             ),
           ),
@@ -403,67 +405,277 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Widget _buildHomeTab() {
     final width = MediaQuery.of(context).size.width;
-    const isWideWeb = true; // Force desktop home view on mobile too
+    final isWideWeb = width >= 900;
 
     if (isWideWeb) {
       return _buildWebHomeTab();
     }
 
-    // Original mobile layout
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        DashboardHeader(
-          diagnosis: _diagnosis,
-          pulseAnimation: _pulseAnimation,
-        ),
-        Padding(
-          padding: EdgeInsets.symmetric(
-              horizontal: Responsive.horizontalPadding(context)),
-          child: DailyMissionCard(
+    // Mobile layout - clean and compact
+    return _buildMobileHomeTab();
+  }
+
+  Widget _buildMobileHomeTab() {
+    return SingleChildScrollView(
+      padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          // Welcome badge
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  AppTheme.accentColor.withOpacity(0.3),
+                  AppTheme.accentColor.withOpacity(0.1),
+                ],
+              ),
+              borderRadius: BorderRadius.circular(20),
+              border: Border.all(
+                color: AppTheme.accentColor.withOpacity(0.4),
+                width: 1,
+              ),
+            ),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Icon(Icons.psychology_rounded, color: AppTheme.accentColor, size: 14),
+                const SizedBox(width: 6),
+                Text(
+                  '¡Bienvenido de vuelta!',
+                  style: TextStyle(
+                    color: AppTheme.accentColor,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 14),
+
+          // Status title
+          AnimatedBuilder(
+            animation: _pulseAnimation,
+            builder: (context, _) {
+              final baseColor = _diagnosis == 'APTO'
+                  ? const Color(0xFF10B981)
+                  : (_diagnosis == 'PENDIENTE' || _diagnosis == '...'
+                      ? const Color(0xFFF59E0B)
+                      : const Color(0xFFEF4444));
+              return ShaderMask(
+                shaderCallback: (bounds) => LinearGradient(
+                  colors: [
+                    baseColor.withOpacity(0.6),
+                    baseColor,
+                    Colors.white,
+                    baseColor,
+                    baseColor.withOpacity(0.6),
+                  ],
+                  stops: const [0.0, 0.3, 0.5, 0.7, 1.0],
+                  begin: Alignment(_pulseAnimation.value - 1, 0),
+                  end: Alignment(_pulseAnimation.value + 1, 0),
+                ).createShader(bounds),
+                child: Text(
+                  'ESTADO: $_diagnosis',
+                  style: const TextStyle(
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontWeight: FontWeight.w900,
+                    letterSpacing: 1.2,
+                    height: 1.1,
+                  ),
+                ),
+              );
+            },
+          ),
+          const SizedBox(height: 6),
+          Text(
+            'Tu progreso en la evaluación psicométrica',
+            style: TextStyle(
+              color: Colors.white.withOpacity(0.7),
+              fontSize: 13,
+              height: 1.4,
+            ),
+          ),
+          const SizedBox(height: 16),
+
+          // Daily mission card - full width
+          _WebDailyBadge(
             todayCompleted: _todayCompleted,
             questionsAnswered: _questionsAnswered,
             totalQuestions: _totalQuestionsInDaily,
             onTap: _startDailyTest,
           ),
-        ),
-        const SizedBox(height: 12),
-        ActionCardCarousel(
-          controller: _pageController,
-          onInteractionChanged: (interacting) =>
-              _isUserInteracting = interacting,
-          items: [
-            ActionCardItem(
-              title: 'PONTE A PRUEBA',
-              subtitle: 'Simulación de examen real',
-              icon: Icons.timer_rounded,
-              color: const Color(0xFF00E5FF),
-              onTap: _startExamSimulation,
+          const SizedBox(height: 16),
+
+          // Stats row - 2 cards side by side
+          Row(
+            children: [
+              Expanded(
+                child: _buildStatCard(
+                  'Respondidas',
+                  '$_questionsAnswered',
+                  'En total',
+                  Icons.task_alt_rounded,
+                  const Color(0xFF06B6D4),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: _buildStatCard(
+                  'Errores',
+                  '$_failedCount',
+                  'Para mejorar',
+                  Icons.assignment_late_rounded,
+                  const Color(0xFFF97316),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 24),
+
+          // Section title
+          Row(
+            children: [
+              Container(
+                width: 4,
+                height: 20,
+                decoration: BoxDecoration(
+                  color: AppTheme.accentColor,
+                  borderRadius: BorderRadius.circular(2),
+                ),
+              ),
+              const SizedBox(width: 10),
+              const Text(
+                'Módulos de Entrenamiento',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 14),
+
+          // Action cards grid - 2 columns on mobile
+          GridView(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+              crossAxisCount: 2,
+              crossAxisSpacing: 10,
+              mainAxisSpacing: 10,
+              childAspectRatio: 1.1,
             ),
-            ActionCardItem(
-              title: 'PSICOTÉCNICO',
-              subtitle: 'Razonamiento espacial',
-              icon: Icons.extension_rounded,
-              color: Colors.tealAccent,
-              onTap: _startPsychotechnicalTest,
-            ),
-            ActionCardItem(
-              title: 'LA ESCUELITA',
-              subtitle: 'Refuerzo de Errores',
-              icon: Icons.school_rounded,
-              color: Colors.orangeAccent,
-              onTap: _startEscuelita,
-            ),
-            ActionCardItem(
-              title: 'EXAMEN MÉDICO',
-              subtitle: 'Psicología (Entrevista)',
-              icon: Icons.forum_rounded,
-              color: Colors.blueAccent,
-              onTap: _startMedicalExam,
+            children: [
+              _buildMobileActionCard(
+                'MISIÓN DIARIA',
+                _todayCompleted ? '¡Completada!' : '$_questionsAnswered/$_totalQuestionsInDaily',
+                _todayCompleted ? Icons.check_circle_rounded : Icons.bolt_rounded,
+                _todayCompleted
+                    ? const LinearGradient(colors: [Color(0xFF10B981), Color(0xFF059669)])
+                    : const LinearGradient(colors: [Color(0xFFFF6F00), Color(0xFFFF9100)]),
+                _todayCompleted ? null : _startDailyTest,
+              ),
+              _buildMobileActionCard(
+                'PSICOTÉCNICO',
+                'Razonamiento espacial',
+                Icons.extension_rounded,
+                const LinearGradient(colors: [Color(0xFF8B5CF6), Color(0xFF7C3AED)]),
+                _startPsychotechnicalTest,
+              ),
+              _buildMobileActionCard(
+                'PONTE A PRUEBA',
+                'Simulación real',
+                Icons.timer_rounded,
+                const LinearGradient(colors: [Color(0xFF3B82F6), Color(0xFF2563EB)]),
+                _startExamSimulation,
+              ),
+              _buildMobileActionCard(
+                'LA ESCUELITA',
+                'Refuerzo de errores',
+                Icons.school_rounded,
+                const LinearGradient(colors: [Color(0xFFF97316), Color(0xFFEA580C)]),
+                _startEscuelita,
+              ),
+              _buildMobileActionCard(
+                'ENTREVISTA',
+                'Evaluación psicológica',
+                Icons.forum_rounded,
+                const LinearGradient(colors: [Color(0xFFEC4899), Color(0xFFDB2777)]),
+                _startMedicalExam,
+              ),
+            ],
+          ),
+          const SizedBox(height: 16),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildMobileActionCard(
+    String title,
+    String subtitle,
+    IconData icon,
+    Gradient gradient,
+    VoidCallback? onTap,
+  ) {
+    return InkWell(
+      onTap: onTap,
+      borderRadius: BorderRadius.circular(20),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: gradient,
+          borderRadius: BorderRadius.circular(20),
+          boxShadow: [
+            BoxShadow(
+              color: Colors.black.withOpacity(0.3),
+              blurRadius: 10,
+              offset: const Offset(0, 6),
             ),
           ],
         ),
-      ],
+        padding: const EdgeInsets.all(14),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              padding: const EdgeInsets.all(8),
+              decoration: BoxDecoration(
+                color: Colors.white.withOpacity(0.2),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(icon, color: Colors.white, size: 22),
+            ),
+            const Spacer(),
+            Text(
+              title,
+              style: const TextStyle(
+                color: Colors.white,
+                fontSize: 12,
+                fontWeight: FontWeight.w900,
+                letterSpacing: 0.5,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+            ),
+            const SizedBox(height: 2),
+            Text(
+              subtitle,
+              style: TextStyle(
+                color: Colors.white.withOpacity(0.85),
+                fontSize: 10,
+                height: 1.3,
+              ),
+              maxLines: 2,
+              overflow: TextOverflow.ellipsis,
+            ),
+          ],
+        ),
+      ),
     );
   }
 
@@ -472,7 +684,7 @@ class _DashboardScreenState extends State<DashboardScreen>
   // ──────────────────────────────────────────
   Widget _buildWebHomeTab() {
     final secService = sl<SecurityService>();
-    final isMobile = MediaQuery.of(context).size.width < 900;
+    final isMobile = MediaQuery.of(context).size.width < 1100;
     
     return Container(
       color: Colors.transparent,
@@ -739,7 +951,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     Icons.task_alt_rounded,
                     const Color(0xFF06B6D4),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 12),
                   _buildStatCard(
                     'Errores Cometidos',
                     '$_failedCount',
@@ -747,7 +959,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                     Icons.assignment_late_rounded,
                     const Color(0xFFF97316),
                   ),
-                  const SizedBox(height: 20),
+                  const SizedBox(height: 12),
                   _buildStatCard(
                     'Dimensión Débil',
                     _weakestDim.isEmpty ? 'N/A' : _weakestDim,
@@ -769,7 +981,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       const Color(0xFF06B6D4),
                     ),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: _buildStatCard(
                       'Errores Cometidos',
@@ -779,7 +991,7 @@ class _DashboardScreenState extends State<DashboardScreen>
                       const Color(0xFFF97316),
                     ),
                   ),
-                  const SizedBox(width: 20),
+                  const SizedBox(width: 12),
                   Expanded(
                     child: _buildStatCard(
                       'Dimensión Débil',
@@ -872,10 +1084,10 @@ class _DashboardScreenState extends State<DashboardScreen>
 
   Widget _buildStatCard(String title, String value, String subtitle, IconData icon, Color color) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
         color: const Color(0xFF1E1F20).withOpacity(0.4),
-        borderRadius: BorderRadius.circular(24),
+        borderRadius: BorderRadius.circular(16),
         border: Border.all(
           color: color.withOpacity(0.25),
           width: 1.5,
@@ -894,18 +1106,18 @@ class _DashboardScreenState extends State<DashboardScreen>
           Row(
             children: [
               Container(
-                padding: const EdgeInsets.all(10),
+                padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
                   color: color.withOpacity(0.12),
-                  borderRadius: BorderRadius.circular(12),
+                  borderRadius: BorderRadius.circular(10),
                 ),
-                child: Icon(icon, color: color, size: 20),
+                child: Icon(icon, color: color, size: 18),
               ),
               const Spacer(),
               Text(
                 value,
                 style: TextStyle(
-                  fontSize: 26,
+                  fontSize: 22,
                   fontWeight: FontWeight.w900,
                   color: color,
                   letterSpacing: -0.5,
@@ -913,25 +1125,25 @@ class _DashboardScreenState extends State<DashboardScreen>
               ),
             ],
           ),
-          const SizedBox(height: 16),
+          const SizedBox(height: 12),
           Text(
             title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: const TextStyle(
-              fontSize: 14,
+              fontSize: 13,
               fontWeight: FontWeight.bold,
               color: Colors.white,
               letterSpacing: 0.2,
             ),
           ),
-          const SizedBox(height: 4),
+          const SizedBox(height: 2),
           Text(
             subtitle,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
             style: TextStyle(
-              fontSize: 12,
+              fontSize: 11,
               color: const Color(0xFFC4C7C5),
               fontWeight: FontWeight.w400,
             ),
@@ -968,7 +1180,7 @@ class _DashboardScreenState extends State<DashboardScreen>
           ],
         ),
         child: Padding(
-          padding: const EdgeInsets.all(32),
+          padding: const EdgeInsets.all(20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
@@ -1165,7 +1377,6 @@ class _WebDailyBadge extends StatelessWidget {
           mainAxisSize: MainAxisSize.min,
           children: [
             Row(
-              mainAxisSize: MainAxisSize.min,
               children: [
                 Container(
                   padding: const EdgeInsets.all(6),
@@ -1180,13 +1391,16 @@ class _WebDailyBadge extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(width: 8),
-                Text(
-                  todayCompleted ? 'MISIÓN COMPLETADA' : 'MISIÓN DIARIA REQUERIDA',
-                  style: const TextStyle(
-                    fontSize: 11,
-                    fontWeight: FontWeight.w900,
-                    color: Colors.white,
-                    letterSpacing: 1.0,
+                Flexible(
+                  child: Text(
+                    todayCompleted ? 'MISIÓN COMPLETADA' : 'MISIÓN DIARIA REQUERIDA',
+                    style: const TextStyle(
+                      fontSize: 11,
+                      fontWeight: FontWeight.w900,
+                      color: Colors.white,
+                      letterSpacing: 1.0,
+                    ),
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ),
               ],
@@ -1204,16 +1418,13 @@ class _WebDailyBadge extends StatelessWidget {
             ),
             if (!todayCompleted) ...[
               const SizedBox(height: 8),
-              SizedBox(
-                width: 200,
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(4),
-                  child: LinearProgressIndicator(
-                    value: progress,
-                    backgroundColor: Colors.white.withOpacity(0.25),
-                    valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
-                    minHeight: 6,
-                  ),
+              ClipRRect(
+                borderRadius: BorderRadius.circular(4),
+                child: LinearProgressIndicator(
+                  value: progress,
+                  backgroundColor: Colors.white.withOpacity(0.25),
+                  valueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
+                  minHeight: 6,
                 ),
               ),
             ],
