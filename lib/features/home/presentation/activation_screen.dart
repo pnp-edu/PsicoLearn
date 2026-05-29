@@ -241,8 +241,7 @@ class _ActivationScreenState extends State<ActivationScreen> with TickerProvider
                 ),
               ),
             ),
-          ),
-        );
+          );
       },
     );
   }
@@ -1122,97 +1121,86 @@ class _BentoCardRedesignState extends State<_BentoCardRedesign> {
           child: Stack(
             children: [
               AnimatedContainer(
-                  duration: const Duration(milliseconds: 250),
-                  color: Colors.white.withOpacity(_isHovered ? 0.05 : 0.03),
+                duration: const Duration(milliseconds: 250),
+                color: Colors.white.withOpacity(_isHovered ? 0.05 : 0.03),
+              ),
+              AnimatedOpacity(
+                duration: const Duration(milliseconds: 250),
+                opacity: _isHovered ? 1.0 : 0.0,
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: RadialGradient(
+                      center: const Alignment(-0.6, -0.6),
+                      radius: 0.8,
+                      colors: [widget.glowColor, Colors.transparent],
+                    ),
+                  ),
                 ),
-                AnimatedOpacity(
+              ),
+              Padding(
+                padding: const EdgeInsets.all(22.0),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      width: 36,
+                      height: 36,
+                      decoration: BoxDecoration(
+                        color: widget.iconBgColor,
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: widget.iconBorderColor, width: 1.0),
+                      ),
+                      alignment: Alignment.center,
+                      child: Text(
+                        widget.icon,
+                        style: TextStyle(fontSize: 18, color: widget.iconTextColor),
+                      ),
+                    ),
+                    const SizedBox(height: 14),
+                    Text(
+                      widget.title,
+                      style: const TextStyle(
+                        fontFamily: 'Google Sans',
+                        fontSize: 14,
+                        fontWeight: FontWeight.w500,
+                        color: Color(0xFFE8EAED),
+                      ),
+                    ),
+                    const SizedBox(height: 6),
+                    Text(
+                      widget.description,
+                      style: const TextStyle(
+                        fontFamily: 'Google Sans',
+                        fontSize: 12,
+                        fontWeight: FontWeight.w300,
+                        color: Color(0xFF9AA0A6),
+                        height: 1.55,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+              Positioned(
+                bottom: 0,
+                left: 0,
+                right: 0,
+                child: AnimatedOpacity(
                   duration: const Duration(milliseconds: 250),
                   opacity: _isHovered ? 1.0 : 0.0,
                   child: Container(
+                    height: 1.5,
                     decoration: BoxDecoration(
-                      gradient: RadialGradient(
-                        center: const Alignment(-0.6, -0.6),
-                        radius: 0.8,
-                        colors: [
-                          widget.glowColor,
-                          Colors.transparent,
-                        ],
+                      gradient: LinearGradient(
+                        colors: [Colors.transparent, widget.lineColor, Colors.transparent],
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
                       ),
                     ),
                   ),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(22.0),
-                  child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        width: 36,
-                        height: 36,
-                        decoration: BoxDecoration(
-                          color: widget.iconBgColor,
-                          borderRadius: BorderRadius.circular(10),
-                          border: Border.all(color: widget.iconBorderColor, width: 1.0),
-                        ),
-                        alignment: Alignment.center,
-                        child: Text(
-                          widget.icon,
-                          style: TextStyle(
-                            fontSize: 18,
-                            color: widget.iconTextColor,
-                          ),
-                        ),
-                      ),
-                      const SizedBox(height: 14),
-                      Text(
-                        widget.title,
-                        style: const TextStyle(
-                          fontFamily: 'Google Sans',
-                          fontSize: 14,
-                          fontWeight: FontWeight.w500,
-                          color: Color(0xFFE8EAED),
-                        ),
-                      ),
-                      const SizedBox(height: 6),
-                      Text(
-                        widget.description,
-                        style: const TextStyle(
-                          fontFamily: 'Google Sans',
-                          fontSize: 12,
-                          fontWeight: FontWeight.w300,
-                          color: Color(0xFF9AA0A6),
-                          height: 1.55,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                Positioned(
-                  bottom: 0,
-                  left: 0,
-                  right: 0,
-                  child: AnimatedOpacity(
-                    duration: const Duration(milliseconds: 250),
-                    opacity: _isHovered ? 1.0 : 0.0,
-                    child: Container(
-                      height: 1.5,
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [
-                            Colors.transparent,
-                            widget.lineColor,
-                            Colors.transparent,
-                          ],
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
       ),
