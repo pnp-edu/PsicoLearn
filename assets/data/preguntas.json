@@ -1,0 +1,3004 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "texto": "Pregunta 1: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 2,
+      "texto": "Pregunta 2: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 3,
+      "texto": "Pregunta 3: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 4,
+      "texto": "Pregunta 4: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 5,
+      "texto": "Pregunta 5: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 6,
+      "texto": "Pregunta 6: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 7,
+      "texto": "Pregunta 7: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 8,
+      "texto": "Pregunta 8: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 9,
+      "texto": "Pregunta 9: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 10,
+      "texto": "Pregunta 10: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 11,
+      "texto": "Pregunta 11: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 12,
+      "texto": "Pregunta 12: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 13,
+      "texto": "Pregunta 13: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 14,
+      "texto": "Pregunta 14: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 15,
+      "texto": "Pregunta 15: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 16,
+      "texto": "Pregunta 16: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 17,
+      "texto": "Pregunta 17: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 18,
+      "texto": "Pregunta 18: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 19,
+      "texto": "Pregunta 19: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 20,
+      "texto": "Pregunta 20: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 21,
+      "texto": "Pregunta 21: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 22,
+      "texto": "Pregunta 22: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 23,
+      "texto": "Pregunta 23: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 24,
+      "texto": "Pregunta 24: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 25,
+      "texto": "Pregunta 25: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 26,
+      "texto": "Pregunta 26: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 27,
+      "texto": "Pregunta 27: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 28,
+      "texto": "Pregunta 28: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 29,
+      "texto": "Pregunta 29: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 30,
+      "texto": "Pregunta 30: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 31,
+      "texto": "Pregunta 31: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 32,
+      "texto": "Pregunta 32: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 33,
+      "texto": "Pregunta 33: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 34,
+      "texto": "Pregunta 34: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 35,
+      "texto": "Pregunta 35: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 36,
+      "texto": "Pregunta 36: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 37,
+      "texto": "Pregunta 37: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 38,
+      "texto": "Pregunta 38: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 39,
+      "texto": "Pregunta 39: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 40,
+      "texto": "Pregunta 40: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 41,
+      "texto": "Pregunta 41: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 42,
+      "texto": "Pregunta 42: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 43,
+      "texto": "Pregunta 43: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 44,
+      "texto": "Pregunta 44: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 45,
+      "texto": "Pregunta 45: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 46,
+      "texto": "Pregunta 46: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 47,
+      "texto": "Pregunta 47: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 48,
+      "texto": "Pregunta 48: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 49,
+      "texto": "Pregunta 49: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 50,
+      "texto": "Pregunta 50: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 51,
+      "texto": "Pregunta 51: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 52,
+      "texto": "Pregunta 52: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 53,
+      "texto": "Pregunta 53: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 54,
+      "texto": "Pregunta 54: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 55,
+      "texto": "Pregunta 55: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 56,
+      "texto": "Pregunta 56: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 57,
+      "texto": "Pregunta 57: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 58,
+      "texto": "Pregunta 58: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 59,
+      "texto": "Pregunta 59: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 60,
+      "texto": "Pregunta 60: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 61,
+      "texto": "Pregunta 61: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 62,
+      "texto": "Pregunta 62: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 63,
+      "texto": "Pregunta 63: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 64,
+      "texto": "Pregunta 64: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 65,
+      "texto": "Pregunta 65: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 66,
+      "texto": "Pregunta 66: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 67,
+      "texto": "Pregunta 67: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 68,
+      "texto": "Pregunta 68: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 69,
+      "texto": "Pregunta 69: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 70,
+      "texto": "Pregunta 70: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 71,
+      "texto": "Pregunta 71: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 72,
+      "texto": "Pregunta 72: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 73,
+      "texto": "Pregunta 73: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 74,
+      "texto": "Pregunta 74: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 75,
+      "texto": "Pregunta 75: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 76,
+      "texto": "Pregunta 76: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 77,
+      "texto": "Pregunta 77: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 78,
+      "texto": "Pregunta 78: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 79,
+      "texto": "Pregunta 79: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 80,
+      "texto": "Pregunta 80: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 81,
+      "texto": "Pregunta 81: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 82,
+      "texto": "Pregunta 82: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 83,
+      "texto": "Pregunta 83: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 84,
+      "texto": "Pregunta 84: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 85,
+      "texto": "Pregunta 85: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 86,
+      "texto": "Pregunta 86: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 87,
+      "texto": "Pregunta 87: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 88,
+      "texto": "Pregunta 88: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 89,
+      "texto": "Pregunta 89: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 90,
+      "texto": "Pregunta 90: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 91,
+      "texto": "Pregunta 91: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 92,
+      "texto": "Pregunta 92: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 93,
+      "texto": "Pregunta 93: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 94,
+      "texto": "Pregunta 94: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 95,
+      "texto": "Pregunta 95: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 96,
+      "texto": "Pregunta 96: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 97,
+      "texto": "Pregunta 97: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 98,
+      "texto": "Pregunta 98: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 99,
+      "texto": "Pregunta 99: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 100,
+      "texto": "Pregunta 100: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 101,
+      "texto": "Pregunta 101: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 102,
+      "texto": "Pregunta 102: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 103,
+      "texto": "Pregunta 103: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 104,
+      "texto": "Pregunta 104: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 105,
+      "texto": "Pregunta 105: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 106,
+      "texto": "Pregunta 106: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 107,
+      "texto": "Pregunta 107: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 108,
+      "texto": "Pregunta 108: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 109,
+      "texto": "Pregunta 109: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 110,
+      "texto": "Pregunta 110: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 111,
+      "texto": "Pregunta 111: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 112,
+      "texto": "Pregunta 112: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 113,
+      "texto": "Pregunta 113: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 114,
+      "texto": "Pregunta 114: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 115,
+      "texto": "Pregunta 115: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 116,
+      "texto": "Pregunta 116: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 117,
+      "texto": "Pregunta 117: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 118,
+      "texto": "Pregunta 118: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 119,
+      "texto": "Pregunta 119: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 120,
+      "texto": "Pregunta 120: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 121,
+      "texto": "Pregunta 121: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 122,
+      "texto": "Pregunta 122: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 123,
+      "texto": "Pregunta 123: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 124,
+      "texto": "Pregunta 124: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 125,
+      "texto": "Pregunta 125: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 126,
+      "texto": "Pregunta 126: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 127,
+      "texto": "Pregunta 127: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 128,
+      "texto": "Pregunta 128: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 129,
+      "texto": "Pregunta 129: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 130,
+      "texto": "Pregunta 130: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 131,
+      "texto": "Pregunta 131: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 132,
+      "texto": "Pregunta 132: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 133,
+      "texto": "Pregunta 133: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 134,
+      "texto": "Pregunta 134: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 135,
+      "texto": "Pregunta 135: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 136,
+      "texto": "Pregunta 136: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 137,
+      "texto": "Pregunta 137: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 138,
+      "texto": "Pregunta 138: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 139,
+      "texto": "Pregunta 139: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 140,
+      "texto": "Pregunta 140: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 141,
+      "texto": "Pregunta 141: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 142,
+      "texto": "Pregunta 142: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 143,
+      "texto": "Pregunta 143: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 144,
+      "texto": "Pregunta 144: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 145,
+      "texto": "Pregunta 145: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 146,
+      "texto": "Pregunta 146: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 147,
+      "texto": "Pregunta 147: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 148,
+      "texto": "Pregunta 148: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 149,
+      "texto": "Pregunta 149: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 150,
+      "texto": "Pregunta 150: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    }
+  ]
+}
