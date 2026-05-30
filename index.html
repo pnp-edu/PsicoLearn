@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/PsicoLearn/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="PsicoLearn es la plataforma de entrenamiento inteligente y simulación de exámenes psicométricos y psicotécnicos para asegurar tu ingreso a la PNP.">
+  <meta name="keywords" content="PNP, psicométrico, psicotécnico, examen, simulación, entrenamiento">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="google-signin-client_id" content="474933138096-i9m8vn3qonujq4qgnq75jhu80flm6lsj.apps.googleusercontent.com">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PsicoLearn">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>PsicoLearn - Entrenamiento Psicológico Inteligente</title>
+  <link rel="manifest" href="manifest.json">
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background-color: #0A0E12;
+    }
+    
+    #app {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    flt-glass-pane {
+      width: 100% !important;
+      height: 100% !important;
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    // CACHE BUSTER: Force unregister any existing service workers so the user gets the fresh version
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then(function(registrations) {
+        for(let registration of registrations) {
+          registration.unregister();
+          console.log('Unregistered SW to force update');
+        }
+      });
+      caches.keys().then((keyList) => {
+        return Promise.all(keyList.map((key) => {
+          return caches.delete(key);
+        }));
+      });
+    }
+    
+    // Force reload if not reloaded recently
+    if (!sessionStorage.getItem('force_reloaded')) {
+      sessionStorage.setItem('force_reloaded', 'true');
+      setTimeout(() => {
+        window.location.reload(true);
+      }, 500);
+    }
+  </script>
+  <script src="flutter_bootstrap.js?v=v3_desktop_force" async></script>
+</body>
+</html>

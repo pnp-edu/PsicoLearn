@@ -1,0 +1,3418 @@
+{
+  "preguntas": [
+    {
+      "id": 1,
+      "texto": "Pregunta 1: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 2,
+      "texto": "Pregunta 2: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 3,
+      "texto": "Pregunta 3: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 4,
+      "texto": "Pregunta 4: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 5,
+      "texto": "Pregunta 5: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 6,
+      "texto": "Pregunta 6: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 7,
+      "texto": "Pregunta 7: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 8,
+      "texto": "Pregunta 8: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Determine el valor de 'x' en la siguiente distribución: 8, 7, 9 (extremos superiores); 11, 13, 15 (extremos inferiores). Se sabe que: (8x11)+8=96 y (7x13)+7=98. ¿Cuál es el valor de 'x' para la tercera columna?",
+      "opciones": {
+        "A": "136",
+        "B": "144",
+        "C": "116"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Numérico",
+      "sub_dimension": "Relaciones Operacionales",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Capacidad de Análisis",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-NUM-02",
+      "pista": "La ley de formación es (A x B) + A. Por lo tanto: (9 x 15) + 9.",
+      "id": 9
+    },
+    {
+      "texto": "Sobre el análisis de trazos y figuras: ¿Qué condición se debe cumplir para que una figura se pueda realizar con un trazo continuo sin pasar dos veces por el mismo segmento?",
+      "opciones": {
+        "A": "Debe tener solo puntos pares o máximo dos puntos impares.",
+        "B": "Debe tener todos sus puntos impares.",
+        "C": "No debe tener ningún punto de intersección."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Topología y Trazados",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Resolución de Problemas",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-01",
+      "pista": "Basado en los ejercicios de trazo continuo del documento.",
+      "id": 10
+    },
+    {
+      "texto": "En un sistema de transmisión, si el engranaje '3' se mueve en sentido horario, ¿qué dirección tomará un engranaje conectado directamente a él?",
+      "opciones": {
+        "A": "Sentido horario.",
+        "B": "Sentido antihorario.",
+        "C": "Se mantiene estático."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Mecánico",
+      "sub_dimension": "Sistemas de Engranajes",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Comprensión Técnica",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-MEC-01",
+      "pista": "Dos ruedas dentadas en contacto siempre giran en sentidos opuestos.",
+      "id": 11
+    },
+    {
+      "texto": "¿Qué letra sigue en la secuencia lógica presentada en el esquema: A(2), B(3), D(5), G(7)?",
+      "opciones": {
+        "A": "J",
+        "B": "K",
+        "C": "L"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Sucesiones Alfanuméricas",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Agilidad Mental",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-08",
+      "pista": "La secuencia numérica asociada a las letras (2, 3, 5, 7) corresponde a números primos.",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "texto": "Pregunta 13: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Indique la figura discordante (la que no guarda relación) en una serie de matrices con figuras geométricas y puntos internos.",
+      "opciones": {
+        "A": "Figura con patrón de rotación invertido.",
+        "B": "Figura con el mismo número de elementos.",
+        "C": "Figura con simetría axial."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Series No Verbales",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Reconocimiento de Patrones",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-02",
+      "pista": "Analice la posición de los elementos internos respecto a la estructura principal de la figura.",
+      "id": 14
+    },
+    {
+      "texto": "Si se tiene una serie de fichas de dominó, ¿cuál es la lógica para determinar la ficha que continúa la secuencia?",
+      "opciones": {
+        "A": "Suma constante entre los valores superiores e inferiores.",
+        "B": "Alternancia de valores pares e impares.",
+        "C": "Progresión aritmética independiente en cada mitad de la ficha."
+      },
+      "puntos_opciones": {
+        "A": 5,
+        "B": 5,
+        "C": 10
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Sucesiones Gráficas",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Atención al Detalle",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-09",
+      "pista": "Observe el comportamiento de los puntos en la parte superior e inferior por separado.",
+      "id": 15
+    },
+    {
+      "texto": "En un sistema complejo de engranajes y fajas, ¿cuántas ruedas giran en sentido horario si la primera se mueve en sentido antihorario?",
+      "opciones": {
+        "A": "Depende de si las fajas están cruzadas o son directas.",
+        "B": "La misma cantidad que giran en sentido antihorario.",
+        "C": "Todas girarán en el mismo sentido."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "dimension": "Razonamiento Mecánico",
+      "sub_dimension": "Cinemática Básica",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Análisis de Sistemas",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-MEC-02",
+      "pista": "Recuerde: Fajas cruzadas invierten el giro; fajas directas lo mantienen.",
+      "id": 16
+    },
+    {
+      "texto": "¿Qué figura se puede realizar con un trazo continuo, pudiendo cruzarse los trazos, pero sin pasar dos veces por el mismo segmento?",
+      "opciones": {
+        "A": "Una figura con cuatro puntos impares.",
+        "B": "Una figura con todos sus puntos de intersección pares.",
+        "C": "Una figura donde todos los puntos son impares."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Topología",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Resolución de Problemas",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-03",
+      "pista": "Para que una figura sea realizable de un solo trazo, debe tener 0 o 2 puntos impares.",
+      "id": 17
+    },
+    {
+      "texto": "Si el engranaje '7' se mueve en el sentido indicado por la flecha (horario), identifique qué otros engranajes se mueven en sentido horario según el esquema de transmisión.",
+      "opciones": {
+        "A": "Solo los engranajes impares.",
+        "B": "Los engranajes 3, 5, 7 y 8.",
+        "C": "Los engranajes 1, 2, 4, 6 y 9."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Mecánico",
+      "sub_dimension": "Transmisión de Movimiento",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Análisis Técnico",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-MEC-03",
+      "pista": "Siga la cadena de contacto; los engranajes unidos por fajas cruzadas invierten el sentido de giro.",
+      "id": 18
+    },
+    {
+      "texto": "Complete la analogía de palabras: ¿Qué planeta es a 'Mar' como 'Asno' es a un animal determinado?",
+      "opciones": {
+        "A": "Mercurio",
+        "B": "Marte",
+        "C": "Tierra"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Verbal",
+      "sub_dimension": "Analogías",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Comprensión de Conceptos",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-VER-01",
+      "pista": "Busque la relación de prefijos o similitudes fonéticas presentadas en los ejercicios.",
+      "id": 19
+    },
+    {
+      "id": 20,
+      "texto": "Pregunta 20: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "texto": "Complete la siguiente analogía de personajes: ¿Qué rey mago falta en la relación: Baltazar, Melchor, ________?",
+      "opciones": {
+        "A": "Aaron",
+        "B": "Gaspar",
+        "C": "Simeón"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Verbal",
+      "sub_dimension": "Analogías y Secuencias",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Cultura General y Lógica",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-VER-02",
+      "pista": "Debe completar la terna clásica de los Reyes Magos mencionada en el documento.",
+      "id": 21
+    },
+    {
+      "texto": "En un sistema de poleas y fajas, si la rueda 'A' se mueve en sentido horario y está conectada a la rueda 'B' mediante una faja cruzada, ¿en qué sentido gira la rueda 'B'?",
+      "opciones": {
+        "A": "Sentido horario",
+        "B": "Sentido antihorario",
+        "C": "No se mueve"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Mecánico",
+      "sub_dimension": "Sistemas de Transmisión",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Análisis Táctico",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-MEC-04",
+      "pista": "Las fajas cruzadas siempre invierten el sentido de giro entre dos ruedas.",
+      "id": 22
+    },
+    {
+      "texto": "Identifique la figura discordante en un grupo de matrices donde se evalúa la rotación y el número de elementos internos.",
+      "opciones": {
+        "A": "La figura que tiene un número par de puntos cuando las demás tienen impares.",
+        "B": "La figura que mantiene la misma ley de formación.",
+        "C": "La figura que es simétrica a la primera."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Figuras Discordantes",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Atención Selectiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-04",
+      "pista": "Busque el elemento que rompe la regla común del grupo (puntos, trazos o posición).",
+      "id": 23
+    },
+    {
+      "texto": "Dada la proposición: 'Algunos senadores son irracionales'. ¿Cuál es su contradictoria directa?",
+      "opciones": {
+        "A": "Todos los senadores son irracionales.",
+        "B": "Ningún senador es irracional.",
+        "C": "Algunos senadores son racionales."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Cuadro de Oposición",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Interpretación Lógica",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-10",
+      "pista": "En el cuadro de Boecio, la contradictoria de una Particular Afirmativa (I) es la Universal Negativa (E).",
+      "id": 24
+    },
+    {
+      "texto": "Determine el valor de 'x' en la siguiente distribución numérica: 8, 7, 9 (superiores); 11, 13, 15 (inferiores). Se sabe que (8x11)+8=96 y (7x13)+7=98. ¿Cuál es el resultado de (9x15)+9?",
+      "opciones": {
+        "A": "136",
+        "B": "144",
+        "C": "116"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Numérico",
+      "sub_dimension": "Relaciones Operacionales",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Capacidad Analítica",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-NUM-03",
+      "pista": "La ley de formación es (Superior * Inferior) + Superior.",
+      "id": 25
+    },
+    {
+      "texto": "Halle el valor de 'x' en la siguiente analogía: 8 (38) 11; 6 (38) 13; 7 (x) 15.",
+      "opciones": {
+        "A": "37",
+        "B": "44",
+        "C": "76"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Numérico",
+      "sub_dimension": "Analogías Numéricas",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Detección de Patrones",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-NUM-04",
+      "pista": "La solución se obtiene sumando los extremos y multiplicando el resultado por dos: (7+15)x2.",
+      "id": 26
+    },
+    {
+      "texto": "Indique la figura discordante entre las opciones presentadas (figuras con patrones de puntos y líneas).",
+      "opciones": {
+        "A": "Figura A",
+        "B": "Figura B",
+        "C": "Figura D"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Figuras Discordantes",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Atención al Detalle",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-05",
+      "pista": "Identifique el elemento que no comparte la misma ley de formación o simetría que los demás.",
+      "id": 27
+    },
+    {
+      "texto": "En un sistema de engranajes, si la rueda '3' se mueve en sentido horario, ¿cuántas ruedas se mueven en sentido antihorario?",
+      "opciones": {
+        "A": "4",
+        "B": "5",
+        "C": "6"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Mecánico",
+      "sub_dimension": "Cinemática",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Análisis de Procesos",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-MEC-05",
+      "pista": "Siga la secuencia de giro: los engranajes en contacto directo alternan su sentido.",
+      "id": 28
+    },
+    {
+      "texto": "Identifique la figura discordante entre un grupo de cuatro opciones con patrones circulares y líneas internas.",
+      "opciones": {
+        "A": "Figura A",
+        "B": "Figura B",
+        "C": "Figura C",
+        "D": "Figura D"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Figuras Discordantes",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Atención Selectiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-06",
+      "pista": "Analice la orientación de las líneas internas en relación con el borde de la figura.",
+      "id": 29
+    },
+    {
+      "texto": "Seleccione la figura que no tiene la misma ley de formación en una matriz de cuadros con divisiones internas.",
+      "opciones": {
+        "A": "Figura con patrón de sombreado alterno.",
+        "B": "Figura con simetría opuesta.",
+        "C": "Figura con elementos adicionales externos."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico-Visual",
+      "sub_dimension": "Leyes de Formación",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Análisis de Datos",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-11",
+      "pista": "Observe el número de divisiones y cómo cambia el patrón en cada paso.",
+      "id": 30
+    },
+    {
+      "texto": "Indique qué figura sigue en una serie donde los elementos se desplazan y cambian de forma (Círculos, Cruces y Cuadrados).",
+      "opciones": {
+        "A": "Figura con X en la esquina superior.",
+        "B": "Figura con O en el centro.",
+        "C": "Figura con patrón invertido."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Sucesiones Gráficas",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Previsión de Eventos",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-07",
+      "pista": "Determine el movimiento (sentido horario o antihorario) de cada símbolo dentro de la matriz.",
+      "id": 31
+    },
+    {
+      "texto": "Normalmente me voy a dormir sintiéndome satisfecho de cómo ha sido mi vida.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Duda",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Satisfacción Personal",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Refleja el bienestar general y ajuste emocional.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 32
+    },
+    {
+      "texto": "¿Qué letra falta en la siguiente secuencia alfanumérica basada en la posición de los elementos en el esquema?",
+      "opciones": {
+        "A": "R",
+        "B": "P",
+        "C": "S",
+        "D": "T"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 0,
+        "C": 10,
+        "D": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Sucesiones Alfabéticas",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Agilidad Mental",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-12",
+      "pista": "Relacione la posición de la letra con los valores numéricos 2, 3, 5 y 7 proporcionados en el gráfico.",
+      "id": 33
+    },
+    {
+      "texto": "Me gusta muchísimo tener invitados y que lo pasen bien.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Extroversión",
+      "sub_dimension": "Sociabilidad/Afabilidad",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la disposición hacia las relaciones sociales y la hospitalidad.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 34
+    },
+    {
+      "texto": "Aprendo a vivir con el problema si no se puede solucionar.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En ocasiones",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Resignación/Adaptación",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la capacidad de aceptar situaciones inalterables sin estrés excesivo.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 35
+    },
+    {
+      "texto": "Me atrae más realizar una tarea individual que me agrade, que estar con amigos.",
+      "opciones": {
+        "A": "Verdad",
+        "B": "Duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Sociabilidad vs. Individualismo",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Aislamiento",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la preferencia por el trabajo solitario frente a la interacción grupal.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 36
+    },
+    {
+      "texto": "Admiro más a:",
+      "opciones": {
+        "A": "Una persona con capacidad de tipo medio, pero con una moral estricta",
+        "B": "Una persona famosa, aunque a veces es egocéntrico",
+        "C": "Una persona con talento, aunque a veces no sea responsable"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Prioridad Moral",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Falta de Ética",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa si el postulante valora más la integridad que el éxito o el talento.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 5
+      },
+      "id": 37
+    },
+    {
+      "texto": "Sería más interesante ser:",
+      "opciones": {
+        "A": "Ingeniero de la construcción",
+        "B": "Empleado del hogar",
+        "C": "Escritor de teatro"
+      },
+      "dimension": "Intereses Profesionales",
+      "sub_dimension": "Inclinación Laboral",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide intereses hacia áreas técnicas, de servicio o creativas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 38
+    },
+    {
+      "texto": "Normalmente soy el que da el primer paso al hacer amigos.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Duda",
+        "C": "Falso"
+      },
+      "dimension": "Extroversión",
+      "sub_dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Aislamiento Social",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la iniciativa en las relaciones interpersonales.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 39
+    },
+    {
+      "texto": "Dentro de la matriz de figuras circulares, halle la figura discordante que rompe el patrón establecido.",
+      "opciones": {
+        "A": "Figura con círculo simple.",
+        "B": "Figura con círculos concéntricos dobles.",
+        "C": "Figura con tres círculos alineados.",
+        "D": "Figura con patrón de sombreado."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0,
+        "D": 0
+      },
+      "dimension": "Razonamiento Abstracto",
+      "sub_dimension": "Figuras Discordantes",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Atención Selectiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-ABS-08",
+      "pista": "Busque el patrón de repetición.",
+      "id": 40
+    },
+    {
+      "texto": "Cuando la gente autoritaria trata de dominarme, hago justamente lo contrario de lo que quieren.",
+      "opciones": {
+        "A": "Si",
+        "B": "En duda",
+        "C": "No"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Respeto a la Autoridad",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Insubordinación",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la reacción ante figuras de mando y cumplimiento de normas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 41
+    },
+    {
+      "texto": "Algunas veces no congenio muy bien con los demás porque mis ideas no son convencionales y corrientes.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Conformidad con el grupo",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Dificultad de integración",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa si la originalidad del sujeto interfiere en su relación con los demás.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 42
+    },
+    {
+      "texto": "Muchas personas 'apuñalarían por la espalda' para salir ellas adelante.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Depende",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Confianza en los demás",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Paranoia/Hostilidad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la percepción de cinismo o maldad en el entorno social.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 43
+    },
+    {
+      "texto": "Me meto en problemas porque a veces sigo adelante con mis ideas, sin cometerlas con las personas que puedan estar implicadas.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "De vez en cuando",
+        "C": "Falso"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Trabajo en Equipo",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Individualismo Táctico",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la tendencia a actuar sin consultar, lo que puede ser riesgoso en operativos.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 44
+    },
+    {
+      "texto": "Hablo de mis sentimientos:",
+      "opciones": {
+        "A": "Con facilidad cuando las personas parecen estar interesadas.",
+        "B": "Cuando estoy bajo los efectos del alcohol",
+        "C": "Solo si no tengo más remedio"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Apertura Emocional",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Consumo de Sustancias",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "La opción B puede indicar un factor de riesgo relacionado con el alcohol.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 5
+      },
+      "id": 45
+    },
+    {
+      "texto": "Me aprovecho de la gente:",
+      "opciones": {
+        "A": "Algunas veces",
+        "B": "A veces",
+        "C": "Nunca"
+      },
+      "dimension": "Integridad",
+      "sub_dimension": "Ética Profesional",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Conducta Antisocial",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Indica tendencias de manipulación o falta de ética.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 46
+    },
+    {
+      "texto": "Mis pensamientos son demasiado complicados y profundos como para ser comprendidos por muchas personas.",
+      "opciones": {
+        "A": "Casi nunca",
+        "B": "Raras vez",
+        "C": "A menudo"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Sentimiento de Incomprensión",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Aislamiento Cognitivo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la percepción de superioridad o aislamiento intelectual.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 47
+    },
+    {
+      "texto": "Prefiero:",
+      "opciones": {
+        "A": "Comentar mis problemas con mis amigos",
+        "B": "Tratar de olvidarlos en la medida posible",
+        "C": "Guardarlos para mis adentros."
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Afrontamiento",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Aislamiento",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide los canales de desahogo emocional y búsqueda de apoyo.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 48
+    },
+    {
+      "texto": "Pienso acerca de cosas que debería haber dicho, pero que no dije",
+      "opciones": {
+        "A": "Casi nunca",
+        "B": "A veces",
+        "C": "A menudo"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Rumiación",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Ansiedad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Indica la tendencia a dar vueltas a situaciones pasadas por inseguridad.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 49
+    },
+    {
+      "texto": "Siempre estoy atento ante los intentos de publicidad en las cosas que leo.",
+      "opciones": {
+        "A": "Si",
+        "B": "No recuerdo",
+        "C": "No"
+      },
+      "dimension": "Atención",
+      "sub_dimension": "Percepción Crítica",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide el nivel de alerta y análisis crítico ante estímulos externos.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 50
+    },
+    {
+      "texto": "Si las personas actúan como si yo no les gustara:",
+      "opciones": {
+        "A": "No me perturba",
+        "B": "En duda",
+        "C": "Normalmente me hace daño"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autoconcepto/Seguridad",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Hipersensibilidad Social",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide cuánto afecta la aprobación externa al bienestar del sujeto.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 51
+    },
+    {
+      "texto": "Cuando observo que difiero de alguien en puntos de vista sociales, prefiero:",
+      "opciones": {
+        "A": "Discutir el significado de nuestras diferencias básicas",
+        "B": "No tomar importancia",
+        "C": "Cambiar de tema"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Manejo de Discrepancias",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Conflictividad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la disposición al diálogo o a la evitación de conflictos ideológicos.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 52
+    },
+    {
+      "texto": "He dicho cosas que hirieron los sentimientos de otros.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Raras veces",
+        "C": "Falso"
+      },
+      "dimension": "Validez",
+      "sub_dimension": "Sinceridad",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Pregunta de control; negar faltas comunes sugiere que el postulante miente para dar buena imagen.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 53
+    },
+    {
+      "texto": "He contestado las preguntas diciendo la verdad",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Raras veces",
+        "C": "Falso"
+      },
+      "dimension": "Validez",
+      "sub_dimension": "Sinceridad",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Sesgo de Respuesta",
+      "es_escala_mentira": true,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Pregunta de control para medir la honestidad del postulante.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 54
+    },
+    {
+      "texto": "A la hora de construir o hacer algo preferiría trabajar:",
+      "opciones": {
+        "A": "Con otros",
+        "B": "En duda",
+        "C": "Solo"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Cooperación",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Dificultad para trabajar en equipo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la disposición hacia el trabajo colaborativo.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 55
+    },
+    {
+      "texto": "He mentido alguna vez.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A veces",
+        "C": "Falso"
+      },
+      "dimension": "Validez",
+      "sub_dimension": "Sinceridad",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Deseabilidad Social",
+      "es_escala_mentira": true,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Admitir faltas comunes indica sinceridad; negarlas puede sugerir falsedad.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 56
+    },
+    {
+      "texto": "Normalmente me gusta hacer mis planes solo, sin interrupciones y sugerencias de otros.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Algunas veces",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Autonomía/Individualismo",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Resistencia a la supervisión",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la apertura a recibir aportes externos en la planificación.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 57
+    },
+    {
+      "texto": "Cuando me siento tenso, incluso pequeñas cosas me sacan de quicio.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Algunas veces",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Tolerancia a la Frustración",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Reactividad al Estrés",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la capacidad de mantener la calma bajo presión.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 58
+    },
+    {
+      "texto": "Puedo encontrarme bastante a gusto en un ambiente desorganizado.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Raras veces",
+        "C": "Falso"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Orden",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Indisciplina",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "El orden es fundamental en la gestión de evidencias y procedimientos policiales.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 59
+    },
+    {
+      "texto": "Si mis planes cuidadosamente elaborados, tuvieran que ser cambiados por otras personas:",
+      "opciones": {
+        "A": "Eso me molestaría e irritaría",
+        "B": "Dejo de hablarle",
+        "C": "Me parecería bien y estuviera contento de cambiarlos"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Flexibilidad Cognitiva",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Rigidez/Baja tolerancia",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la reacción ante cambios imprevistos fuera de su control.",
+      "puntos_opciones": {
+        "A": 5,
+        "B": 0,
+        "C": 10
+      },
+      "id": 60
+    },
+    {
+      "texto": "Preferiría:",
+      "opciones": {
+        "A": "Estar en una oficina organizando y atendiendo personas",
+        "B": "Pasar el tiempo con mis amigos",
+        "C": "Ser arquitecto y dibujar planos en un despacho tranquilo."
+      },
+      "dimension": "Intereses Profesionales",
+      "sub_dimension": "Entorno Laboral",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Compara la preferencia por ambientes sociales, de ocio o técnicos/tranquilos.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 61
+    },
+    {
+      "texto": "Cuando las pequeñas cosas empiezan a marchar mal una tras otras:",
+      "opciones": {
+        "A": "Me siento como si no pudiera dominarlas",
+        "B": "Me siento incapaz",
+        "C": "Continuo de un modo normal"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Resiliencia",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Colapso bajo presión",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la tolerancia a la acumulación de problemas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 62
+    },
+    {
+      "texto": "Me satisface y entretiene cuidar de las necesidades de los demás.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A veces",
+        "C": "Falso"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Servicio/Altruismo",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Falta de vocación",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Importante para el servicio policial, que se basa en la atención al ciudadano.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 63
+    },
+    {
+      "texto": "A veces hago observaciones tontas a modo de broma, para sorprender a los demás.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Extraversión/Expresividad",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Falta de seriedad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la tendencia a buscar atención mediante el humor o conductas impulsivas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 64
+    },
+    {
+      "texto": "Cuando llega el momento de hacer algo que he planeado y esperado, a veces no quiero continuarlo.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Persistencia",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Inconstancia",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la motivación intrínseca y la capacidad de finalizar tareas iniciadas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 65
+    },
+    {
+      "texto": "En las situaciones que dependen de mí, me siento bien dando instrucciones a los demás.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Raras veces",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Liderazgo/Dominancia",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Pasividad excesiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la capacidad y comodidad para asumir roles de mando.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 66
+    },
+    {
+      "texto": "Preferiría emplear una tarde:",
+      "opciones": {
+        "A": "Haciendo con tranquilidad y sosiego algo que me agrade.",
+        "B": "En duda",
+        "C": "En una fiesta animada"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Sociabilidad/Introversión",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la preferencia por actividades solitarias y tranquilas frente a entornos sociales activos.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 67
+    },
+    {
+      "texto": "Cuando yo sé muy bien lo que el grupo tiene que hacer, me gusta ser el único en dar las órdenes.",
+      "opciones": {
+        "A": "Si",
+        "B": "En duda",
+        "C": "No"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Dominancia/Liderazgo",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Autoritarismo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la tendencia a centralizar el mando y la dirección grupal.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 68
+    },
+    {
+      "texto": "Me divierte mucho el rápido y ágil humor de algunas series de televisión.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Intereses Personales",
+      "sub_dimension": "Sentido del Humor",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la receptividad ante estímulos de entretenimiento ágil.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 69
+    },
+    {
+      "texto": "Le doy más respeto y valor a las normas y buenas maneras que a una vida fácil.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A veces",
+        "C": "Falso"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Apego Normativo",
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Corrupción/Indisciplina",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Fundamental para el perfil policial: anteponer el deber al beneficio propio.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 70
+    },
+    {
+      "texto": "Me siento tímido y retraído a la hora de hacer mis amigos entre personas desconocidas.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Sociabilidad/Timidez",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Dificultad de Interacción",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la seguridad personal en entornos sociales nuevos.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 71
+    },
+    {
+      "texto": "Si pudiera preferiría hacer ejercicios con:",
+      "opciones": {
+        "A": "La esgrima o la danza",
+        "B": "En duda",
+        "C": "El tenis o la lucha libre"
+      },
+      "dimension": "Intereses Personales",
+      "sub_dimension": "Preferencia Deportiva",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la inclinación hacia deportes de precisión/arte frente a deportes de confrontación directa.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 72
+    },
+    {
+      "texto": "Normalmente hay una gran diferencia entre lo que la gente dice y lo que hace.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Cinismo/Suspicacia",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Desconfianza social",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Refleja la visión del sujeto sobre la coherencia y honestidad de los demás.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 73
+    },
+    {
+      "texto": "Resulta más interesante ser músico que mecánico.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Intereses Profesionales",
+      "sub_dimension": "Inclinación Vocacional",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la preferencia por actividades creativas versus actividades técnicas o manuales.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 74
+    },
+    {
+      "texto": "Las personas forman demasiado rápido su opinión acerca de mí",
+      "opciones": {
+        "A": "Casi nunca",
+        "B": "En duda",
+        "C": "A menudo"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Percepción de Imagen Pública",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Hipersensibilidad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa cómo percibe el sujeto que los demás lo juzgan.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 75
+    },
+    {
+      "texto": "Soy de esas personas que:",
+      "opciones": {
+        "A": "Siempre están haciendo cosas prácticas que necesitan ser hechas.",
+        "B": "En duda",
+        "C": "Imaginan o piensan acerca de cosas sobre sí mismas"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Pragmatismo vs. Introspección",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Distracción",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Diferencia entre individuos orientados a la acción y aquellos orientados a la reflexión o fantasía.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 76
+    },
+    {
+      "texto": "Algunas personas creen que es difícil intimar conmigo.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Afabilidad/Reserva",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Dificultad de vinculación",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la percepción externa sobre la accesibilidad emocional del sujeto.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 77
+    },
+    {
+      "texto": "Puedo engañar a las personas siendo amigable cuando en verdad me desagradan.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A menudo",
+        "C": "Falso"
+      },
+      "dimension": "Integridad",
+      "sub_dimension": "Manipulación",
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Doble cara/Deshonestidad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la tendencia a la simulación y falta de transparencia.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 78
+    },
+    {
+      "texto": "Mis pensamientos tienden a girar sobre cosas realistas y prácticas.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A menudo",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Pragmatismo",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la orientación del pensamiento hacia la realidad concreta.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 79
+    },
+    {
+      "texto": "Suelo ser reservado y guardar mis problemas para mis adentros.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A menudo",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Introversión/Privacidad",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Baja comunicación",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide el nivel de hermetismo personal frente a los demás.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 80
+    },
+    {
+      "texto": "Después de tomar una decisión sobre algo, sigo pensando si será acertado o errónea.",
+      "opciones": {
+        "A": "Normalmente verdadero",
+        "B": "En duda",
+        "C": "Normalmente falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Seguridad/Decisión",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Indecisión",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la confianza en el propio juicio tras actuar.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 81
+    },
+    {
+      "texto": "En el fondo no me gustan las personas que son 'diferentes' u originales",
+      "opciones": {
+        "A": "Verdadero, normalmente no me gusta",
+        "B": "En duda",
+        "C": "Falso, normalmente el encuentro interesante"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Tolerancia",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Intolerancia/Prejuicio",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la apertura hacia la diversidad individual.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 82
+    },
+    {
+      "id": 83,
+      "texto": "Pregunta 83: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Me perturbo más que otros cuando las personas se enojan entre ellas.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "A menudo",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Susceptibilidad al conflicto",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Vulnerabilidad emocional",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa cómo le afectan los conflictos ajenos en el entorno de trabajo.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 84
+    },
+    {
+      "texto": "Lo que este mundo necesita es:",
+      "opciones": {
+        "A": "Más ciudadanos integrados y constantes",
+        "B": "Más ciudadanos honestos",
+        "C": "Más reformadores con opiniones sobre como mejorar el mundo"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Visión Social",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Inconformismo extremo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la inclinación hacia la estabilidad y honestidad ciudadana.",
+      "puntos_opciones": {
+        "A": 5,
+        "B": 10,
+        "C": 0
+      },
+      "id": 85
+    },
+    {
+      "id": 86,
+      "texto": "Pregunta 86: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 87,
+      "texto": "Pregunta 87: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Frecuentemente tengo periodos de tiempo en los que me es difícil dejar de compadecerme a mí mismo.",
+      "opciones": {
+        "A": "Bastante verdadero para mi",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Bastante falso para mi"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autocompasión/Depresión",
+      "peso_critico": 1.7,
+      "tipo_riesgo": "Inestabilidad anímica",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Indica rumiación negativa y posibles tendencias a la baja autoestima.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 88
+    },
+    {
+      "id": 89,
+      "texto": "Pregunta 89: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Si la gente me interrumpe cuando estoy intentando hacer algo, eso no me perturba.",
+      "opciones": {
+        "A": "Verdadero, no me siento mal",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Falso, me molesta"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control de Impulsos",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa el nivel de irritabilidad ante interferencias externas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 90
+    },
+    {
+      "texto": "Siempre conservo mis pertenencias en perfectas condiciones.",
+      "opciones": {
+        "A": "Bastante verdadero para mi",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Bastante falso para mi"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Orden/Cuidado de equipo",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Descuido material",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Crucial para el mantenimiento de armas y equipo policial.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 91
+    },
+    {
+      "texto": "A veces me siento frustrado muy rápidamente por las personas.",
+      "opciones": {
+        "A": "Bastante verdadero para mi",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Bastante falso para mi"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Tolerancia a la Frustración",
+      "peso_critico": 1.6,
+      "tipo_riesgo": "Irritabilidad/Agresión",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la rapidez con la que el sujeto pierde la paciencia con otros.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 92
+    },
+    {
+      "id": 93,
+      "texto": "Pregunta 93: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 94,
+      "texto": "Pregunta 94: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 95,
+      "texto": "Pregunta 95: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 96,
+      "texto": "Pregunta 96: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 97,
+      "texto": "Pregunta 97: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 98,
+      "texto": "Pregunta 98: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "La gente debería insistir más de lo que hace ahora en que las normas morales sean seguidas estrictamente.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Rigidez Moral",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Intolerancia",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Indica la importancia que el sujeto le da a la moralidad pública y social.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 99
+    },
+    {
+      "id": 100,
+      "texto": "Pregunta 100: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "texto": "Me suelo sentir desconcertado, si de pronto paso a ser el centro de atención de un grupo social.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Seguridad Social",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Ansiedad Social",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la reacción ante la presión social directa.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 101
+    },
+    {
+      "texto": "Me irrita que la gente insista en que yo siga las mínimas reglas de seguridad.",
+      "opciones": {
+        "A": "Verdadero, porque no siempre son necesarias",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Falso porque es importante hacer las cosas correctamente"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Apego a Normas",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Riesgo Operacional",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Crucial para funciones policiales; el cumplimiento de reglas es obligatorio.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 102
+    },
+    {
+      "id": 103,
+      "texto": "Pregunta 103: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 104,
+      "texto": "Pregunta 104: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Dejo que pequeñas cosas me perturben más de lo que debieran.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Control Emocional",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Reactividad Emocional",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la sensibilidad ante estresores menores.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 105
+    },
+    {
+      "texto": "Es bueno tener cuidado con los que hablan de un modo amable, porque se pueden aprovechar de uno.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Depende",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Suspicacia",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Dificultad de integración",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa el nivel de desconfianza ante el trato cordial.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 106
+    },
+    {
+      "id": 107,
+      "texto": "Pregunta 107: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 108,
+      "texto": "Pregunta 108: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 109,
+      "texto": "Pregunta 109: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Cuando hablo con alguien que no conozco todavía, no doy más información que necesaria",
+      "opciones": {
+        "A": "Normalmente verdadero",
+        "B": "En duda",
+        "C": "Normalmente falso"
+      },
+      "dimension": "Seguridad",
+      "sub_dimension": "Discreción",
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Fuga de Información",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Importante para el manejo de información confidencial en la labor policial.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 110
+    },
+    {
+      "id": 111,
+      "texto": "Pregunta 111: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Cuando la gente me critica delante de otros, me siento muy desalentado y herido.",
+      "opciones": {
+        "A": "Casi nunca",
+        "B": "Raras veces",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autoestima/Resiliencia",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Hipersensibilidad",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Un oficial debe tolerar críticas y mantener la postura profesional.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 112
+    },
+    {
+      "id": 113,
+      "texto": "Pregunta 113: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "El tratar con la gente es mejor:",
+      "opciones": {
+        "A": "Poner todas las cartas sobre la mesa",
+        "B": "Descubrir sus intenciones",
+        "C": "No descubrir tu propio juego"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Estrategia Social",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Ocultamiento/Desconfianza",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la transparencia o reserva en las relaciones interpersonales.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 114
+    },
+    {
+      "texto": "A veces me gustaría más defender mi punto de vista que perdonar y olvidar.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Flexibilidad/Obstinación",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Conflictividad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la tendencia a sostener discusiones innecesarias.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 115
+    },
+    {
+      "texto": "Me gusta la gente que:",
+      "opciones": {
+        "A": "Es estable y tradicional en sus intereses.",
+        "B": "Divertida y graciosa",
+        "C": "Reconsidera seriamente sus puntos de vista sobre la vida"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Preferencia Social",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Identifica el tipo de entorno social en el que el sujeto se siente cómodo.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 116
+    },
+    {
+      "id": 117,
+      "texto": "Pregunta 117: ¿Consideras que tu nivel de valores es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Valores",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 118,
+      "texto": "Pregunta 118: ¿Consideras que tu nivel de liderazgo es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Liderazgo",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 119,
+      "texto": "Pregunta 119: ¿Consideras que tu nivel de tolerancia al estrés es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Tolerancia al Estrés",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 120,
+      "texto": "Pregunta 120: ¿Consideras que tu nivel de sociabilidad es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Sociabilidad",
+      "peso_critico": 1.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": true
+    },
+    {
+      "id": 121,
+      "texto": "Pregunta 121: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "id": 122,
+      "texto": "Pregunta 122: ¿Consideras que tu nivel de disciplina es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Disciplina",
+      "peso_critico": 2.0,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "Soy algo perfeccionista y me gusta que las cosas se hagan bien.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "Depende",
+        "C": "Falso"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Minuciosidad",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Negligencia",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Refleja el estándar de calidad y autoexigencia en las tareas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 123
+    },
+    {
+      "texto": "Cuando tengo que hacer una larga cola por algún motivo, no me pongo tan intranquilo y nervioso como la mayoría.",
+      "opciones": {
+        "A": "Verdadero, no me pongo",
+        "B": "Ni verdadero ni falso para mi",
+        "C": "Falso, me pongo intranquilo"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Paciencia",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Impulsividad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa el control de la ansiedad en situaciones de espera o tedio.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 124
+    },
+    {
+      "texto": "La gente me trata peor de lo que merezco por mis buenas intenciones.",
+      "opciones": {
+        "A": "A veces.",
+        "B": "En duda",
+        "C": "Nunca"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Victimización",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Paranoia",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Sentirse víctima puede nublar el juicio objetivo en el servicio.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 125
+    },
+    {
+      "texto": "Lo paso bien con gente que muestra abiertamente sus emociones.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Afabilidad/Empatía",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la comodidad ante la expresividad emocional ajena.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 126
+    },
+    {
+      "texto": "No dejo que me depriman pequeñas cosas.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Fortaleza Emocional",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Vulnerabilidad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la resiliencia ante inconvenientes cotidianos.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 127
+    },
+    {
+      "texto": "Si pudiera ayudar en el desarrollo de un invento útil, preferiría encargarme de:",
+      "opciones": {
+        "A": "Investigarlo en el laboratorio",
+        "B": "Ser un observador más.",
+        "C": "Mostrar a las personas su utilización"
+      },
+      "dimension": "Intereses Profesionales",
+      "sub_dimension": "Rol Operativo",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "No especificado",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Identifica preferencia por investigación, observación pasiva o instrucción/ventas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 5
+      },
+      "id": 128
+    },
+    {
+      "texto": "Si ser Cortez y amable no da resultado, puedo ser agresivo y astuto cuando sea necesario.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Manejo de Conflictos",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Agresividad Injustificada",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la transición del trato cortés al uso de otras tácticas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 129
+    },
+    {
+      "texto": "Me gusta ir a menudo a espectáculos y diversiones.",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Búsqueda de Excitación",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Necesidad de estimulación",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la frecuencia de búsqueda de ocio externo.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 130
+    },
+    {
+      "texto": "Si alguien me criticase por cometer algún error, rápidamente le reprocharía sus errores.",
+      "opciones": {
+        "A": "Cierto",
+        "B": "Nunca",
+        "C": "A veces"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Defensividad/Agresividad",
+      "peso_critico": 1.6,
+      "tipo_riesgo": "Baja aceptación de crítica",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la madurez para aceptar correcciones sin contraatacar.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "id": 131
+    },
+    {
+      "texto": "Me resulta difícil cambiar de opción.",
+      "opciones": {
+        "A": "Nunca",
+        "B": "A veces",
+        "C": "Siempre"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Flexibilidad Cognitiva",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Obstinación/Rigidez",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "La rigidez mental puede ser un riesgo en situaciones que requieren adaptación rápida.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 132
+    },
+    {
+      "id": 133,
+      "texto": "Pregunta 133: ¿Consideras que tu nivel de estabilidad emocional es adecuado para la institución?",
+      "opciones": {
+        "A": "Totalmente de acuerdo",
+        "B": "Parcialmente de acuerdo",
+        "C": "En desacuerdo",
+        "D": "Totalmente en desacuerdo"
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 7,
+        "C": 3,
+        "D": 0
+      },
+      "dimension": "Estabilidad Emocional",
+      "peso_critico": 1.5,
+      "hint": "Esta pregunta evalúa tu idoneidad para el puesto policial.",
+      "es_escala_mentira": false
+    },
+    {
+      "texto": "No entiendo a la gente sentimental",
+      "opciones": {
+        "A": "Nunca",
+        "B": "A veces",
+        "C": "Siempre"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Empatía",
+      "peso_critico": 1.6,
+      "tipo_riesgo": "Frialdad afectiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la capacidad de comprender y conectar con las emociones ajenas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 134
+    },
+    {
+      "texto": "Me afectan las situaciones sociales difíciles.",
+      "opciones": {
+        "A": "Nunca",
+        "B": "A veces",
+        "C": "Siempre"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Manejo del Estrés Social",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Bloqueo bajo presión",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la susceptibilidad emocional ante entornos de conflicto o tensión.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 135
+    },
+    {
+      "texto": "Dedico poco tiempo y esfuerzo a mi trabajo.",
+      "opciones": {
+        "A": "Nunca",
+        "B": "A veces",
+        "C": "Siempre"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Compromiso Laboral",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Bajo rendimiento/Abandono",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la ética de trabajo y el nivel de esfuerzo.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 136
+    },
+    {
+      "texto": "Raramente me tomo mi revancha con los demás.",
+      "opciones": {
+        "A": "Nunca",
+        "B": "A veces",
+        "C": "Siempre"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Rencor/Venganza",
+      "peso_critico": 1.7,
+      "tipo_riesgo": "Hostilidad/Represalia",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la capacidad de perdonar y evitar conductas vindicativas.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 137
+    },
+    {
+      "texto": "Participa en diferentes actividades dentro de mi comunidad",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Integración Comunitaria",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Aislamiento",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa el nivel de compromiso y participación social.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 138
+    },
+    {
+      "texto": "Soy incapaz de controlar mis deseos",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autocontrol",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Impulsividad Criminal",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "El descontrol de impulsos es un riesgo crítico para portadores de armas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 139
+    },
+    {
+      "texto": "Comúnmente, me gustan las discusiones",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Beligerancia",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Hostilidad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide la inclinación hacia el conflicto verbal o la confrontación.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 140
+    },
+    {
+      "texto": "Siempre suelo hablar de mis cualidades a los demás",
+      "opciones": {
+        "A": "Verdadero",
+        "B": "En duda",
+        "C": "Falso"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Narcisismo/Humildad",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Egocentrismo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Hablar excesivamente de uno mismo puede indicar necesidad de validación externa.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 141
+    },
+    {
+      "texto": "Me cuesta empezar las tareas.",
+      "opciones": {
+        "A": "Cierto",
+        "B": "Nunca",
+        "C": "A veces"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Proactividad",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Procrastinación",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la iniciativa y la diligencia al iniciar labores asignadas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "id": 142
+    },
+    {
+      "texto": "Bajo presión no mantengo la calma",
+      "opciones": {
+        "A": "Cierto",
+        "B": "Nunca",
+        "C": "A veces"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Manejo del Estrés",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Vulnerabilidad Táctica",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Un oficial debe mantener la serenidad en situaciones críticas.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "id": 143
+    },
+    {
+      "texto": "Con mucha frecuencia pienso en los necesitados",
+      "opciones": {
+        "A": "Cierto",
+        "B": "Nunca",
+        "C": "A veces"
+      },
+      "dimension": "Valores",
+      "sub_dimension": "Empatía",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Falta de Sensibilidad Social",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la sensibilidad humana, necesaria para el servicio a la comunidad.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 5
+      },
+      "id": 144
+    },
+    {
+      "texto": "Deberíamos ser implacables con la delincuencia y mostrar nuestro poder",
+      "opciones": {
+        "A": "De acuerdo",
+        "B": "Algunas veces",
+        "C": "En desacuerdo"
+      },
+      "dimension": "Valores/Actitudes",
+      "sub_dimension": "Uso de la Fuerza/Autoritarismo",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Abuso de Autoridad",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la postura frente al ejercicio del poder y el control delictivo.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 145
+    },
+    {
+      "texto": "Me gusta la acción y el peligro.",
+      "opciones": {
+        "A": "Cierto",
+        "B": "Nunca",
+        "C": "A veces"
+      },
+      "dimension": "Personalidad",
+      "sub_dimension": "Búsqueda de Sensaciones",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Temeridad/Imprudencia",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la afinidad por situaciones de riesgo, común en el perfil policial.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "id": 146
+    },
+    {
+      "texto": "Siempre miro el lado bueno de la vida.",
+      "opciones": {
+        "A": "De acuerdo",
+        "B": "Algunas veces",
+        "C": "En desacuerdo"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Optimismo",
+      "peso_critico": 1.0,
+      "tipo_riesgo": "Negativismo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa la actitud general y disposición ante la vida.",
+      "puntos_opciones": {
+        "A": 10,
+        "B": 5,
+        "C": 0
+      },
+      "id": 147
+    },
+    {
+      "texto": "Me considero una persona incapaz de controlar mis deseos",
+      "opciones": {
+        "A": "De acuerdo",
+        "B": "Algunas veces",
+        "C": "En desacuerdo"
+      },
+      "dimension": "Estabilidad Emocional",
+      "sub_dimension": "Autocontrol",
+      "peso_critico": 2.0,
+      "tipo_riesgo": "Impulsividad",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "INC-139",
+      "pista": "Esta es una pregunta de consistencia que valida la respuesta del ítem 139.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 148
+    },
+    {
+      "texto": "Rompo mis promesas con regularidad",
+      "opciones": {
+        "A": "De acuerdo",
+        "B": "Algunas veces",
+        "C": "En desacuerdo"
+      },
+      "dimension": "Responsabilidad",
+      "sub_dimension": "Confiabilidad",
+      "peso_critico": 1.8,
+      "tipo_riesgo": "Falta de Integridad",
+      "es_escala_mentira": false,
+      "es_reversa": true,
+      "inconsistencia_id": "N/A",
+      "pista": "Evalúa el cumplimiento de compromisos y la palabra empeñada.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 149
+    },
+    {
+      "texto": "Siempre desconfío de la gente",
+      "opciones": {
+        "A": "De acuerdo",
+        "B": "Algunas veces",
+        "C": "En desacuerdo"
+      },
+      "dimension": "Adaptación Social",
+      "sub_dimension": "Paranoia/Confianza",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Dificultad de Trabajo en Equipo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "N/A",
+      "pista": "Mide el nivel de suspicacia hacia los demás.",
+      "puntos_opciones": {
+        "A": 0,
+        "B": 5,
+        "C": 10
+      },
+      "id": 150
+    }
+  ],
+  "silogismos": [
+    {
+      "id": 1,
+      "texto": "Si se establece que: 'Ningún delfín es depredador' y 'Todos los tiburones son depredadores'. ¿Qué conclusión lógica se deriva necesariamente?",
+      "opciones": {
+        "A": "Ningún delfín es tiburón.",
+        "B": "Algún tiburón es delfín.",
+        "C": "Todos los depredadores son tiburones."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Inferencia Silogística",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Error en Toma de Decisiones",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-01",
+      "pista": "Si un grupo está totalmente excluido de una categoría (depredadores) y otro está totalmente incluido en ella, ambos grupos son excluyentes entre sí."
+    },
+    {
+      "id": 2,
+      "texto": "Identifique la negación lógica de la siguiente proposición: 'Todos los alumnos no son responsables'.",
+      "opciones": {
+        "A": "Ningún alumno es responsable.",
+        "B": "Algunos alumnos son responsables.",
+        "C": "Todos los alumnos son irresponsables."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Lógica Proposicional",
+      "peso_critico": 1.2,
+      "tipo_riesgo": "Vulnerabilidad Cognitiva",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-02",
+      "pista": "La negación de una proposición universal negativa (Ningún S es P) es una particular afirmativa (Algún S es P)."
+    },
+    {
+      "id": 3,
+      "texto": "Dadas las premisas: 'Cualquier persona es honesta' y 'Nunca un honesto es corrupto'. Determine la conclusión válida.",
+      "opciones": {
+        "A": "Ciertas personas son corruptas.",
+        "B": "Ninguna persona es corrupta.",
+        "C": "Todo corrupto es persona."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Silogismo Categórico",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Juicio Crítico",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-03",
+      "pista": "Si el conjunto A pertenece a B, y B tiene exclusión total con C, entonces A tiene exclusión total con C."
+    },
+    {
+      "id": 4,
+      "texto": "Halle la negación de la frase: 'Algunos senadores son irracionales'.",
+      "opciones": {
+        "A": "Ningún senador es irracional.",
+        "B": "Todos los senadores son irracionales.",
+        "C": "Algunos senadores son racionales."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Oposición de Proposiciones",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Interpretación de Normas",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-04",
+      "pista": "La negación de una proposición particular afirmativa (I) es siempre su contradictoria universal negativa (E)."
+    },
+    {
+      "id": 5,
+      "texto": "¿Cuál es la equivalencia lógica de la proposición: 'Todos los hombres no son bellos'?",
+      "opciones": {
+        "A": "Algunos hombres son bellos.",
+        "B": "Ningún hombre es bello.",
+        "C": "No todos los hombres son bellos."
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 5
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Equivalencias Lógicas",
+      "peso_critico": 1.4,
+      "tipo_riesgo": "Sesgo Cognitivo",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-05",
+      "pista": "La expresión 'Todos... no son' equivale a una exclusión total de la característica en el sujeto."
+    },
+    {
+      "id": 6,
+      "texto": "Identifique la fórmula o estructura de la siguiente proposición categórica: 'Ningún deportista peruano es drogadicto'.",
+      "opciones": {
+        "A": "Algún S es P",
+        "B": "Ningún S es P",
+        "C": "Todo S es P"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Estructuras Categóricas",
+      "peso_critico": 1.1,
+      "tipo_riesgo": "Análisis de Información",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-06",
+      "pista": "Las proposiciones que inician con 'Ningún' representan una exclusión total (Universal Negativa)."
+    },
+    {
+      "id": 7,
+      "texto": "Determine el valor de 'x' en la siguiente analogía numérica: 8 (38) 11; 6 (38) 13; 7 (x) 15.",
+      "opciones": {
+        "A": "37",
+        "B": "44",
+        "C": "76"
+      },
+      "puntos_opciones": {
+        "A": 0,
+        "B": 10,
+        "C": 0
+      },
+      "dimension": "Razonamiento Numérico",
+      "sub_dimension": "Relaciones Operacionales",
+      "peso_critico": 1.3,
+      "tipo_riesgo": "Capacidad Analítica",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-NUM-01",
+      "pista": "La ley de formación es la suma de los extremos multiplicada por dos: (7 + 15) x 2."
+    },
+    {
+      "id": 8,
+      "texto": "Si se sabe que 'Cualquier persona es honesta' y 'Nunca un honesto es corrupto', ¿cuál es la negación de la conclusión resultante?",
+      "opciones": {
+        "A": "Algunas personas son corruptas.",
+        "B": "Ninguna persona es corrupta.",
+        "C": "Ciertos honestos son corruptos."
+      },
+      "puntos_opciones": {
+        "A": 10,
+        "B": 0,
+        "C": 0
+      },
+      "dimension": "Razonamiento Lógico",
+      "sub_dimension": "Inferencia y Negación",
+      "peso_critico": 1.5,
+      "tipo_riesgo": "Integridad de Juicio",
+      "es_escala_mentira": false,
+      "es_reversa": false,
+      "inconsistencia_id": "INC-LOG-07",
+      "pista": "Primero halle la conclusión (Ninguna persona es corrupta) y luego niéguela para obtener la respuesta correcta."
+    }
+  ]
+}

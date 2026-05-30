@@ -1,0 +1,284 @@
+{
+  "preguntas_entrevista": [
+    {
+      "id": 1,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 2,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 3,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 4,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 5,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 6,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 7,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 8,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 9,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 10,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 11,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 12,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 13,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 14,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 15,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 16,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 17,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 18,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 19,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 20,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 21,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 22,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 23,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 24,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 25,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 26,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 27,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 28,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 29,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 30,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 31,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 32,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 33,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 34,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 35,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 36,
+      "categoria": "MOTIVACIÓN",
+      "pregunta": "¿Cómo manejarías una situación que requiere motivación bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 37,
+      "categoria": "LIDERAZGO",
+      "pregunta": "¿Cómo manejarías una situación que requiere liderazgo bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 38,
+      "categoria": "SITUACIONAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere situacional bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 39,
+      "categoria": "TOMA DE DECISIONES",
+      "pregunta": "¿Cómo manejarías una situación que requiere toma de decisiones bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    },
+    {
+      "id": 40,
+      "categoria": "GENERAL",
+      "pregunta": "¿Cómo manejarías una situación que requiere general bajo alta presión?",
+      "puntos_clave": "Mantener la calma, aplicar el protocolo, proteger la vida humana.",
+      "respuesta_ideal": "Evaluando rápidamente el escenario, aplicando los protocolos de la PNP con disciplina y manteniendo siempre el respeto por los derechos humanos."
+    }
+  ]
+}

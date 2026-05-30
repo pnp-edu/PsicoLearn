@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@300;400;500;600&family=Google+Sans+Display:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#060A14;font-family:'Google Sans',sans-serif;overflow-x:hidden;min-height:600px}
+
+  /* Aurora neural background */
+  .aurora{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
+  .aurora-blob{position:absolute;border-radius:50%;filter:blur(80px);animation:drift 12s ease-in-out infinite}
+  .b1{width:500px;height:400px;background:radial-gradient(ellipse,rgba(66,133,244,0.22) 0%,transparent 70%);top:-100px;left:-100px;animation-delay:0s}
+  .b2{width:400px;height:500px;background:radial-gradient(ellipse,rgba(138,43,226,0.18) 0%,transparent 70%);top:50px;right:-50px;animation-delay:-4s}
+  .b3{width:350px;height:300px;background:radial-gradient(ellipse,rgba(234,67,53,0.12) 0%,transparent 70%);bottom:0;left:30%;animation-delay:-8s}
+  .b4{width:300px;height:350px;background:radial-gradient(ellipse,rgba(52,168,83,0.14) 0%,transparent 70%);bottom:50px;right:20%;animation-delay:-2s}
+
+  @keyframes drift{
+    0%,100%{transform:translate(0,0) scale(1)}
+    33%{transform:translate(30px,-20px) scale(1.05)}
+    66%{transform:translate(-20px,30px) scale(0.97)}
+  }
+
+  /* Neural grid overlay */
+  .neural-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(66,133,244,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(66,133,244,0.04) 1px,transparent 1px);background-size:40px 40px;pointer-events:none;z-index:0}
+
+  nav{position:relative;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:18px 40px;border-bottom:1px solid rgba(255,255,255,0.06)}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-icon{width:32px;height:32px;background:linear-gradient(135deg,#4285F4,#9B59B6);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px}
+  .logo-text{font-family:'Google Sans Display',sans-serif;font-size:17px;font-weight:500;color:#E8EAED;letter-spacing:-0.2px}
+  .nav-pill{padding:8px 18px;border-radius:20px;border:1px solid rgba(255,255,255,0.12);background:rgba(255,255,255,0.04);color:#9AA0A6;font-size:13px;font-weight:400;cursor:pointer;transition:all .2s;backdrop-filter:blur(8px)}
+  .nav-pill:hover{background:rgba(255,255,255,0.08);color:#E8EAED}
+
+  .hero{position:relative;z-index:5;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;padding:60px 40px 50px;min-height:520px}
+
+  /* Left column */
+  .hero-left{}
+  .chip{display:inline-flex;align-items:center;gap:7px;padding:6px 14px;border-radius:20px;border:1px solid rgba(66,133,244,0.35);background:rgba(66,133,244,0.08);color:#8AB4F8;font-size:11px;font-weight:500;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:28px}
+  .chip-dot{width:6px;height:6px;border-radius:50%;background:linear-gradient(135deg,#4285F4,#34A853);animation:pulse-dot 2s ease-in-out infinite}
+  @keyframes pulse-dot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.6;transform:scale(.8)}}
+
+  h1{font-family:'Google Sans Display',sans-serif;font-size:44px;font-weight:500;line-height:1.15;letter-spacing:-1px;margin-bottom:20px}
+  .grad-blue{background:linear-gradient(135deg,#4285F4 0%,#8AB4F8 50%,#C58AF9 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .grad-multi{background:linear-gradient(135deg,#EA4335 0%,#FBBC04 35%,#34A853 70%,#4285F4 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+
+  .hero-desc{font-size:15px;font-weight:300;color:#9AA0A6;line-height:1.7;max-width:420px;margin-bottom:36px}
+  .hero-desc strong{color:#C4C7CC;font-weight:400}
+
+  .cta-group{display:flex;align-items:center;gap:14px}
+  .btn-primary{display:flex;align-items:center;gap:10px;padding:13px 24px;border-radius:24px;background:linear-gradient(135deg,#4285F4,#3367D6);border:none;color:#fff;font-family:'Google Sans',sans-serif;font-size:14px;font-weight:500;cursor:pointer;transition:all .25s;box-shadow:0 0 0 0 rgba(66,133,244,0)}
+  .btn-primary:hover{transform:translateY(-1px);box-shadow:0 0 30px rgba(66,133,244,0.4)}
+  .btn-primary svg{width:18px;height:18px}
+  .btn-ghost{padding:12px 22px;border-radius:24px;background:transparent;border:1px solid rgba(255,255,255,0.15);color:#BDC1C6;font-family:'Google Sans',sans-serif;font-size:14px;font-weight:400;cursor:pointer;transition:all .2s}
+  .btn-ghost:hover{border-color:rgba(255,255,255,0.3);color:#E8EAED;background:rgba(255,255,255,0.04)}
+
+  /* Stats bar */
+  .stats-bar{display:flex;gap:28px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(255,255,255,0.07)}
+  .stat-item{text-align:left}
+  .stat-num{font-family:'Google Sans Display',sans-serif;font-size:22px;font-weight:500;background:linear-gradient(135deg,#E8EAED,#9AA0A6);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+  .stat-label{font-size:11px;color:#5F6368;text-transform:uppercase;letter-spacing:.8px;margin-top:2px}
+
+  /* Right column — feature cards */
+  .section-label{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:#5F6368;margin-bottom:20px;text-align:right}
+  .cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+
+  .card{position:relative;padding:22px;border-radius:16px;border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.03);backdrop-filter:blur(16px);cursor:pointer;transition:all .3s;overflow:hidden}
+  .card::before{content:'';position:absolute;inset:0;border-radius:16px;background:radial-gradient(ellipse at 20% 20%,var(--card-glow) 0%,transparent 60%);opacity:0;transition:opacity .3s}
+  .card:hover::before{opacity:1}
+  .card:hover{border-color:rgba(255,255,255,0.15);transform:translateY(-2px);background:rgba(255,255,255,0.05)}
+
+  .card-1{--card-glow:rgba(66,133,244,0.15)}
+  .card-2{--card-glow:rgba(138,43,226,0.15)}
+  .card-3{--card-glow:rgba(52,168,83,0.15)}
+  .card-4{--card-glow:rgba(234,67,53,0.12)}
+
+  .card-icon{width:36px;height:36px;border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:18px;position:relative;z-index:1}
+  .icon-blue{background:rgba(66,133,244,0.15);color:#8AB4F8;border:1px solid rgba(66,133,244,0.25)}
+  .icon-purple{background:rgba(138,43,226,0.15);color:#C58AF9;border:1px solid rgba(138,43,226,0.25)}
+  .icon-green{background:rgba(52,168,83,0.15);color:#81C995;border:1px solid rgba(52,168,83,0.25)}
+  .icon-red{background:rgba(234,67,53,0.12);color:#F28B82;border:1px solid rgba(234,67,53,0.2)}
+
+  .card-title{font-size:14px;font-weight:500;color:#E8EAED;margin-bottom:6px;position:relative;z-index:1}
+  .card-desc{font-size:12px;font-weight:300;color:#5F6368;line-height:1.55;position:relative;z-index:1}
+
+  /* Shimmer line on active card */
+  .card-line{position:absolute;bottom:0;left:0;right:0;height:1.5px;background:linear-gradient(90deg,transparent,var(--line-color),transparent);opacity:0;transition:opacity .3s}
+  .card:hover .card-line{opacity:1}
+  .card-1 .card-line{--line-color:#4285F4}
+  .card-2 .card-line{--line-color:#9B59B6}
+  .card-3 .card-line{--line-color:#34A853}
+  .card-4 .card-line{--line-color:#EA4335}
+</style>
+</head>
+<body>
+  <div class="aurora">
+    <div class="aurora-blob b1"></div>
+    <div class="aurora-blob b2"></div>
+    <div class="aurora-blob b3"></div>
+    <div class="aurora-blob b4"></div>
+  </div>
+  <div class="neural-grid"></div>
+
+  <nav>
+    <div class="logo">
+      <div class="logo-icon">🧠</div>
+      <span class="logo-text">PsicoLearn</span>
+    </div>
+    <button class="nav-pill">Soporte</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="chip">
+        <span class="chip-dot"></span>
+        Sistema de Preparación PNP
+      </div>
+      <h1>
+        <span class="grad-blue">Entrenamiento</span><br>
+        <span class="grad-multi">Psicológico</span><br>
+        <span style="color:#E8EAED">Inteligente</span>
+      </h1>
+      <p class="hero-desc">
+        Desarrolla el perfil psicológico y capacidad cognitiva requeridos para tu ingreso a la PNP con <strong>retroalimentación en tiempo real</strong> y simulación de exámenes.
+      </p>
+      <div class="cta-group">
+        <button class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+          Iniciar con Google
+        </button>
+        <button class="btn-ghost">Ver demo</button>
+      </div>
+      <div class="stats-bar">
+        <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Preguntas diarias</div></div>
+        <div class="stat-item"><div class="stat-num">98%</div><div class="stat-label">Tasa de aprobación</div></div>
+        <div class="stat-item"><div class="stat-num">12k</div><div class="stat-label">Postulantes activos</div></div>
+      </div>
+    </div>
+
+    <div>
+      <div class="section-label">Características del sistema</div>
+      <div class="cards-grid">
+        <div class="card card-1">
+          <div class="card-icon icon-blue">⚡</div>
+          <div class="card-title">Misión Diaria</div>
+          <div class="card-desc">Resuelve 50 preguntas personalizadas cada día para mantener tu racha.</div>
+          <div class="card-line"></div>
+        </div>
+        <div class="card card-2">
+          <div class="card-icon icon-purple">🧩</div>
+          <div class="card-title">Psicotécnico</div>
+          <div class="card-desc">Ejercicios interactivos de figuras y razonamiento espacial.</div>
+          <div class="card-line"></div>
+        </div>
+        <div class="card card-3">
+          <div class="card-icon icon-green">🎯</div>
+          <div class="card-title">Simulacros Reales</div>
+          <div class="card-desc">Exámenes completos contrarreloj con la estructura exacta PNP.</div>
+          <div class="card-line"></div>
+        </div>
+        <div class="card card-4">
+          <div class="card-icon icon-red">🎓</div>
+          <div class="card-title">La Escuelita</div>
+          <div class="card-desc">Retroalimentación y repaso enfocado únicamente en tus errores.</div>
+          <div class="card-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Bind click events to send window messages to the parent frame (Flutter)
+    const googleBtn = document.querySelector('.btn-primary');
+    if (googleBtn) {
+      googleBtn.addEventListener('click', () => {
+        window.parent.postMessage('google-signin', '*');
+      });
+    }
+
+    const demoBtn = document.querySelector('.btn-ghost');
+    if (demoBtn) {
+      demoBtn.addEventListener('click', () => {
+        window.parent.postMessage('view-demo', '*');
+      });
+    }
+
+    const supportBtn = document.querySelector('.nav-pill');
+    if (supportBtn) {
+      supportBtn.addEventListener('click', () => {
+        window.parent.postMessage('support', '*');
+      });
+    }
+  </script>
+</body>
+</html>
